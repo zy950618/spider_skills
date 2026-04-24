@@ -1,0 +1,12 @@
+name: Regression for stage-specific WAF block
+prompt: >
+  Search works, cart sometimes works, but order submit returns Incapsula HTML.
+  How should the Reese84/WAF handling avoid calling this a successful flow?
+criteria:
+  - "Treats each business stage as a separate WAF acceptance test."
+  - "Does not treat search/cart success as order or purchase success."
+  - "Records host, cookie domain, token cache key, status, content type, and WAF marker."
+  - "Adds the failure to site memory or eval backlog as a regression case."
+expect_skill: true
+timeout: 120
+

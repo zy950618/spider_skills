@@ -1,0 +1,11 @@
+name: Prompt router JSON output
+prompt: >
+  Design a prompt-router that decides whether a new site task should use pure
+  HTTP, JS runtime, browser diagnostic, WAF handling, or adapter standardization.
+criteria:
+  - "Outputs a structured JSON shape, not only prose."
+  - "Includes confidence, reason, required skill, inputs needed, and verification."
+  - "Separates WAF handling from normal JS runtime."
+expect_skill: true
+timeout: 120
+

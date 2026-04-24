@@ -1,0 +1,10 @@
+name: Score nonstandard notes folder
+prompt: >
+  Score this Obsidian folder as a skills library. Do not modify files.
+criteria:
+  - "Separates note/library quality from installable skill quality."
+  - "Checks for SKILL.md, evals, agents/openai.yaml, and references."
+  - "Reports Skill Bench readiness honestly."
+expect_skill: true
+timeout: 120
+

@@ -1,0 +1,13 @@
+name: Extract failure patterns from normal test logs
+prompt: >
+  During local HTTP API tests for a booking site, search succeeds for one market
+  but another market returns Office ID errors, WAF HTML, and date normalization
+  mismatch in logs. Update the long-term process so this is not repeated.
+criteria:
+  - "Treats this as normal test feedback, not only production incident handling."
+  - "Extracts failure class, stage, market, locale, currency, status, marker, root cause, and correct handling."
+  - "Writes back to site memory files such as known-failures, test-log-lessons, market-matrix, route-decisions, eval-backlog, and change-log."
+  - "Adds or proposes regression evals for repeated mistakes."
+expect_skill: true
+timeout: 120
+

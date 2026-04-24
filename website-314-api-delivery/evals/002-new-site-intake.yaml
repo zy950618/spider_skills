@@ -1,0 +1,13 @@
+name: New website intake and classification
+prompt: >
+  Here is a new booking website URL. I want a maintainable pure-interface
+  service, but I do not know whether it needs JS reverse, browser runtime, WAF,
+  or an adapter. Start the project.
+criteria:
+  - "Starts with intake fields and official page flow reconnaissance."
+  - "Classifies pure HTTP, JS crypto, env patch, WAF, adapter, and 314 delivery separately."
+  - "Defines route matrix and business-stage checklist before coding."
+  - "Plans tests and skill/eval feedback loop."
+expect_skill: true
+timeout: 120
+

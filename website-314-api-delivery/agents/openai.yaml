@@ -1,0 +1,5 @@
+interface:
+  display_name: "Website 314 API Delivery"
+  short_description: "Turn a new website into pure API services with 314 integration"
+  default_prompt: "Take a target website from page reconnaissance to pure API implementation, tests, and 314 service delivery."
+
