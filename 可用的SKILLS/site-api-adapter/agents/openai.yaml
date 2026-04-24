@@ -1,5 +1,0 @@
-interface:
-  display_name: "Site API Adapter"
-  short_description: "Standardize reverse findings into adapters, schemas, and runbooks"
-  default_prompt: "Turn site reverse-engineering notes into a reusable API adapter."
-

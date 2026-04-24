@@ -1,5 +1,0 @@
-interface:
-  display_name: "Skills Evaluation Governance"
-  short_description: "Score skills, build evals, and prepare Skill Bench tracking"
-  default_prompt: "Evaluate this skills library and turn it into Skill Bench-ready packages."
-

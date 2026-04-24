@@ -1,5 +1,0 @@
-interface:
-  display_name: "Reverse JS Crawler"
-  short_description: "JS reverse engineering, API restoration, and crawler delivery"
-  default_prompt: "Analyze a target page or API and restore a verified collection script."
-
