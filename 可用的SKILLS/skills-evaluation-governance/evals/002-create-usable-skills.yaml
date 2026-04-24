@@ -1,0 +1,11 @@
+name: Create usable skills from notes
+prompt: >
+  Convert these reverse-engineering notes into usable SKILLS, but keep coding
+  AGENT rules separate for later.
+criteria:
+  - "Creates standard skill package structure instead of one large note."
+  - "Keeps reverse skills and coding agent rules separate."
+  - "Adds evals and references for each skill."
+expect_skill: true
+timeout: 120
+

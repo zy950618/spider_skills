@@ -1,0 +1,11 @@
+name: Negative trigger for standalone script
+prompt: >
+  Write a quick one-off Python script to call this public JSON endpoint once.
+  I do not need a service, 314 framework, payment flow, adapter, or long-term
+  governance.
+criteria:
+  - "Does not force the website-to-314 delivery workflow."
+  - "Keeps the solution scoped to a standalone script."
+expect_skill: false
+timeout: 120
+

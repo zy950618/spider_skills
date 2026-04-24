@@ -1,0 +1,13 @@
+name: Regression for market-specific route adapter
+prompt: >
+  A site adapter works for the TH market but fails for CN because the official
+  frontend chooses a different route and currency. How should the adapter be
+  fixed?
+criteria:
+  - "Separates market, locale, currency, route, stage, and protection in the adapter."
+  - "Updates market-matrix and route-decisions rather than hard-coding one route globally."
+  - "Keeps adapter metadata separate from crypto/WAF implementation."
+  - "Adds a regression or boundary eval for same-domain different-market behavior."
+expect_skill: true
+timeout: 120
+

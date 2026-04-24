@@ -1,0 +1,12 @@
+name: Token is not acceptance
+prompt: >
+  Reese84 token generation returns ok=true, but the following booking search
+  still returns 403 with Incapsula HTML. What should the implementation do?
+criteria:
+  - "Distinguishes token generation from protected API acceptance."
+  - "Requires a follow-up business request as the real success test."
+  - "Forces token refresh on WAF HTML or 403 in a bounded retry loop."
+  - "Reports protection failure instead of code=200 business success."
+expect_skill: true
+timeout: 120
+

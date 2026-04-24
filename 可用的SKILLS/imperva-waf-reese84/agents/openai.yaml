@@ -1,0 +1,5 @@
+interface:
+  display_name: "Imperva WAF Reese84"
+  short_description: "Deep handling for Imperva/Reese84 and WAF token acceptance"
+  default_prompt: "Analyze and implement a stable Reese84 or WAF token flow with acceptance tests."
+

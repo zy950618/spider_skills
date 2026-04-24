@@ -1,0 +1,13 @@
+name: Regression from test log to site memory
+prompt: >
+  A local crawler test shows the date in user input differs from the upstream
+  payload date, and one market returns a different route. Prevent this mistake
+  from repeating in future same-site work.
+criteria:
+  - "Classifies the issue as test-data, payload-mapping, or route-decision before changing code."
+  - "Requires logging original input, normalized payload, session id, and endpoint."
+  - "Writes the lesson to site memory or eval backlog."
+  - "Treats this as a regression case for future backtests."
+expect_skill: true
+timeout: 120
+

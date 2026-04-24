@@ -1,0 +1,11 @@
+name: Cache by proxy UA market session
+prompt: >
+  Explain why one shared browser SESSION causes WAF failures under concurrency
+  and how token cache keys should be grouped.
+criteria:
+  - "Includes proxy/IP, UA/client hints, market/language, host/domain, and session scope."
+  - "Warns against sharing one browser session across unrelated users."
+  - "Requires refresh on 403, x-iinfo, WAF HTML, or challenge markers."
+expect_skill: true
+timeout: 120
+

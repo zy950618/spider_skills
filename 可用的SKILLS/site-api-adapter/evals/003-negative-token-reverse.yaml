@@ -1,0 +1,10 @@
+name: Negative trigger for solving token directly
+prompt: >
+  Restore this x-sign algorithm from a minified JavaScript bundle and produce
+  runnable Node code. I do not need adapter.yaml or API governance.
+criteria:
+  - "Does not use the site adapter workflow as the primary skill."
+  - "Routes to JS reverse/sign restoration instead."
+expect_skill: false
+timeout: 120
+
