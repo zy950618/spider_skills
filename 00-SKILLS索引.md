@@ -16,23 +16,25 @@ tags:
 
 | 层 | 目录 | 角色 |
 |---|---|---|
-| 1 | `1-业务流程层/` | 顶层入口，按用户需求调度 2/3 层 |
+| 1 | `1-业务流程层/` | 顶层入口，按用户需求调度 2/3/5 层 |
 | 2 | `2-JS逆向工具层/` | Web/JS 原子工具，被 1 层调用 |
 | 3 | `3-移动逆向工具层/` | Android/iOS/Native 工具，被 1 层调用 |
 | 4 | `4-通用规范层/` | 行为守则、代码纪律 |
+| 5 | `5-沉淀工具层/` | 接口稳定后的标准化沉淀（被 1 层调用） |
 | 99 | `99-SKILLS治理/` | 生命周期/分类/评分/漂移/准入 |
 | - | `站点经验库/` | 站点案例（按 domain/market/locale 拆分） |
+| - | `tools/` | 仓库辅助脚本（sync_site_memory.py 等） |
 
-## 全部 17 个 skill
+## 全部 18 个 skill
 
 ### 1-业务流程层（5 个）
 
 | Skill | 适用场景 | 主要触发词 |
 |---|---|---|
 | `website-314-api-delivery` | 新网站 → 纯接口 → 查询/加车/生单/支付 → 314 交付 | 新站点接入、纯接口、314 基础框架、加解密全部实现 |
+| `mobile-app-reverse-delivery` | 航司类 Mobile App → 接口逆向 → 314 交付 | APK 逆向、IPA 逆向、航司 App 接口、安卓 app 接口逆向、Frida hook airline |
 | `reverse-js-crawler` | 页面侦察、接口识别、签名/token 还原、采集脚本交付 | JS逆向、接口还原、加密参数、补环境、批量采集 |
 | `imperva-waf-reese84` | Imperva/Reese84/84 盾/x-d-token/WAF challenge | 84盾、Reese84逆向、Incapsula、WAF挑战、风控token |
-| `site-api-adapter` | 单站点逆向结果 → adapter.yaml/schema/runbook | 接口化沉淀、adapter标准化、prompt-router、多站点复用 |
 | `skills-evaluation-governance` | 给技能评分、补 eval、回测、漂移测试、版本治理 | SKILLS评分、Skill Bench、新增Skill准入、回测、漂移 |
 
 ### 2-JS逆向工具层（4 个）
@@ -62,28 +64,44 @@ tags:
 |---|---|
 | `karpathy-guidelines` | LLM 编码行为守则（最小改动、显式假设、可验证成功标准） |
 
+### 5-沉淀工具层（1 个）
+
+| Skill | 适用场景 |
+|---|---|
+| `site-api-adapter` | 把单站点稳定的逆向结果标准化为 adapter.yaml / schema.json / runbook / prompt-router（接口稳定后才用，被 1 层调用） |
+
 ## 调度顺序（典型场景）
 
 ### 网页逆向（最常用）
 
 ```
-website-314-api-delivery（总控）
+website-314-api-delivery（Web 总控）
   ├─ reverse-js-crawler         主链路
   │    ├─ find-crypto-entry     定位加密
   │    ├─ ast-deobfuscate       看不懂的 JS
   │    └─ env-patch             浏览器 JS → Node
   ├─ imperva-waf-reese84        遇到 84盾/Incapsula
-  ├─ site-api-adapter           接口稳定后做 adapter
-  └─ skills-evaluation-governance  任务结束做评分
+  ├─ 5-沉淀工具层/site-api-adapter   接口稳定后做 adapter
+  └─ skills-evaluation-governance    任务结束做评分
 ```
 
-### 移动端 / Native 逆向
+### Mobile App 逆向（航司类）
+
+```
+mobile-app-reverse-delivery（Mobile 总控）
+  ├─ 阶段 A: 协议判别（H5 / Native / RN / Flutter）
+  ├─ H5 路径   → reverse-js-crawler + 2-JS逆向工具层/*
+  ├─ Native 路径 → 3-移动逆向工具层/rev-frida + rev-idapython + rev-unicorn-debug
+  ├─ 加壳 APK → 3-移动逆向工具层/rev-dex-dumper
+  ├─ 5-沉淀工具层/site-api-adapter   接口稳定后做 adapter
+  └─ skills-evaluation-governance    任务结束做评分
+```
+
+### 纯 Native 工具单点
 
 ```
 rev-frida                动态 hook 看真实参数
   ├─ rev-idapython       静态分析
-  ├─ rev-dex-dumper      Android 脱壳
-  ├─ rev-u3d-dump        Unity 游戏
   ├─ rev-struct          重建结构
   ├─ rev-symbol          还原符号
   └─ rev-unicorn-debug   独立仿真验证算法

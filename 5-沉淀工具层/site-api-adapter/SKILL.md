@@ -6,6 +6,14 @@ description: >-
 
 # Site API Adapter
 
+## Do NOT Trigger When
+
+- 用户的接口还没逆向稳定，处于"找加密入口/补环境/破 WAF"阶段（沉淀必须在能稳定复现之后） → 切到 `reverse-js-crawler` / `imperva-waf-reese84`
+- 用户只要单次脚本/采集数据，不会复用，不需要 schema/runbook → 切到 `reverse-js-crawler`
+- 用户要求"完整 314 服务交付" → 切到 `website-314-api-delivery`（让它做总控，本 skill 是它的 references 输出之一）
+- 用户做的是移动端 App 的接口沉淀 → 当前 skill 也可用，但建议先走 `mobile-app-reverse-delivery` 拿到稳定接口再回头沉淀
+- 用户问的是"skill 评分" → 切到 `skills-evaluation-governance`
+
 ## Purpose
 
 把单站点逆向结果升级为可复用、可回归、可交接的接口化单元。这个 Skill 关注沉淀和标准化，不负责深度破解某个 token。

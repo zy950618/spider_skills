@@ -12,10 +12,10 @@
 ```
 my_reverse_skill/
 ├── 1-业务流程层/   顶层入口，调度其他层
-│   ├── website-314-api-delivery       新站点 → 314 接口交付（最常用入口）
+│   ├── website-314-api-delivery       新站点 → 314 接口交付（Web 最常用入口）
+│   ├── mobile-app-reverse-delivery    航司类 Mobile App → 接口交付（Mobile 入口）
 │   ├── reverse-js-crawler             JS 逆向主流程
 │   ├── imperva-waf-reese84            Imperva/Reese84/84 盾专攻
-│   ├── site-api-adapter               站点经验沉淀为 adapter
 │   └── skills-evaluation-governance   skill 评分/回测/治理
 │
 ├── 2-JS逆向工具层/   被 1-业务流程层 调用的 Web 原子工具
@@ -36,6 +36,9 @@ my_reverse_skill/
 ├── 4-通用规范层/
 │   └── karpathy-guidelines            LLM 代码行为守则
 │
+├── 5-沉淀工具层/   接口稳定后的标准化沉淀
+│   └── site-api-adapter               adapter.yaml / schema.json / runbook / prompt-router
+│
 ├── 99-SKILLS治理/
 │   ├── 01-生命周期.md
 │   ├── 02-新网站接入分类.md
@@ -44,18 +47,24 @@ my_reverse_skill/
 │   ├── 05-当前评分与回测结果.md
 │   └── 06-网页逆向标准规划.md          ← meta 规划入口
 │
-└── 站点经验库/
-    ├── _templates/                    （domain/market/locale/currency/stage 多维拆分模板）
-    └── thaiairways.com/               含 案例原稿/ 子目录
+├── 站点经验库/
+│   ├── _templates/                    （domain/market/locale/currency/stage 多维拆分模板）
+│   └── thaiairways.com/               含 案例原稿/ 子目录
+│
+└── tools/
+    ├── sync_site_memory.py            手动同步 project memory → 站点经验库
+    └── README.md                      tools 说明
 ```
 
 ## 安装方式
 
-仓库为唯一来源。本机用 Windows junction 把每个 skill 链回 `~/.claude/skills/`：
+仓库为唯一来源。本机用软链把每个 skill 链回 `~/.claude/skills/`：
+
+### Windows（PowerShell）
 
 ```powershell
 # 业务流程层
-foreach ($n in @('website-314-api-delivery','reverse-js-crawler','imperva-waf-reese84','site-api-adapter','skills-evaluation-governance')) {
+foreach ($n in @('website-314-api-delivery','mobile-app-reverse-delivery','reverse-js-crawler','imperva-waf-reese84','skills-evaluation-governance')) {
   New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\$n" -Target "E:\SKILLS\my_reverse_skill\1-业务流程层\$n"
 }
 # JS 工具层
@@ -68,7 +77,36 @@ foreach ($n in @('rev-frida','rev-idapython','rev-dex-dumper','rev-u3d-dump','re
 }
 # 通用规范
 New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\karpathy-guidelines" -Target "E:\SKILLS\my_reverse_skill\4-通用规范层\karpathy-guidelines"
+# 沉淀工具
+New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\site-api-adapter" -Target "E:\SKILLS\my_reverse_skill\5-沉淀工具层\site-api-adapter"
 ```
+
+### macOS / Linux（bash）
+
+```bash
+REPO="$HOME/SKILLS/my_reverse_skill"   # 改成你本地实际路径
+DST="$HOME/.claude/skills"
+mkdir -p "$DST"
+
+# 业务流程层
+for n in website-314-api-delivery mobile-app-reverse-delivery reverse-js-crawler imperva-waf-reese84 skills-evaluation-governance; do
+  ln -snf "$REPO/1-业务流程层/$n" "$DST/$n"
+done
+# JS 工具层
+for n in find-crypto-entry ast-deobfuscate env-patch ai-reverse-skill-creator; do
+  ln -snf "$REPO/2-JS逆向工具层/$n" "$DST/$n"
+done
+# 移动逆向层
+for n in rev-frida rev-idapython rev-dex-dumper rev-u3d-dump rev-struct rev-symbol rev-unicorn-debug; do
+  ln -snf "$REPO/3-移动逆向工具层/$n" "$DST/$n"
+done
+# 通用规范
+ln -snf "$REPO/4-通用规范层/karpathy-guidelines" "$DST/karpathy-guidelines"
+# 沉淀工具
+ln -snf "$REPO/5-沉淀工具层/site-api-adapter" "$DST/site-api-adapter"
+```
+
+> `ln -snf`：`-s` 符号链接，`-n` 不解引用已存在目标，`-f` 强制覆盖。和 Windows junction 等效。
 
 ## 标准入口
 

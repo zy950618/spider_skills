@@ -1,0 +1,16 @@
+id: 003-regression-h5-wrapper
+type: regression
+description: 用户的 app 是 H5 套壳（webview 加密），仍由本 skill 总控，但内部要走 H5 路径而非 native 路径。
+prompt: |
+  我抓包发现这个航司的 Android app 用 WebView 加载页面，加密参数 x-sign 在 JS 里。
+  帮我做接口还原 + Python 复现。
+
+expected_skill: mobile-app-reverse-delivery
+expected_internal_routing:
+  - 阶段 A 协议判别得出"H5 套壳"
+  - 切到阶段 B，调用 reverse-js-crawler / find-crypto-entry / env-patch
+  - 不应该错误地走阶段 C native 路径
+criteria:
+  - 必须明确说"判别为 H5 套壳"
+  - 不应调用 rev-frida / rev-idapython
+  - 最终交付以 Python/Node 调用 + JS 加密复算为准

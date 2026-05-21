@@ -6,6 +6,14 @@ description: >-
 
 # Imperva WAF Reese84
 
+## Do NOT Trigger When
+
+- 目标网站的反爬不是 Imperva 系（Akamai / Cloudflare / Datadome / PerimeterX / Shape / kasada 等都不是本 skill 范围）→ 这类需另起 skill 或走通用 `reverse-js-crawler`
+- 用户只问普通 sign/token/cookie 生成（无 challenge HTML、无 Reese84 cookie、无 x-d-token、无 `_Incapsula_Resource` 标记） → 切到 `reverse-js-crawler`
+- 用户要求"完整 314 服务交付" → 切到 `website-314-api-delivery`（让它做总控，本 skill 只处理 WAF 子链）
+- 用户做的是移动端 App 的反爬（mobile WAF 经常有 SDK 形态）→ 切到 `mobile-app-reverse-delivery`
+- 用户只要"评估 WAF skill 本身好不好" → 切到 `skills-evaluation-governance`
+
 ## Purpose
 
 处理 WAF/Reese84 时必须区分三件事：本地能生成 token、挑战端点返回 token、业务接口真正接受请求。只有第三个才算成功。

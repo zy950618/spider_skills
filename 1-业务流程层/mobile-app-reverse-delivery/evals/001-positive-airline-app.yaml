@@ -1,0 +1,17 @@
+id: 001-positive-airline-app
+type: positive
+description: 用户给出一个航司 app（Android/iOS），要求做接口逆向 + 复现成 Python，应当触发本 skill。
+prompt: |
+  我想做 VietJet Android app 的航班搜索 + 选座 + 行李加购接口逆向。抓包看到有 x-sign 头，
+  需要还原签名算法，最后用 Python 复现这套接口给我们的 314 框架使用。
+
+expected_skill: mobile-app-reverse-delivery
+expected_routing:
+  - 阶段 A 抓包判别协议形态
+  - 阶段 C 如果是 native 签名，调用 rev-frida + rev-idapython
+  - 阶段 B 如果是 H5 套壳，调用 reverse-js-crawler 工具链
+  - 阶段 E 沉淀到 site-api-adapter
+criteria:
+  - 必须先输出阶段化规划（参考 99-SKILLS治理/06-网页逆向标准规划.md）
+  - 不能直接跳进具体工具
+  - 不能伪造 app 内部细节（如果没看过该 app 必须说"未验证"）

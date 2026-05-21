@@ -1,0 +1,11 @@
+id: 002-negative-pure-web
+type: negative
+description: 用户描述的是纯 Web 网站任务，不应触发本 skill。
+prompt: |
+  我想逆向 https://www.thaiairways.com 的搜索和支付接口，做成 Python，接 314。
+
+expected_skill: website-314-api-delivery
+expected_not_triggered: mobile-app-reverse-delivery
+criteria:
+  - description 中不含 app / APK / IPA / 移动端 关键词，本 skill 不应被触发
+  - 应正确路由到 website-314-api-delivery

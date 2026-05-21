@@ -6,6 +6,15 @@ description: >-
 
 # Website 314 API Delivery
 
+## Do NOT Trigger When
+
+- 用户只要"采集一下数据"、单次性脚本，不提"长期维护"、"服务化"、"接入框架" → 切到 `reverse-js-crawler`
+- 用户只问"找加密入口"、"补环境"、"看一下 JS 怎么生成 sign" 等单点逆向问题 → 切到 `reverse-js-crawler`（或更具体的 `find-crypto-entry` / `env-patch`）
+- 用户只问 WAF/Reese84/84盾怎么过 → 切到 `imperva-waf-reese84`
+- 用户只要把已有结果"沉淀成 adapter / schema / runbook" → 切到 `site-api-adapter`
+- 用户做的是移动端 App 逆向（不是 web 网站） → 切到 `mobile-app-reverse-delivery`
+- 用户问的是 skill 评分/治理本身 → 切到 `skills-evaluation-governance`
+
 ## Purpose
 
 把一个新网站从“给 URL / 业务目标”推进到“纯接口实现 + 314 框架服务化 + 测试闭环 + 可持续沉淀”。这个 Skill 是总控流程，用来调度逆向、反爬、接口化、测试和长期治理。

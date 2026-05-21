@@ -1,0 +1,11 @@
+id: 004-negative-game-only
+type: negative
+description: 用户描述的是 Unity 游戏逆向（不是航司/预订类 app），不应由本 skill 处理。
+prompt: |
+  这是一款 Unity 手游，IL2CPP 加固，我想 dump 协议字段。
+
+expected_skill: rev-u3d-dump
+expected_not_triggered: mobile-app-reverse-delivery
+criteria:
+  - 本 skill 不接管纯游戏逆向（道德/合规边界 + 工具链不同）
+  - 应正确路由到 rev-u3d-dump

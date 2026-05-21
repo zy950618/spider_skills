@@ -6,6 +6,14 @@ description: >-
 
 # Skills Evaluation Governance
 
+## Do NOT Trigger When
+
+- 用户在做实际业务任务（实现某个接口、修某个 bug、跑某个测试）→ 不要把"治理"当万能锤
+- 用户只是问"这个 skill 是干嘛的" → 直接回答 description，不用本 skill 评分
+- 用户要求"创建一个新 skill" → 用 `skill-creator:skill-creator`（plugin）；本 skill 用于评分/准入，不用于创建
+- 用户只问"看一下当前评分" → 直接读 `99-SKILLS治理/05-当前评分与回测结果.md`，不必走完整评分流程
+- 用户要求"改某个 skill 的 description"等具体修改 → 直接改对应 SKILL.md，不必整套评分
+
 ## Purpose
 
 把经验笔记升级为可安装、可触发、可评测、可回测、可持续改进的 Skills。评分时必须区分笔记质量、Skill 包质量、Skill Bench 可跑性、站点经验沉淀和长期漂移风险。
