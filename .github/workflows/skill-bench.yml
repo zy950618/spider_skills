@@ -1,0 +1,86 @@
+name: Skill Bench (Layer A - Static Scoring)
+
+on:
+  pull_request:
+    paths:
+      - '**/SKILL.md'
+      - '**/evals/**'
+      - '**/references/**'
+      - '**/agents/**'
+      - '1-业务流程层/**'
+      - '2-JS逆向工具层/**'
+      - '3-移动逆向工具层/**'
+      - '4-通用规范层/**'
+      - '5-沉淀工具层/**'
+      - '.github/workflows/**'
+      - 'tools/ci_gate.py'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  static-scoring:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Score every layer
+        id: score
+        run: |
+          set -euo pipefail
+          SCRIPT="1-业务流程层/skills-evaluation-governance/scripts/score_skills.py"
+          mkdir -p .ci-out
+
+          for layer in "1-业务流程层" "2-JS逆向工具层" "3-移动逆向工具层" "4-通用规范层" "5-沉淀工具层"; do
+            safe=$(echo "$layer" | tr / _)
+            echo "::group::Scoring $layer"
+            python "$SCRIPT" "$layer" > ".ci-out/${safe}.json"
+            cat ".ci-out/${safe}.json" | python -c "import json,sys; d=json.load(sys.stdin); [print(f\"  {s['skill']:40s} total={s['scores']['total']:3d}  rating={s['rating']}\") for s in d['skills']]"
+            echo "::endgroup::"
+          done
+
+      - name: CI gate (layer-aware thresholds)
+        run: python tools/ci_gate.py .ci-out
+
+      - name: Upload score artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-scores
+          path: .ci-out/
+
+      - name: Comment summary on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const dir = '.ci-out';
+            const rows = [];
+            for (const f of fs.readdirSync(dir)) {
+              const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));
+              for (const s of data.skills) {
+                rows.push(`| ${f.replace(/\.json$/, '').replace(/_/g, '/')} | \`${s.skill}\` | ${s.scores.total} | ${s.rating} |`);
+              }
+            }
+            const body = [
+              '### Skill Bench - Static Scoring',
+              '',
+              '| Layer | Skill | Total | Rating |',
+              '|---|---|---|---|',
+              ...rows,
+              '',
+              '_Artifact `skill-scores` 包含 JSON 详细打分，下载查看每个 skill 的 structure / operational / drift 分项。_'
+            ].join('\n');
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });

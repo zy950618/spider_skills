@@ -1,0 +1,16 @@
+# CI 评分输出（每次 workflow 跑后会重新生成）
+.ci-out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
