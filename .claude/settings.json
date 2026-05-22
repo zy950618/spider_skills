@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python tools/post_task_reminder.py"
+          }
+        ]
+      }
+    ]
+  }
+}
