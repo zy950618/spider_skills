@@ -26,6 +26,8 @@ LAYER_MIN = {
     "5-沉淀工具层": 70,
 }
 
+MIN_REPLAY_RATE = 0.90  # 任何 skill 的 applicable_domains 中若有 latest_rate < 0.90 则 fail
+
 
 def layer_from_filename(name: str) -> str:
     # ".ci-out/1-业务流程层.json"  →  "1-业务流程层"
@@ -44,6 +46,7 @@ def main():
 
     failures = []
     passed = []
+    replay_failures = []
 
     for json_path in sorted(out_dir.glob("*.json")):
         layer = layer_from_filename(json_path.name)
@@ -53,6 +56,7 @@ def main():
             continue
         with open(json_path, encoding="utf-8") as f:
             data = json.load(f)
+        consistency_by_domain = data.get("consistency_by_domain", {})
         for skill in data.get("skills", []):
             total = skill["scores"]["total"]
             name = skill["skill"]
@@ -60,6 +64,17 @@ def main():
                 failures.append((layer, name, total, threshold, skill.get("gaps", [])))
             else:
                 passed.append((layer, name, total, threshold))
+
+            # replay rate 检查
+            for domain in skill.get("applicable_domains") or []:
+                dom_info = consistency_by_domain.get(domain)
+                if not dom_info:
+                    continue
+                rate = dom_info.get("latest_rate")
+                if rate is None:
+                    continue
+                if rate < MIN_REPLAY_RATE:
+                    replay_failures.append((layer, name, domain, rate, MIN_REPLAY_RATE))
 
     print("=" * 70)
     print(f"Skill Bench CI Gate - layer-aware thresholds")
@@ -76,6 +91,15 @@ def main():
                 print(f"        - {gap}")
         print(f"\n{'!' * 70}")
         print(f"CI Gate 失败: {len(failures)} 个 skill 低于其所在层阈值")
+        print(f"{'!' * 70}")
+        sys.exit(1)
+
+    if replay_failures:
+        print(f"\nReplay Rate 失败 ({len(replay_failures)}):")
+        for layer, name, domain, rate, min_rate in replay_failures:
+            print(f"  FAIL  {layer:25s} {name:40s} {domain:25s} rate={rate:.4f} < {min_rate}")
+        print(f"\n{'!' * 70}")
+        print(f"CI Gate 失败: {len(replay_failures)} 个 (skill, domain) 重放率低于 {MIN_REPLAY_RATE}")
         print(f"{'!' * 70}")
         sys.exit(1)
 

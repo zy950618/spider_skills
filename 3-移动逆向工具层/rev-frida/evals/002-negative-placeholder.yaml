@@ -1,0 +1,11 @@
+name: Negative trigger for static IDA analysis and smali patching
+prompt: >
+  我把 libnative.so 拖进 IDA 了，想静态分析 sub_12A40 这个函数的控制流，
+  顺便把 classes.dex 反编译出来的 smali 里那段 if-eqz 判断改掉重新打包。
+  不需要在设备上跑，不需要运行时拦截，纯静态。
+criteria:
+  - "Does not generate any Frida script or Interceptor.attach code."
+  - "Routes the request to static analysis tooling (IDA / IDAPython / smali patching) instead of runtime hooking."
+  - "Does not suggest spawning the app with frida -U -f."
+expect_skill: false
+timeout: 120

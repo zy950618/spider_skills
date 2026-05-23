@@ -1,0 +1,13 @@
+name: unity-il2cpp-symbol-recovery-to-ida
+prompt: >
+  我抓到一个 iOS Unity 手游 IPA,Payload/X.app/Frameworks/UnityFramework.framework/UnityFramework
+  是 IL2CPP 编译的原生二进制,Data/Managed/Metadata/global-metadata.dat 也在。
+  现在 IDA 里全是 sub_xxx,需要把 C# 类名/方法名/地址 dump 出来,生成 script.json
+  和 ida_py3.py,在 IDA 里一键恢复符号。Unity 版本看着像 6000.x。
+criteria:
+  - "必须识别为 Unity IL2CPP 符号恢复任务,触发 rev-u3d-dump"
+  - "必须先用 xxd 检查 global-metadata.dat 头 8 字节确认 metadata version(此例 v39 → 用 roytu/Il2CppDumper v39 fork,不要用 Perfare 原版)"
+  - "工作流要覆盖: 定位 binary + metadata → 校验版本 → 跑 Il2CppDumper(net8.0, DOTNET_ROLL_FORWARD=LatestMajor)→ 产出 script.json/dump.cs/il2cpp.h/ida_py3.py → 在 IDA File→Script file 导入"
+  - "不能跳过版本校验直接用原版 Il2CppDumper(v39 在原版会报 not a supported version[39])"
+expect_skill: true
+timeout: 120

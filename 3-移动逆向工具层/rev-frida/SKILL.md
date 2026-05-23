@@ -1,6 +1,7 @@
 ---
 name: rev-frida
 description: Generate Frida hook scripts using modern Frida API. Activate when the user wants to write Frida scripts, hook functions at runtime, trace calls/arguments/return values, intercept native or ObjC/Java methods, or dump memory and exports.
+platforms: [app]
 ---
 
 # rev-frida - Frida Script Generator
@@ -201,3 +202,10 @@ When generating Frida scripts:
    ```javascript
    console.log(hexdump(args[0], { offset: 0, length: 64, header: true, ansi: false }));
    ```
+
+---
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。

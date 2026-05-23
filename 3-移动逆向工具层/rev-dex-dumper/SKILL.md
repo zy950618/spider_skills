@@ -1,6 +1,7 @@
 ---
 name: rev-dex-dumper
-description: Dump DEX files from a running Android app for unpacking/deobfuscation. Activate when the user wants to unpack an Android APK, dump DEX from memory, extract decrypted DEX files, or defeat class-loading packing.
+description: Dump DEX files from a running Android app for unpacking/deobfuscation. Activate when the user wants to unpack an Android APK (including packers like 360 加固 / 腾讯乐固 / 梆梆 / 爱加密), dump DEX from memory, extract decrypted DEX files, or defeat class-loading packing.
+platforms: [app]
 ---
 
 # rev-dex-dumper - Android DEX Dumper
@@ -69,3 +70,10 @@ adb shell rm /data/local/tmp/panda-dex-dumper
 4. **Handle pidof failure** — if `pidof` returns empty, the app may not be running. Launch it first with `adb shell monkey -p <package_name> -c android.intent.category.LAUNCHER 1`.
 5. **Multiple DEX files are normal** — packed apps often produce several DEX files. All files in `/data/local/tmp/panda/` should be pulled.
 6. **Always clean up** — remove both the dumped DEX files and the tool binary from the device after pulling results to avoid leaving artifacts.
+
+---
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。

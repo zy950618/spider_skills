@@ -1,0 +1,64 @@
+{
+  "status": 200,
+  "headers": {
+    "accept-ranges": "bytes",
+    "age": "64449",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-disposition": "attachment",
+    "content-length": "872",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "\"368-6335d952d1a00\"",
+    "expires": "0",
+    "last-modified": "Tue, 22 Apr 2025 13:01:28 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "4U9xEdYXD3sI67NiSEWGxPLHwNusqtvgMDSd0ulkqlgcTyjLOhUg9g==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "footerSectionId": 1,
+    "footerSectionName": "Connect with us",
+    "platforms": [
+      {
+        "iconId": "yt",
+        "iconName": "Youtube",
+        "iconLink": "https://www.youtube.com/ThaiAirwaysChannel"
+      },
+      {
+        "iconId": "fb",
+        "iconName": "Facebook",
+        "iconLink": "https://www.facebook.com/ThaiAirways.TH/"
+      },
+      {
+        "iconId": "insta",
+        "iconName": "Instagram",
+        "iconLink": "https://instagram.com/ThaiAirways/"
+      },
+      {
+        "iconId": "x",
+        "iconName": "X",
+        "iconLink": "https://x.com/ThaiAirways/"
+      },
+      {
+        "iconId": "line",
+        "iconName": "Line",
+        "iconLink": "https://lin.ee/uTkEULC"
+      },
+      {
+        "iconId": "tiktok",
+        "iconName": "Tiktok",
+        "iconLink": "https://www.tiktok.com/@thaiairwaysinternational?_t=ZS-8vZOXIJoCkW&_r=1"
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 872
+  }
+}

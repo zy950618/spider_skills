@@ -1,0 +1,151 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64440",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "br",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"999-6526661b4dbea\"",
+    "expires": "0",
+    "last-modified": "Fri, 22 May 2026 11:32:19 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "NWYAkrfNHyoVQHv_CJqwiCZm-ZjxsYRKccGqYB28ww9Hv-hLkcGYWw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "mainHelpId": "1",
+    "mainHelpName": "Contact Us",
+    "mainHelpUrl": "/content/help",
+    "mainHelpGroup": [
+      {
+        "groupId": "11",
+        "mainHelpNavigation": [
+          {
+            "mainHelpNavigationId": "111",
+            "mainHelpNavigationName": "FAQ",
+            "mainHelpNavigationUrl": "/content/help/faq",
+            "mainHelpNameHiglight": false,
+            "data": []
+          },
+          {
+            "mainHelpNavigationId": "112",
+            "mainHelpNavigationName": "THAI World Wide Offices",
+            "mainHelpNavigationUrl": "/content/help/thai-worldwide-offices",
+            "mainHelpNameHiglight": false,
+            "data": []
+          }
+        ]
+      },
+      {
+        "groupId": "12",
+        "mainHelpNavigation": [
+          {
+            "mainHelpNavigationId": "121",
+            "mainHelpNavigationName": "Flight Support",
+            "mainHelpNavigationUrl": "/help/flight-support",
+            "mainHelpNameHiglight": false,
+            "data": []
+          },
+          {
+            "mainHelpNavigationId": "122",
+            "mainHelpNavigationName": "Special Service <br/>Request & Assistance",
+            "mainHelpNavigationUrl": "/help/service-request",
+            "mainHelpNameHiglight": false,
+            "data": []
+          },
+          {
+            "mainHelpNavigationId": "123",
+            "mainHelpNavigationName": "Royal Orchid Plus Service",
+            "mainHelpNavigationUrl": "/help/royal-orchid-plus-services",
+            "mainHelpNameHiglight": false,
+            "data": []
+          }
+        ]
+      },
+      {
+        "groupId": "13",
+        "mainHelpNavigation": [
+          {
+            "mainHelpNavigationId": "131",
+            "mainHelpNavigationName": "Flight Disruption",
+            "mainHelpNavigationUrl": "/content/help/flight-disruption",
+            "mainHelpNameHiglight": false,
+            "data": []
+          },
+          {
+            "mainHelpNavigationId": "132",
+            "mainHelpNavigationName": "Lost and Found",
+            "mainHelpNavigationUrl": "/help/lost-and-found",
+            "mainHelpNameHiglight": false,
+            "data": []
+          },
+          {
+            "mainHelpNavigationId": "133",
+            "mainHelpNavigationName": "Customer Feedback",
+            "mainHelpNavigationUrl": "/help/feedback",
+            "mainHelpNameHiglight": false,
+            "data": []
+          },
+          {
+            "mainHelpNavigationId": "134",
+            "mainHelpNavigationName": "My Request",
+            "mainHelpNavigationUrl": "/help/my-requests",
+            "mainHelpNameHiglight": false,
+            "data": []
+          }
+        ]
+      },
+      {
+        "groupId": "14",
+        "mainHelpNavigation": [
+          {
+            "mainHelpNavigationId": null,
+            "mainHelpNavigationName": null,
+            "mainHelpNavigationUrl": null,
+            "mainHelpNameHiglight": false,
+            "showCard": true,
+            "data": [
+              {
+                "headingText": "Baggage Policies",
+                "buttonText": "Learn More",
+                "bgImageUrl": "/content/dam/thaiairways/images/help-menu/HelpMenuBaggagePolicies_OOZOU.jpg",
+                "redirectionUrl": "/content/baggage"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "groupId": "15",
+        "mainHelpNavigation": [
+          {
+            "mainHelpNavigationId": null,
+            "mainHelpNavigationName": null,
+            "mainHelpNavigationUrl": null,
+            "mainHelpNameHiglight": false,
+            "showCard": true,
+            "data": [
+              {
+                "headingText": "Manage Booking",
+                "buttonText": "Learn More",
+                "bgImageUrl": "/content/dam/thaiairways/images/help-menu/HelpMenuManageBooking_OOZOU.jpg",
+                "redirectionUrl": "/book/my-trips"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 2457
+  }
+}

@@ -1,0 +1,13 @@
+name: Webpack bundle 未 unpack 直接整体解混淆
+prompt: >
+  我有个 9000 行的混淆 JS,外层是 function(e){...}([function(t,n,r){...},function(t,n,r){...}])
+  这种 webpack bundle 结构,内部每个模块还套了一层 _0x 混淆。
+  之前直接对整个 bundle 跑解混淆,产出 LLM 完全读不懂、调试也对不上模块边界。
+  这次重做,怎么处理?
+criteria:
+  - "识别为 Webpack bundle,先执行 Step 0.5 Unpack,拆出 intermediate/modules/module_N.js 独立文件后再对每个模块解混淆,而不是对整 bundle 一把梭"
+  - "对 webpack 三参数函数 function(t,n,r) 应用确定性模式化重命名:第 1/2/3 参数固定 → module / exports / __webpack_require__,不做语义猜测重命名"
+  - "在 __webpack_require__(N) 调用处添加注释标注引用的模块号,保留模块间引用关系"
+  - "把'整 bundle 直接解混淆'这条失败模式写入 站点经验库/<domain>/known-failures.md(symptom / stage / root cause / correct handling),防止下次重犯"
+expect_skill: true
+timeout: 120

@@ -17,3 +17,16 @@ Thumbs.db
 
 # Stop hook 校准数据(本地分析用,不入 git)
 tools/.reminder-stats.jsonl
+
+# Claude Code 本地权限缓存
+.claude/settings.local.json
+
+# Replay 临时产物(每次本地跑都会重新生成,不入 git)
+站点经验库/*/fixtures/actual/
+
+# Recording 原始抓包(30 天后删除,体积大,不入 git 默认值,需要时按 domain 取消注释)
+# 站点经验库/*/fixtures/recordings/
+
+# 不入 git 的 recording 二进制(HAR/jsonl 单文件常 30MB+)
+站点经验库/*/fixtures/recordings/*.har
+站点经验库/*/fixtures/recordings/*.jsonl

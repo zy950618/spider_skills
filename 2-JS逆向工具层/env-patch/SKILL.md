@@ -5,6 +5,7 @@ description: >-
   TRIGGER when: 用户说"补环境"、"提取模块"、"Node里跑"、"webpack模块提取"、"环境模拟"、"把JS搞到Node跑"，或找到加密入口后需要脱离浏览器独立运行。
   DO NOT TRIGGER when: 只是在浏览器调试、做 AST 解混淆、或写普通 Node.js 代码。
 argument-hint: "[项目名] [可选：场景说明]"
+platforms: [web, h5]
 ---
 
 # env-patch
@@ -167,6 +168,11 @@ module.exports = function sign(url, data) {
 **验证顺序**：
 1. **格式验证** — 签名长度、前缀与浏览器一致
 2. **请求验证** — HTTP 200 + 业务数据返回
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。
 
 ## References
 

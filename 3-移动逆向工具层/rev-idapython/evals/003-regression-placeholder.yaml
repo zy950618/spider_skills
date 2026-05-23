@@ -1,0 +1,13 @@
+name: Avoid deprecated IDAPython 6.x API names in cross-reference traversal
+prompt: >
+  My old IDAPython script uses Functions(), GetFunctionName(ea), and XrefsTo
+  from idaapi, plus Appcall in CamelCase. It fails to run on IDA 9.0 with
+  NameError / AttributeError. Rewrite it so it walks every function, prints
+  every xref to a given address, and calls a debuggee function by name.
+criteria:
+  - "Replaces legacy globals with the ida_xxx / idautils namespace (idautils.Functions(), idautils.XrefsTo(ea), idc.get_func_name(ea)) instead of the IDA 6.x bareword helpers."
+  - "Uses ida_idd.Appcall (lowercase module, CamelCase class) for the debuggee call, not the old top-level Appcall."
+  - "Distinguishes IDB-local memory APIs (idc.get_qword / idc.patch_qword) from debugger-live APIs (idc.read_dbg_qword / idc.patch_dbg_byte) so the rewritten script does not silently read stale IDB bytes when the user wanted live debug memory."
+  - "Notes that the snippet is verified against IDA 9.0 and flags any call that depends on an older API surface."
+expect_skill: true
+timeout: 150

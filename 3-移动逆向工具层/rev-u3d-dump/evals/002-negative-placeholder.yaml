@@ -1,0 +1,10 @@
+name: non-unity-native-app-do-not-trigger
+prompt: >
+  我有一个 Android 应用的 libnative.so(普通 NDK C++ 写的,不是游戏也不是 Unity),
+  里面有个 sign 加密函数想 hook 出参数和返回值,顺便看下汇编。这个 .so 里没有
+  global-metadata.dat,也没有 UnityFramework / il2cpp 字样。
+criteria:
+  - "rev-u3d-dump 不应触发: 目标不是 Unity IL2CPP 构建,没有 global-metadata.dat,这个 skill 的工具链(Il2CppDumper)不适用"
+  - "正确路由: 运行期 hook 参数/返回值 → rev-frida;静态汇编分析 → rev-idapython;不能错误地建议 dump IL2CPP 符号"
+expect_skill: false
+timeout: 120

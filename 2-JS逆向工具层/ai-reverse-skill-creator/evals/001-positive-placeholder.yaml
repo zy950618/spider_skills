@@ -1,0 +1,11 @@
+name: Create new skill for akamai sensor-data reverse
+prompt: >
+  我想给我们仓库新增一个 SKILL 专门处理 akamai sensor-data 逆向(_abck cookie、
+  sensor_data 上报、bmak 入口定位、补环境)。帮我从零起一个 skill 包,写好
+  SKILL.md / description / 2-3 个 evals,后面我还要跑 trigger optimization。
+criteria:
+  - "进入 skill-creator 的 Capture Intent / Interview 流程,先澄清触发词、输入输出、是否要 eval,再动手写 SKILL.md。"
+  - "产出标准 skill 包目录结构(SKILL.md + evals/ + references/ 至少其一),不要把所有内容塞进一个超长 SKILL.md。"
+  - "为新 skill 写出包含 should-trigger / should-not-trigger 的 description,并起草至少 2-3 条真实 eval prompt 而非占位 TODO。"
+expect_skill: true
+timeout: 120

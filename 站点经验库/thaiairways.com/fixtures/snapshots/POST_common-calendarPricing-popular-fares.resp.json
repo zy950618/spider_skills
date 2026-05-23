@@ -1,0 +1,233 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:21 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+    "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "4Z-KIvELAANDomkZ0ixbt-yhOaF-6x_VVOzUJi1PmjIx7IZz-ornNQ==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block"
+  },
+  "body": {
+    "prices": [
+      {
+        "date": "2026-06-12",
+        "returnDate": "2026-06-14",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "CNX",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Chiang Mai",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://media.jtdwjcwq6f4wp4ce.com/tg/ChiangMai_Thailand.jpg",
+        "fare": {
+          "totalPrice": "4,810",
+          "usdTotalPrice": "148",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-01",
+        "returnDate": "2026-06-05",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "HKT",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Phuket",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://media.jtdwjcwq6f4wp4ce.com/tg/Phuket_Thailand.jpg",
+        "fare": {
+          "totalPrice": "5,260",
+          "usdTotalPrice": "161",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-13",
+        "returnDate": "2026-06-16",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "SIN",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Singapore",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://assets.airtrfx.com/media-em/tg/6498fcc09fe0e_Singapore-Hero.jpg",
+        "fare": {
+          "totalPrice": "5,880",
+          "usdTotalPrice": "180",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-18",
+        "returnDate": "2026-06-21",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "NRT",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Tokyo",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://media.jtdwjcwq6f4wp4ce.com/tg/Tokyo_Japan.jpg",
+        "fare": {
+          "totalPrice": "20,235",
+          "usdTotalPrice": "619",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-05-25",
+        "returnDate": "2026-05-31",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "KIX",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Osaka",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://media.jtdwjcwq6f4wp4ce.com/tg/Osaka_Japan.jpg",
+        "fare": {
+          "totalPrice": "24,450",
+          "usdTotalPrice": "748",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "returnDate": "2026-06-03",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "HKG",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Hong Kong",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://assets.airtrfx.com/media-em/tg/Hong-Kong-Hong-Kong.jpg",
+        "fare": {
+          "totalPrice": "9,510",
+          "usdTotalPrice": "291",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-07",
+        "returnDate": "2026-06-13",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "ICN",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Seoul",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://assets.airtrfx.com/media-em/tg/Seoul_Korea.jpg",
+        "fare": {
+          "totalPrice": "20,280",
+          "usdTotalPrice": "620",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-07-08",
+        "returnDate": "2026-07-26",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "KKC",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Khon Kaen",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://assets.airtrfx.com/media-em/tg/Khon-Kaen.jpg",
+        "fare": {
+          "totalPrice": "3,755",
+          "usdTotalPrice": "115",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-08-14",
+        "returnDate": "2026-08-16",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "HDY",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Hat Yai",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://assets.airtrfx.com/media-em/tg/HatYai.jpg",
+        "fare": {
+          "totalPrice": "5,260",
+          "usdTotalPrice": "161",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-11",
+        "returnDate": "2026-06-17",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "LHR",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "London",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://media.jtdwjcwq6f4wp4ce.com/tg/London_United_Kingdom.jpg",
+        "fare": {
+          "totalPrice": "43,630",
+          "usdTotalPrice": "1,334",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-03",
+        "returnDate": "2026-06-09",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "PVG",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Shanghai",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://assets.airtrfx.com/media-em/tg/Shanghai_Chaina.jpg",
+        "fare": {
+          "totalPrice": "12,540",
+          "usdTotalPrice": "384",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      },
+      {
+        "date": "2026-06-13",
+        "returnDate": "2026-06-16",
+        "journeyType": "ROUND_TRIP",
+        "departureAirportIataCode": "BKK",
+        "arrivalAirportIataCode": "HND",
+        "departureCityName": "Bangkok",
+        "arrivalCityName": "Tokyo",
+        "departureCityImageURL": "https://assets.airtrfx.com/media-em/tg/65572ced07a8f_Bangkok_Temple.jpg",
+        "arrivalCityImageURL": "https://media.jtdwjcwq6f4wp4ce.com/tg/Tokyo_Japan.jpg",
+        "fare": {
+          "totalPrice": "24,355",
+          "usdTotalPrice": "745",
+          "currencyCode": "THB",
+          "fareClass": "ECONOMY"
+        }
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 5685
+  }
+}

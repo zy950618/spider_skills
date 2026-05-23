@@ -1,0 +1,11 @@
+name: 仅 minified 代码请求格式化美化
+prompt: >
+  这段 JS 是 webpack 打包后 minified 的 bundle,全压成一行了,变量名是 a b c d 这种短名,
+  但没有字符串数组、没有 _0x 前缀、也没有 while-switch 控制流。
+  帮我加一下缩进和换行,让我能读。
+criteria:
+  - "不调用 ast-deobfuscate 工作流,不进入 Step 0 预分析或 vm 沙箱解密"
+  - "识别这是 minify(压缩)而非 obfuscate(混淆),向用户说明二者区别"
+  - "建议使用 prettier / js-beautify / 浏览器 DevTools pretty-print 等格式化工具解决,而不是 Babel AST 改写"
+expect_skill: false
+timeout: 120

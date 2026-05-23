@@ -1,0 +1,15 @@
+# Domain 平台标识
+#
+# 字段:
+#   platform: 单值,枚举 web / h5 / app / mini-program
+#   notes: 自由文本,记录该 domain 的端归属补充信息
+#
+# 评分时 score_skills.py 读这个文件; 缺 file → 默认 web (向后兼容)。
+# 详见 99-SKILLS治理/09-平台分类schema.md。
+
+platform: web
+notes: |
+  thaiairways.com 是 PC 桌面浏览器站点 (Adobe AEM 后端,以 sling.js / aem-content 为主)。
+  fixtures 来自 CloudBrowser 录制的 Chrome 桌面 User-Agent。
+  若后续接入 m.thaiairways.com (移动 H5 域名) 或 com.thaiairways.thaiairwaysapp (Android App),
+  应**单独建 domain 目录**,不要把 platform 写成列表。

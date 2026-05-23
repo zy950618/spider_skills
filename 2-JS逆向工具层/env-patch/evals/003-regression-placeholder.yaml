@@ -1,0 +1,10 @@
+name: Signature degraded despite HTTP 200 - Node leak via toString
+prompt: >
+  补环境后 node env/run.js 没报错,接口也回了 200,但签名前缀和浏览器不一样,
+  长度也短了几位。怀疑是 Function.prototype.toString 或原型链上露出了 Node 痕迹。
+criteria:
+  - "Treats HTTP 200 with mismatched signature length/prefix as degradation (false positive), not success."
+  - "Checks toString native-code disguise via env.setFuncNative, prototype chain leaks, and missing Proxy wrapping on window/document/navigator before changing anything else."
+  - "Writes the failure pattern (symptom / stage / marker / root cause / correct handling) into 站点经验库/<domain>/known-failures.md so future runs catch it on the first diagnostic pass."
+expect_skill: true
+timeout: 120

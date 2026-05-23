@@ -1,0 +1,14 @@
+name: Regression against deprecated Frida API and obsolete --no-pause flag
+prompt: >
+  帮我写个 Frida 脚本 hook iOS app 里的 [LoginManager signRequest:]，
+  打印 self 和参数。我之前那版脚本是这样跑的：
+  `frida -U --no-pause -f com.example.app -l hook.js`，
+  脚本里用 `var base = Module.findBaseAddress("LoginManager");`
+  拿基址然后 attach。现在跑不起来，帮我修一下。
+criteria:
+  - "Detects and removes the deprecated --no-pause flag from the frida command line (modern CLI auto-resumes)."
+  - "Replaces Module.findBaseAddress with Process.getModuleByName (or Process.findModuleByName for lazy load), explaining why the old API is wrong here."
+  - "For the ObjC method hook, uses ObjC.classes.LoginManager['- signRequest:'].implementation with Interceptor.attach, wrapping args[0]/args[2] via new ObjC.Object()."
+  - "Guards the script with `if (ObjC.available)` and notes this regression should be logged so the same deprecated-API mistake is not repeated."
+expect_skill: true
+timeout: 120

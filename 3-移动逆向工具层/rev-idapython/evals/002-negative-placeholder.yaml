@@ -1,0 +1,10 @@
+name: Ghidra headless script request, not IDA
+prompt: >
+  I only have Ghidra installed (no IDA license). I want to write a Ghidra
+  headless script in Python that lists every function in an ELF and prints
+  its decompiled C. How do I run analyzeHeadless and what's the script API?
+criteria:
+  - "Does not produce IDAPython / IDALib code (no idapro, idautils, idaapi, ida_hexrays imports)."
+  - "Stays on Ghidra-native APIs (analyzeHeadless, FlatProgramAPI, DecompInterface) instead of redirecting the user to IDA."
+expect_skill: false
+timeout: 120

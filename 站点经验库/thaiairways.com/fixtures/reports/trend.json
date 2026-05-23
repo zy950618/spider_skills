@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "date": "2026-05-23",
+      "consistency_rate": 0.0964,
+      "total": 28,
+      "replayed": 28,
+      "structure_ok": 6,
+      "status": "FAIL"
+    },
+    {
+      "date": "2026-05-23",
+      "consistency_rate": 0.9999,
+      "total": 28,
+      "replayed": 28,
+      "structure_ok": 26,
+      "status": "PASS"
+    }
+  ]
+}

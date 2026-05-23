@@ -1,8 +1,28 @@
 # my_reverse_skill
 
-逆向工程 SKILLS 总库。覆盖 Web/JS 逆向、Native/移动逆向、爬虫接口化、WAF 风控对抗、Skill 治理评测的完整工具链与流程。
+逆向工程 SKILLS 总库。覆盖 Web/JS 逆向、Native/移动逆向、爬虫接口化、WAF 风控对抗、一致性验证、Skill 治理评测的完整工具链与流程。
 
-整合三处来源：
+## 快速开始
+
+> 第一次来?按这个顺序看:
+
+1. **[USAGE.md](./USAGE.md)** — 我想做 X,应该说什么(场景速查 + 典型对话)
+2. **[INSTALL.md](./INSTALL.md)** — 一站式安装(Skills 软链 + CloakBrowser + hooks + 验证)
+3. **[TRIGGERS.md](./TRIGGERS.md)** — 触发词速查表(中英双列,18 个 Skill 全覆盖)
+
+进阶:
+
+- **[CLAUDE.md](./CLAUDE.md)** — Claude 在本仓库的工作指南
+- **[99-SKILLS治理/06-网页逆向标准规划.md](./99-SKILLS治理/06-网页逆向标准规划.md)** — 五阶段执行流程(Claude 视角)
+- **[99-SKILLS治理/07-一致性验证规约.md](./99-SKILLS治理/07-一致性验证规约.md)** — fixtures + replay + diff 操作规约
+- **[99-SKILLS治理/05-当前评分与回测结果.md](./99-SKILLS治理/05-当前评分与回测结果.md)** — 评分历史与版本变化
+
+---
+
+## 整合来源
+
+本仓库整合了三处来源:
+
 - 原 spider_skills 仓库（5 个业务流程 skill）
 - 本机 `~/.claude/skills` 下的 12 个原子工具（4 个 JS 原子 + 7 个移动/Native + 1 个通用规范）
 - obsidian 笔记中的工作流文档与站点案例

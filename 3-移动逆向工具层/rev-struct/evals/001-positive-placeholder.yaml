@@ -1,0 +1,16 @@
+name: Recover C++ object layout across init/use/destroy functions
+prompt: >
+  I have an IDA-NO-MCP decompile/ export. Function sub_4012A0 takes a void*
+  parameter that gets passed to sub_4013F0 (which calls *(*a1)() at offset 0
+  like a vtable) and to sub_4014C0 (which does *(a1+0x18)+=1 and reads
+  *(a1+0x10) as a char* into printf). Callers allocate it with malloc(0x40)
+  and store callbacks at +0x28. Help me rebuild the struct layout for this
+  object across all these functions.
+criteria:
+  - "Reads decompile/0x4012A0.c plus the listed callers and callees instead of guessing from one function."
+  - "Aggregates offsets across functions (0x00 vtable / 0x10 char* / 0x18 refcount / 0x28 callback) and sorts by offset."
+  - "Infers field types from usage evidence: vtable from *(*this)(), refcount from ++ on int, name from printf %s, callback from indirect call."
+  - "Estimates struct size from max(offset)+last_field_size and reconciles it with the malloc(0x40) size from callers."
+  - "Outputs a struct block with /* offset */ comments and a confidence level, plus the function addresses that touched each field."
+expect_skill: true
+timeout: 180

@@ -1,0 +1,10 @@
+name: Negative trigger for generic prompt rewrite
+prompt: >
+  我有一段给 GPT 用的 system prompt(让它扮演客服回答退款问题),帮我把这段
+  prompt 改得更精炼、触发更稳。注意我不是要做 Claude SKILL,只是普通的 LLM
+  prompt 调优。
+criteria:
+  - "识别出这是通用 LLM prompt 优化,不是 Claude SKILL 的 description / SKILL.md 优化,不进入 skill-creator 流程。"
+  - "按普通 prompt engineering 方式直接给出改写建议,不要求用户去建 evals/ 目录、跑 run_loop.py 或生成 trigger eval set。"
+expect_skill: false
+timeout: 120

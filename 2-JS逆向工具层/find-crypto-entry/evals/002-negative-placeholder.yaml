@@ -1,0 +1,10 @@
+name: Plain packet capture and param listing
+prompt: >
+  帮我抓一下这个页面的接口请求,把 URL、query 参数和返回的 JSON 字段列出来,
+  我只想看页面调了哪些后端接口,参数都是明文的 page/size/keyword,
+  不涉及签名或加密。
+criteria:
+  - "Does not invoke find-crypto-entry or start hunting for an encryption entry."
+  - "Keeps the work scoped to listing endpoints, query params, and response fields as the user asked."
+expect_skill: false
+timeout: 120

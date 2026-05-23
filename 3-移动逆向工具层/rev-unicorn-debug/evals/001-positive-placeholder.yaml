@@ -1,0 +1,14 @@
+name: Emulate ARM64 sub_18A30 string decrypt routine with JNI stubs
+prompt: >
+  我从一个 Android app 的 libcrypto_native.so 里抠出来一段函数 sub_18A30
+  (ARM64),作用是把 .data 段里一段密文解密成明文字符串。函数里调了
+  GetStringUTFChars、malloc、memcpy,还有几个 libc 符号。我不想把整个
+  so 跑起来,只想用 Unicorn 仿真这一个函数,输入密文 buffer 地址,拿到
+  解密后的明文。帮我写脚本。
+criteria:
+  - "Uses Unicorn UC_ARCH_ARM64 + UC_MODE_LITTLE_ENDIAN, loads the .so raw and maps only the needed code/data pages instead of parsing the full ELF."
+  - "Hooks libc imports (malloc with a bump allocator, memcpy in Python) and skips the original by setting PC = LR (X30) inside a UC_HOOK_CODE callback."
+  - "Builds a fake JNIEnv function table in UC memory with RET stubs for GetStringUTFChars and hooks the stub address to return the input buffer, so the function never reaches real JNI code."
+  - "Sets X0..Xn for arguments, SP to a mapped stack page, X30 to a sentinel return address, and reads X0 after emu_stop to recover the decrypted plaintext."
+expect_skill: true
+timeout: 120

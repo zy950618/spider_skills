@@ -1,0 +1,12 @@
+name: OB-obfuscated SDK entry regression
+prompt: >
+  请求头里有个 authKey,我在那个加密 JS 文件里搜参数名一直搜不到,
+  又试着 step_into 跟了半天掉进 Vue 响应式里出不来,
+  每次卡住就刷新页面重来,帮我定位入口。
+criteria:
+  - "Recognises the file is likely OB-obfuscated (_0x prefix, string array, RC4) and stops searching plaintext inside it; searches from non-obfuscated caller side instead."
+  - "Refuses to keep step_into through framework frames; switches to evaluate_on_callframe with an explicit frameIndex on a business-code frame."
+  - "Sets the XHR/static breakpoint once and stops re-refreshing the page (scriptId invalidation), batching the trace in a single run."
+  - "Writes the failure pattern (OB-SDK + step_into trap + refresh loop) back to 站点经验库/<domain>/known-failures.md so the same trap is not repeated."
+expect_skill: true
+timeout: 120

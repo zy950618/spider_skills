@@ -1,0 +1,12 @@
+name: Optimize existing skill description that undertriggers
+prompt: >
+  我那个 imperva-waf-reese84 skill 实际用起来经常该触发的时候没触发 —— 用户说
+  "84盾"、"x-d-token 被拒"、"reese84 cookie 过期" 这种偏口语的中文说法时它就
+  不进。帮我把 description 优化一下,跑 trigger optimization loop,看看能不能
+  把命中率提上来。不要改 SKILL.md 正文。
+criteria:
+  - "走 Description Optimization 路径(scripts/run_loop.py + 20 条 should-trigger/should-not-trigger 混合 eval),而不是直接手改 description 一锤定音。"
+  - "生成的 trigger eval 包含真实中文口语化说法(84盾 / x-d-token / reese84 cookie / 风控被拒 等)以及对应的近似负例,避免负例过于明显失去区分度。"
+  - "最终用 test 集分数(不是 train 集)选 best_description,并展示 before/after 与命中率变化,只更新 frontmatter,不动 SKILL.md 正文。"
+expect_skill: true
+timeout: 120

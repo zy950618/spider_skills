@@ -1,0 +1,26 @@
+{
+  "method": "GET",
+  "url": "https://www.thaiairways.com/content/dam/dapi-booking/json/marketWiseRolloutPlan.json",
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "zh-CN,zh;q=0.9",
+    "cookie": "i18next=en-th",
+    "priority": "u=1, i",
+    "referer": "https://www.thaiairways.com/en-th/",
+    "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+  },
+  "body": null,
+  "_meta": {
+    "host": "www.thaiairways.com",
+    "path": "/content/dam/dapi-booking/json/marketWiseRolloutPlan.json",
+    "query": "",
+    "body_encoding": "none"
+  }
+}

@@ -1,0 +1,14 @@
+name: Regression for union / alignment-padding / nested-struct boundary pitfalls
+prompt: >
+  Previous rev-struct run on sub_405100 declared offset 0x10 as a char[8]
+  string AND offset 0x10 as a uint64_t counter in the same struct, set
+  struct size to 0x1C ignoring 8-byte alignment of a pointer at 0x18, and
+  flattened *(*(a1+0x20)+0x4) into a single field "inner_flag" at 0x24.
+  Re-run the recovery and avoid these three mistakes.
+criteria:
+  - "Detects overlapping offsets at 0x10 with conflicting types and models it as a union (or flags one branch as the real type with evidence), not as two same-offset fields."
+  - "Applies natural alignment / trailing padding: pointer field at 0x18 forces size up to 0x20, and total size is rounded to alignment of the largest member."
+  - "Treats *(*(a1+0x20)+0x4) as a pointer at +0x20 to a nested struct whose +0x4 field is inner_flag, instead of inlining inner_flag at +0x24 of the outer struct."
+  - "Writes the three failure modes (union misjudgment, alignment padding, nested-struct boundary) into 站点经验库 known-failures.md or the eval backlog so the next run does not repeat them."
+expect_skill: true
+timeout: 180

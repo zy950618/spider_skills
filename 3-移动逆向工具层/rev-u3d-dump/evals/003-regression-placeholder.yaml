@@ -1,0 +1,13 @@
+name: il2cpp-v39-tool-version-mismatch
+prompt: >
+  我按教程 git clone https://github.com/Perfare/Il2CppDumper 然后 dotnet run
+  跑 libil2cpp.so + global-metadata.dat,直接报错 "not a supported version[39]"。
+  xxd 看 metadata 头是 af1b b1fa 2700 0000。这是 Unity 6 的包。怎么往下走?
+  另外我在 macOS 上跑还遇到二进制被 SIGKILL,exit code 137。
+criteria:
+  - "必须识别这是 metadata version 39(0x27)的版本不匹配坑: 原版 Perfare/Il2CppDumper 只支持到 v29,Unity 6(6000.x)的 v39 要切到 roytu/Il2CppDumper 的 v39 分支"
+  - "必须给出 macOS SIGKILL(exit 137)的修复: 对 binary 做 ad-hoc 签名 codesign -s - <binary>;同时说明 exit 134(Console.ReadKey 抛 Cannot read keys)在非交互模式下是正常完成,不要误判失败"
+  - "构建命令要带 DOTNET_ROLL_FORWARD=LatestMajor 和 --framework net8.0,避免 .NET 版本不匹配;并提示验证输出: script.json / dump.cs / il2cpp.h / ida_py3.py 四件套齐全才算成功"
+  - "失败模式要回写到站点经验库 known-failures.md(symptom=not a supported version[39] / stage=tool-build / root cause=Perfare 原版只支持 ≤v29 / correct handling=切 roytu v39 fork)"
+expect_skill: true
+timeout: 120

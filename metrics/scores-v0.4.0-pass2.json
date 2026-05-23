@@ -1,0 +1,1316 @@
+{
+  "overall": {
+    "structure": 19.53,
+    "operational": 12.53,
+    "consistency": 15.88,
+    "drift": 10.47,
+    "total": 58.41,
+    "execution_count": 17
+  },
+  "dependency_completeness": 1.0,
+  "consistency_evidence": {
+    "fixtures_present": true,
+    "snapshots_count": 28,
+    "any_expiry_ok": true,
+    "recent_report": true,
+    "latest_rate": 0.9999,
+    "domains": [
+      "thaiairways.com"
+    ],
+    "domain_platforms": {
+      "thaiairways.com": "web"
+    }
+  },
+  "consistency_by_domain": {
+    "thaiairways.com": {
+      "fixtures_present": true,
+      "snapshots_count": 28,
+      "any_expiry_ok": true,
+      "recent_report": true,
+      "latest_rate": 0.9999,
+      "platform": "web"
+    }
+  },
+  "foundation_skills": [
+    {
+      "skill": "karpathy-guidelines",
+      "category": "foundation",
+      "version": "unknown",
+      "platforms": [
+        "cross-platform"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 20,
+        "dependency_completeness": 50,
+        "total": 70
+      },
+      "rating": "结构就绪,缺一致性验证",
+      "evals": 0,
+      "real_evals": 0,
+      "references": 0,
+      "has_negative_eval": false,
+      "has_regression_eval": false,
+      "criteria_count": 0,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "真实 eval 数量不足，回测覆盖偏弱",
+        "缺少负例 eval，误触发风险较高",
+        "缺少回归/边界 eval，漂移风险较高",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 0,
+          "references": 0,
+          "eval_layout": 0,
+          "governance": 0,
+          "maintainability": 0
+        }
+      }
+    }
+  ],
+  "guideline_skills": [],
+  "skills": [
+    {
+      "skill": "ai-reverse-skill-creator",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "cross-platform"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 18,
+        "operational": 10,
+        "consistency": 30,
+        "drift": 6,
+        "total": 64
+      },
+      "rating": "偏笔记化,需要重构",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 1,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 8,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 2,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 4,
+          "workflow_behavior": 0,
+          "eval_quality": 4,
+          "routing_boundaries": 2,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "ast-deobfuscate",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "web",
+        "h5"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 16,
+        "operational": 10,
+        "consistency": 30,
+        "drift": 6,
+        "total": 62
+      },
+      "rating": "偏笔记化,需要重构",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 12,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 0,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "env-patch",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "web",
+        "h5"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 20,
+        "operational": 9,
+        "consistency": 30,
+        "drift": 6,
+        "total": 65
+      },
+      "rating": "偏笔记化,需要重构",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 8,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 8,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=8",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 0,
+          "eval_quality": 4,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "find-crypto-entry",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "web",
+        "h5"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 16,
+        "operational": 10,
+        "consistency": 30,
+        "drift": 6,
+        "total": 62
+      },
+      "rating": "偏笔记化,需要重构",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 10,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 0,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "imperva-waf-reese84",
+      "category": "execution",
+      "version": "0.2.0",
+      "platforms": [
+        "web",
+        "h5"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 25,
+        "operational": 21,
+        "consistency": 30,
+        "drift": 20,
+        "total": 96
+      },
+      "rating": "高可用,产出与真实一致",
+      "evals": 4,
+      "real_evals": 4,
+      "references": 3,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 13,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=3",
+        "真实 evals 数量=4",
+        "包含负例 eval",
+        "包含回归/边界 eval",
+        "包含经验沉淀要求"
+      ],
+      "gaps": [
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 2,
+          "maintainability": 3
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 5,
+          "eval_quality": 5,
+          "routing_boundaries": 2,
+          "evidence_writeback": 2,
+          "real_task_metrics": 2
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 6,
+          "regression_coverage": 6,
+          "version_change_log": 4,
+          "historical_metrics": 4
+        }
+      }
+    },
+    {
+      "skill": "karpathy-guidelines",
+      "category": "foundation",
+      "version": "unknown",
+      "platforms": [
+        "cross-platform"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 20,
+        "dependency_completeness": 50,
+        "total": 70
+      },
+      "rating": "结构就绪,缺一致性验证",
+      "evals": 0,
+      "real_evals": 0,
+      "references": 0,
+      "has_negative_eval": false,
+      "has_regression_eval": false,
+      "criteria_count": 0,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "真实 eval 数量不足，回测覆盖偏弱",
+        "缺少负例 eval，误触发风险较高",
+        "缺少回归/边界 eval，漂移风险较高",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 0,
+          "references": 0,
+          "eval_layout": 0,
+          "governance": 0,
+          "maintainability": 0
+        }
+      }
+    },
+    {
+      "skill": "mobile-app-reverse-delivery",
+      "category": "execution",
+      "version": "0.1.0",
+      "platforms": [
+        "app",
+        "h5"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 25,
+        "operational": 19,
+        "consistency": 0,
+        "drift": 16,
+        "total": 60
+      },
+      "rating": "偏笔记化,需要重构",
+      "evals": 4,
+      "real_evals": 4,
+      "references": 3,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 17,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=3",
+        "真实 evals 数量=4",
+        "包含负例 eval",
+        "包含回归/边界 eval",
+        "包含经验沉淀要求"
+      ],
+      "gaps": [
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 2,
+          "maintainability": 3
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 5,
+          "eval_quality": 5,
+          "routing_boundaries": 2,
+          "evidence_writeback": 2,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 6,
+          "regression_coverage": 6,
+          "version_change_log": 4,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-dex-dumper",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 8,
+        "consistency": 0,
+        "drift": 6,
+        "total": 30
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 11,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 2,
+          "workflow_behavior": 1,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-frida",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 8,
+        "consistency": 0,
+        "drift": 6,
+        "total": 30
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 11,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 1,
+          "workflow_behavior": 0,
+          "eval_quality": 5,
+          "routing_boundaries": 2,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-idapython",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 6,
+        "consistency": 0,
+        "drift": 6,
+        "total": 28
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 10,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 1,
+          "workflow_behavior": 0,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-struct",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 6,
+        "consistency": 0,
+        "drift": 6,
+        "total": 28
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 12,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 1,
+          "workflow_behavior": 0,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-symbol",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 6,
+        "consistency": 0,
+        "drift": 6,
+        "total": 28
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 13,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 1,
+          "workflow_behavior": 0,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-u3d-dump",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 7,
+        "consistency": 0,
+        "drift": 6,
+        "total": 29
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 10,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 1,
+          "workflow_behavior": 1,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "rev-unicorn-debug",
+      "category": "execution",
+      "version": "unknown",
+      "platforms": [
+        "app"
+      ],
+      "applicable_domains": [],
+      "scores": {
+        "structure": 16,
+        "operational": 7,
+        "consistency": 0,
+        "drift": 6,
+        "total": 29
+      },
+      "rating": "原始材料",
+      "evals": 3,
+      "real_evals": 3,
+      "references": 0,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 11,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "真实 evals 数量=3",
+        "包含负例 eval",
+        "包含回归/边界 eval"
+      ],
+      "gaps": [
+        "references 偏少，细节沉淀不足",
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据",
+        "仓库无任何 domain 接入一致性验证 fixtures"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 0,
+          "eval_layout": 3,
+          "governance": 0,
+          "maintainability": 0
+        },
+        "operational": {
+          "trigger_clarity": 1,
+          "workflow_behavior": 1,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 0,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 0,
+          "snapshots_count": 0,
+          "expiry_ok": 0,
+          "recent_report": 0,
+          "consistency_rate": 0
+        },
+        "drift": {
+          "drift_policy": 0,
+          "regression_coverage": 6,
+          "version_change_log": 0,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "reverse-js-crawler",
+      "category": "execution",
+      "version": "0.2.0",
+      "platforms": [
+        "web",
+        "h5"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 25,
+        "operational": 21,
+        "consistency": 30,
+        "drift": 20,
+        "total": 96
+      },
+      "rating": "高可用,产出与真实一致",
+      "evals": 4,
+      "real_evals": 4,
+      "references": 5,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 14,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=5",
+        "真实 evals 数量=4",
+        "包含负例 eval",
+        "包含回归/边界 eval",
+        "包含经验沉淀要求"
+      ],
+      "gaps": [
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 2,
+          "maintainability": 3
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 5,
+          "eval_quality": 5,
+          "routing_boundaries": 2,
+          "evidence_writeback": 2,
+          "real_task_metrics": 2
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 6,
+          "regression_coverage": 6,
+          "version_change_log": 4,
+          "historical_metrics": 4
+        }
+      }
+    },
+    {
+      "skill": "site-api-adapter",
+      "category": "execution",
+      "version": "0.2.0",
+      "platforms": [
+        "web",
+        "h5",
+        "app"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 25,
+        "operational": 21,
+        "consistency": 30,
+        "drift": 16,
+        "total": 92
+      },
+      "rating": "高可用,产出与真实一致",
+      "evals": 4,
+      "real_evals": 4,
+      "references": 3,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 12,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=3",
+        "真实 evals 数量=4",
+        "包含负例 eval",
+        "包含回归/边界 eval",
+        "包含经验沉淀要求"
+      ],
+      "gaps": [
+        "缺少真实任务命中率/完成率统计产物",
+        "缺少更强的失败模式与站点记忆证据"
+      ],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 2,
+          "maintainability": 3
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 5,
+          "eval_quality": 5,
+          "routing_boundaries": 4,
+          "evidence_writeback": 2,
+          "real_task_metrics": 0
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 6,
+          "regression_coverage": 6,
+          "version_change_log": 4,
+          "historical_metrics": 0
+        }
+      }
+    },
+    {
+      "skill": "skills-evaluation-governance",
+      "category": "execution",
+      "version": "0.2.0",
+      "platforms": [
+        "cross-platform"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 25,
+        "operational": 21,
+        "consistency": 30,
+        "drift": 20,
+        "total": 96
+      },
+      "rating": "高可用,产出与真实一致",
+      "evals": 6,
+      "real_evals": 6,
+      "references": 5,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 23,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=5",
+        "真实 evals 数量=6",
+        "包含负例 eval",
+        "包含回归/边界 eval",
+        "包含经验沉淀要求"
+      ],
+      "gaps": [],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 2,
+          "maintainability": 3
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 5,
+          "eval_quality": 5,
+          "routing_boundaries": 0,
+          "evidence_writeback": 4,
+          "real_task_metrics": 2
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 6,
+          "regression_coverage": 6,
+          "version_change_log": 4,
+          "historical_metrics": 4
+        }
+      }
+    },
+    {
+      "skill": "website-314-api-delivery",
+      "category": "execution",
+      "version": "0.2.0",
+      "platforms": [
+        "web",
+        "h5"
+      ],
+      "applicable_domains": [
+        "thaiairways.com"
+      ],
+      "scores": {
+        "structure": 25,
+        "operational": 23,
+        "consistency": 30,
+        "drift": 20,
+        "total": 98
+      },
+      "rating": "高可用,产出与真实一致",
+      "evals": 6,
+      "real_evals": 6,
+      "references": 6,
+      "has_negative_eval": true,
+      "has_regression_eval": true,
+      "criteria_count": 24,
+      "evidence": [
+        "存在 SKILL.md",
+        "frontmatter 完整",
+        "存在 agents/openai.yaml",
+        "references 数量=6",
+        "真实 evals 数量=6",
+        "包含负例 eval",
+        "包含回归/边界 eval",
+        "包含经验沉淀要求"
+      ],
+      "gaps": [],
+      "checks": {
+        "structure": {
+          "skill_md": 5,
+          "frontmatter": 5,
+          "agents": 3,
+          "references": 4,
+          "eval_layout": 3,
+          "governance": 2,
+          "maintainability": 3
+        },
+        "operational": {
+          "trigger_clarity": 5,
+          "workflow_behavior": 5,
+          "eval_quality": 5,
+          "routing_boundaries": 2,
+          "evidence_writeback": 4,
+          "real_task_metrics": 2
+        },
+        "consistency": {
+          "fixtures_present": 5,
+          "snapshots_count": 5,
+          "expiry_ok": 5,
+          "recent_report": 5,
+          "consistency_rate": 10
+        },
+        "drift": {
+          "drift_policy": 6,
+          "regression_coverage": 6,
+          "version_change_log": 4,
+          "historical_metrics": 4
+        }
+      }
+    }
+  ]
+}

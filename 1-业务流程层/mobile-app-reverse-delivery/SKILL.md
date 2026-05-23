@@ -2,6 +2,7 @@
 name: mobile-app-reverse-delivery
 description: >-
   Use this skill when a user wants to reverse-engineer a mobile app (Android APK or iOS IPA) and turn it into a callable HTTP/Python interface, especially for airline / booking / flight apps that combine H5 webview + native bridge + protected APIs. Trigger when the user mentions APK 逆向, IPA 逆向, 移动 App 逆向, 航司 App 逆向, 航空公司 App 接口, 安卓 app 接口逆向, app 抓包逆向, app 加密参数, app 接口还原, mobile crawler, mobile app reverse, Android booking app, iOS airline app, Frida hook airline, H5 套壳, native crypto in app, sign in app, sn in app, airline app login/search/order/payment, vietjet app, thaiairways app, airasia app, or similar airline-app reverse delivery requests.
+platforms: [app, h5]
 ---
 
 # Mobile App Reverse Delivery
@@ -108,6 +109,11 @@ description: >-
 - 已区分 native crypto / WAF / 业务错 / 路由错 / 设备绑定错
 - 已沉淀站点经验库 + adapter
 - 真实扣款不在自动化流程跑
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。
 
 ## Boundaries
 

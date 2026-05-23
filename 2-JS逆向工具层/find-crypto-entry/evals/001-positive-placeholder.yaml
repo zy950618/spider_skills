@@ -1,0 +1,12 @@
+name: Locate x-sign generation entry
+prompt: >
+  抓包看到请求头里有个 x-sign,每次刷新都变,
+  帮我定位这个参数是在哪段 JS 里生成的,
+  我要拿到函数位置和调用链。
+criteria:
+  - "Starts with search_in_sources on the parameter name (excludeMinified=false) before resorting to XHR breakpoints."
+  - "Outputs entry as script URL + line/column + function name + call path, not just the algorithm guess."
+  - "Distinguishes between business-code assignment, axios/fetch interceptor, and external SDK (e.g. window.h5sign) before concluding."
+  - "Stops at locating the entry; does not attempt to reverse the encryption algorithm in this step."
+expect_skill: true
+timeout: 120

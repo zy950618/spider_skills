@@ -1,0 +1,12 @@
+name: Skip symbol recovery when full symbol table already present
+prompt: >
+  I opened a debug build of our own Android service in IDA. Every function
+  already has its original symbol from the .symtab and DWARF info, and I just
+  want to read the decompiled pseudo-code of main() to understand the startup
+  flow. No stripping, no obfuscation, no unknown sub_XXXX functions.
+criteria:
+  - "Does not launch the rev-symbol recovery workflow (no constant matching, no callee/caller inference, no Web Search for magic numbers)."
+  - "Recognizes that symbol recovery is unnecessary when a complete symbol table is already available and tells the user so."
+  - "Suggests the appropriate alternative (read the decompiled main directly, or use rev-idapython if scripting is needed) instead of forcing the rev-symbol output format."
+expect_skill: false
+timeout: 120

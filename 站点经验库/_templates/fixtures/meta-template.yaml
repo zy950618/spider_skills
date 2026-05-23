@@ -1,0 +1,26 @@
+# 复制到 snapshots/<METHOD>_<slug>.meta.yaml 后填写。
+# 见 fixtures/_README.md。
+
+endpoint: "搜索机场列表"              # 人读语义名
+recorded_at: "2026-05-23T00:00:00Z"   # ISO UTC
+expires_at: "2026-06-22T00:00:00Z"    # +30 天,过期重录
+category: "public-read"               # public-read / search / detail / list — 不允许 payment / order-create
+sensitive: false                      # true 时 CI 不打印响应体
+requires_auth: false                  # true 时重放需要 session cookie
+
+# 覆盖默认豁免字段表(默认见 tools/replayer/field_rules.py)。
+# 这里加的是本接口额外要豁免的字段。
+volatile_fields:
+  # - "transactionId"
+
+# 业务字段容忍度规则。key 是字段 jsonpath(简化版,用点号),value 是规则名。
+# 规则名见 field_rules.py: percent_10 / percent_20 / int_diff_5 / int_diff_20 / list_len_20pct
+tolerance:
+  # "data.flights[].price": percent_10
+  # "data.flights[].availability": int_diff_5
+
+# 录制条件 / 触发该接口的业务动作 / 已知不稳定字段
+notes: |
+  在 thaiairways.com 首页打开机场选择 dropdown 时触发。
+  无需登录,无需特定 market/locale。
+  返回机场列表 ~300 项,顺序可能因后端 cache 不同而抖动。

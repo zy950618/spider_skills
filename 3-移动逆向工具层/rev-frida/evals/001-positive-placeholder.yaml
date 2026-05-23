@@ -1,0 +1,14 @@
+name: Hook Android Java sign method and dump native libssl traffic
+prompt: >
+  我要逆向一个 Android app，包名 com.example.airline。它的登录请求带
+  X-Sign 头，怀疑是 com.example.airline.security.SignUtil.sign(String, long)
+  里算出来的。请帮我写一个 Frida 脚本：hook 这个 Java 方法打印入参和返回值，
+  同时在 libssl.so 的 SSL_write 上挂钩 dump 出明文 body。用 frida -U -f
+  方式 spawn 启动。
+criteria:
+  - "Generates a Frida script using Java.perform and Java.use to hook com.example.airline.security.SignUtil.sign with arg/return logging."
+  - "Uses modern native API (Process.getModuleByName('libssl.so') + mod.getExportByName('SSL_write')), not deprecated Module.findBaseAddress."
+  - "Provides the correct spawn command `frida -U -f com.example.airline -l hook.js` without the obsolete --no-pause flag."
+  - "Uses hexdump() or readByteArray() to dump SSL_write plaintext buffer with length from args[2]."
+expect_skill: true
+timeout: 120

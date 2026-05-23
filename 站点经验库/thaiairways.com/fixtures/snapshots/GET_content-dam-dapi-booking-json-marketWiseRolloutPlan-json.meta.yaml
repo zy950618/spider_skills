@@ -1,0 +1,11 @@
+endpoint: "TODO: human-readable name for GET /content/dam/dapi-booking/json/marketWiseRolloutPlan.json"
+recorded_at: "2026-05-23T05:27:38Z"
+expires_at: "2026-06-22T05:27:38Z"
+category: "public-read"   # TODO: confirm. allowed: public-read / search / detail / list
+sensitive: false           # TODO: true if response contains PII
+requires_auth: false       # TODO: true if needs login cookie
+volatile_fields: []
+tolerance: {}
+notes: |
+  Auto-extracted from HAR. Review and edit before committing.
+  Source URL: https://www.thaiairways.com/content/dam/dapi-booking/json/marketWiseRolloutPlan.json

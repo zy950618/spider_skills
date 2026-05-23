@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:22 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+    "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "YJw12SZtjKMee2AsMg7_4x0BgCSPK7Lee2Z9A873XR0KZyLToNVFcw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block"
+  },
+  "body": {
+    "statusMessage": "SUCCESS",
+    "responseMessage": "Sawasdee feeds Retrieved Successfully",
+    "sawasdeeFeedsList": [
+      {
+        "title": "May-June 2026 Issue",
+        "link": "https://sawasdee.thaiairways.com/pocket-guide/may-june-2026-issue/",
+        "creator": "Sawasdee",
+        "pubDate": "Thu, 30 Apr 2026 15:05:30 +0000",
+        "categories": [],
+        "guid": "https://sawasdee.thaiairways.com/?post_type=pocket_guide&p=14314",
+        "description": "",
+        "content": "",
+        "enclosureUrl": "https://sawasdee.thaiairways.com/wp-content/uploads/2026/02/SAWASDEE-May-June-2026-ISSUE.png"
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 510
+  }
+}

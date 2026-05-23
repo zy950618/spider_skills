@@ -1,6 +1,7 @@
 ---
 name: rev-symbol
 description: Restore function symbols by analyzing code patterns, strings, constants, and cross-references
+platforms: [app]
 ---
 
 # rev-symbol - Symbol Recovery
@@ -200,3 +201,10 @@ Based on collected information:
 ### Similar Open Source Implementation
 - <if similar open source code is found, provide link>
 ```
+
+---
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。

@@ -1,0 +1,14 @@
+name: Dump decrypted DEX from a 360-packed Android app at runtime
+prompt: >
+  我手上有个 APK，包名 com.example.airline，jadx 一打开发现 classes.dex
+  里全是 com.qihoo.util.StubApp 这种 360 加固的壳代码，真正的业务类全是
+  动态 ClassLoader 加载出来的，静态根本看不到。设备已 root,adb root 通过。
+  我想在 app 跑起来过完启动页之后,把内存里解密好的真实 DEX 整套 dump 下来,
+  最后 pull 到本机的当前工作目录,设备上残留要清掉。
+criteria:
+  - "Uses panda-dex-dumper via adb push to /data/local/tmp/ and chmod +x before running, not some other unrelated unpacker."
+  - "Resolves target pid via `adb shell pidof com.example.airline`, with a fallback monkey launch when pidof returns empty."
+  - "Advises waiting past the splash screen so the 360 StubApp ClassLoader has actually decrypted the real DEX before attaching, and notes multiple DEX files in /data/local/tmp/panda/ are expected for a packed app — all must be pulled."
+  - "Pulls /data/local/tmp/panda/ to the host cwd and cleans up both the dump directory and the panda-dex-dumper binary on device afterwards."
+expect_skill: true
+timeout: 120

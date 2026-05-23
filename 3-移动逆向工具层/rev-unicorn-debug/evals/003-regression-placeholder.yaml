@@ -1,0 +1,14 @@
+name: Regression against unmapped memory crash from missing libc hook and stack
+prompt: >
+  我之前写的 Unicorn 脚本仿真 libsign.so 里的 sub_2F1C(ARM32 Thumb),跑起来
+  立刻 UC_ERR_READ_UNMAPPED 在 0x00000000,我以为是数据段没映射,就把整个
+  .data 又映射了一遍还是不行。函数里其实只调了 strlen 和 memcpy。我只把
+  .text 那一段 mmap 进去了,SP 也没设,直接 emu_start(func_addr, func_addr + 0x200)
+  就跑了。帮我修。
+criteria:
+  - "Identifies that the crash root cause is unhooked libc PLT calls (strlen/memcpy) jumping into unmapped PLT/GOT pages, not a missing .data mapping."
+  - "Adds a mapped stack region (e.g. uc.mem_map(0x7ff00000, 0x10000)) and sets SP to mid-stack, plus sets LR to a sentinel address mapped as a single nop/ret page used as the emu_stop trampoline."
+  - "Installs a UC_HOOK_MEM_UNMAPPED callback that logs the faulting address/type and returns True to auto-map a page so the iterative debug loop can converge instead of dying on the first fault."
+  - "Hooks strlen and memcpy by their resolved import addresses with UC_HOOK_CODE, implements them in Python (uc.mem_read for strlen scan, uc.mem_write for memcpy), then sets PC = LR to skip the original; uses UC_MODE_THUMB and ORs 1 into the start address since the target is Thumb."
+expect_skill: true
+timeout: 120

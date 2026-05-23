@@ -1,0 +1,18 @@
+name: Recover symbols in stripped binary via constants and call patterns
+prompt: >
+  I have an IDA-NO-MCP export directory for a stripped Android native library.
+  Inside decompile/ there are functions like sub_401000 that contain the
+  constants 0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, and another sub_402000
+  that allocates a buffer of size 0x100, writes to it, and is later paired with
+  a one-argument call sub_402100(buf). A third sub_403000 references a string
+  "/data/data/com.example/config.json" and is called by a function with the
+  symbol load_user_settings in exports.txt. Help me give these three functions
+  proper names.
+criteria:
+  - "Confirms the IDA-NO-MCP export layout (decompile/, strings.txt, imports.txt, exports.txt) is present before doing analysis."
+  - "Identifies sub_401000 as an MD5 implementation by matching the four magic constants and explains the reasoning, not just naming it."
+  - "Recognizes the sub_402000 / sub_402100 pair as an alloc/free pattern from the call-site argument shape (size in, pointer out, same pointer freed) and proposes names accordingly."
+  - "Uses the caller load_user_settings plus the config.json string literal to name sub_403000 as a config-loader / json parser, citing the cross-reference chain from exports.txt."
+  - "Outputs each suggestion with confidence level and reasoning following the SKILL Output Format, instead of asserting the name without evidence."
+expect_skill: true
+timeout: 120

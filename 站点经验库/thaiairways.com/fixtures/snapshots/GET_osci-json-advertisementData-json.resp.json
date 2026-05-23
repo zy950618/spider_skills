@@ -1,0 +1,45 @@
+{
+  "status": 200,
+  "headers": {
+    "accept-ranges": "bytes",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "max-age=2592000",
+    "content-length": "783",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:20 GMT",
+    "etag": "\"3783ce60713a17be984f8af732aeb329\"",
+    "last-modified": "Thu, 21 May 2026 12:03:39 GMT",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "CloudFront",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "R6wA4U5fRw32Q47XZvypD4-Nbx96Zu6uRwsPZLHHxvbd5fZ9bTQfkw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1"
+  },
+  "body": [
+    {
+      "image": "https://teamsite-api.s3.ap-southeast-1.amazonaws.com/images/destinations/KUL.jpg",
+      "optionalTitle": "INSPIRATION DESTINATION",
+      "title": "WINTER IN NISEKO",
+      "description": "Niseko may be synonymous with skiing, but there's lots to do beyond the slopes too. ",
+      "buttonText": "Explore",
+      "buttonUrl": "https://www.thaiairways.com/flights/en/"
+    },
+    {
+      "image": "https://teamsite-api.s3.ap-southeast-1.amazonaws.com/images/royal+orchid+plus/2_HSBC.jpg",
+      "title": "CASH PLUS MILES ON THAI",
+      "description": "Unlock exclusive benefits and earn 2,500 bonus miles with your first THAI flight.",
+      "buttonText": "Join Now",
+      "buttonUrl": "https://www.thaiairways.com/flights/en/"
+    }
+  ],
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 783
+  }
+}

@@ -1,0 +1,20 @@
+# Domain 平台标识 (模板)
+#
+# 复制本文件到 站点经验库/<your-domain>/_platform.yaml,
+# 修改 platform 与 notes 字段。
+#
+# platform 枚举:
+#   web           - PC 浏览器站点 (Chrome/Edge/Firefox 桌面)
+#   h5            - 移动浏览器或 App 内嵌 WebView 打开的 H5 页面
+#   app           - 原生 Android APK / iOS IPA
+#   mini-program  - 微信小程序 / 支付宝小程序 / 字节小程序等
+#
+# 一个 domain 通常单平台。多端共用 domain 时 → 拆成多个 domain 目录,不要写 list。
+#
+# 不创建本文件时, score_skills.py 默认按 web 处理 (向后兼容)。
+#
+# 详见 99-SKILLS治理/09-平台分类schema.md。
+
+platform: web
+notes: |
+  TODO: 描述本 domain 的端归属、抓包环境(桌面/移动)、是否有同公司其他端 domain。

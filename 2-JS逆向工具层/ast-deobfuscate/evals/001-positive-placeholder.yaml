@@ -1,0 +1,13 @@
+name: Obfuscator.io 字符串数组 + 控制流平坦化解混淆
+prompt: >
+  这段 JS 全是 _0x4a3b、_0x21ef 这种变量名,顶部有个 600 多元素的字符串数组,
+  外面包了一层 push/shift 旋转 IIFE,函数体里到处是 while(true){switch(_0x1a['split']('|'))}
+  的结构。帮我还原成可读代码。
+criteria:
+  - "先做 Step 0 预分析(特征识别 + AST 体检报告),识别为 Obfuscator.io 系列并展示分析结果给用户确认"
+  - "使用 vm 沙箱(非 eval)执行字符串数组 + 旋转 IIFE + 访问器函数,批量回填明文,而不是手动硬编码索引"
+  - "Step 2(常量折叠/布尔/Proxy/对象字典) 和 Step 5(死代码) 必须循环执行,设置硬上限并保存每轮 intermediate/target_step5_round{N}.js"
+  - "控制流平坦化按实际 switch 顺序数组分析,而不是套固定模板;复杂情况宁可保留也不错误还原"
+  - "每步输出独立 intermediate 中间文件,最终产物在 source/deobfuscated/ 下,并用 evaluate_script 抽样验证关键函数输入输出一致"
+expect_skill: true
+timeout: 120

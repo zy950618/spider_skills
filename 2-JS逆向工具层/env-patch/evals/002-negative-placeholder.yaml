@@ -1,0 +1,9 @@
+name: Pure AST deobfuscation, no Node execution
+prompt: >
+  我手上有一段被 obfuscator.io 混淆过的 JS,想用 AST 把字符串数组还原、
+  控制流平坦化拆掉,只看静态代码,不需要把它跑起来。
+criteria:
+  - "Does not propose copying the JS into env/ or building run.js with window/document stubs."
+  - "Routes the task to ast-deobfuscate (or general AST tooling) instead of env-patch."
+expect_skill: false
+timeout: 120

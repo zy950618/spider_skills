@@ -1,0 +1,13 @@
+name: Regression against single-shot dump before secondary ClassLoader decrypts real DEX
+prompt: >
+  上次帮我 dump 一个梆梆加固的 app(com.example.bbpacked),设备未 root
+  我用普通用户跑 panda-dex-dumper,结果只 pull 出来一个 DEX,里面还是壳代码,
+  真正的业务类一个都没看到。腾讯乐固那个项目也类似,只 dump 出 1 个文件就停了。
+  这次再来一遍,别再踩同一个坑。
+criteria:
+  - "Detects the historical failure: a single DEX pulled from a packed app almost always means the secondary/business ClassLoader has not finished decrypting yet — the dump fired too early or root was missing so ptrace silently degraded."
+  - "Requires `adb root` (or `su` fallback) up front and refuses to proceed if the device is not rooted, since panda-dex-dumper relies on ptrace attach."
+  - "Forces the user to navigate past the splash / first business screen before running the dumper, and re-runs the dump if /data/local/tmp/panda/ contains only one DEX, since packed apps (360 / Tencent Legu / Bangcle / Ijiami) typically emit several DEX files across multiple ClassLoaders."
+  - "Pulls the full /data/local/tmp/panda/ directory (not a single classes.dex), then cleans up both the dump dir and the panda-dex-dumper binary; logs this packer-vs-single-DEX trap to known-failures so the next session does not repeat it."
+expect_skill: true
+timeout: 120

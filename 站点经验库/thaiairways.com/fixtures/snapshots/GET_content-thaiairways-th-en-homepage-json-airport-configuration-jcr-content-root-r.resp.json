@@ -1,0 +1,79 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64448",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "br",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"654-6526661352460\"",
+    "expires": "0",
+    "last-modified": "Fri, 22 May 2026 11:32:11 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "hegJeSg3jUL2Jz6r8sSdGZ6Oy0_erzOEtRjP1G-U4CsBn-m93fEYjw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "airportRouteDetailsList": [
+      {
+        "validationtype": "both",
+        "airportMultifield": [
+          {
+            "airportCode": "KHH"
+          },
+          {
+            "airportCode": "CSX"
+          }
+        ],
+        "operationalStartDate": "01-06-2026"
+      },
+      {
+        "generalMessage1": "Effective 9 September 2025, all flights to and from Phnom Penh will operate at the new Techo International Airport (KTI), located in Krong Ta Khmau.",
+        "validationtype": "both",
+        "airportMultifield": [
+          {
+            "airportCode": "PNH"
+          }
+        ],
+        "operationalENdDate": "06-09-2025"
+      },
+      {
+        "generalMessage1": "Passengers traveling to Cambodia are required to present a round-trip or return ticket at check-in. Non-compliance may result in refusal of acceptance. Please ensure compliance with all entry requirements prior to travel",
+        "airportMultifield": [
+          {
+            "airportCode": "KTI"
+          }
+        ]
+      },
+      {
+        "generalMessage1": "Passengers traveling to Cambodia are required to present a round-trip or return ticket at check-in. Non-compliance may result in refusal of acceptance. Please ensure compliance with all entry requirements prior to travel.",
+        "airportMultifield": [
+          {
+            "airportCode": "SAI"
+          }
+        ],
+        "operationalStartDate": "26-10-2026",
+        "operationalENdDate": "28-03-2027"
+      },
+      {
+        "countryCode": "IN",
+        "generalMessage1": "Foreign passengers must fill the Online e-Arrival Card at least 72 hours prior to arrival in India. The e-Arrival Card can be completed via the official portal:<a title=\"https://indianvisaonline.gov.in/earrival/\" href=\"https://indianvisaonline.gov.in/earrival/\">https://indianvisaonline.gov.in/earrival/</a>",
+        "validationtype": "arrival"
+      },
+      {
+        "countryCode": "KR",
+        "passengerMessage": "Passengers under 14 years of age require approval and consent from a legal representative for booking."
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 1620
+  }
+}

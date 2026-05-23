@@ -1,0 +1,19 @@
+{
+  "status": 200,
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "x-cache": "HIT"
+  },
+  "body": {
+    "_comment": "body 若为 JSON 直接展开为对象;若为 HTML/二进制存 base64 字符串并加 _body_encoding 字段。",
+    "data": [
+      {"code": "BKK", "name": "Bangkok Suvarnabhumi"},
+      {"code": "HKT", "name": "Phuket"}
+    ]
+  },
+  "_meta": {
+    "_comment": "_meta 不参与 diff。",
+    "body_encoding": "json",
+    "body_size_bytes": 12345
+  }
+}

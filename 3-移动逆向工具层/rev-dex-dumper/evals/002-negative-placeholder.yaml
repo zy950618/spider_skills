@@ -1,0 +1,11 @@
+name: Negative trigger for unpacked APK static analysis and manifest inspection
+prompt: >
+  我从 apkmirror 下了一个未加壳的开源 APK,直接想用 jadx 把 classes.dex
+  反编译出来读源码,顺便用 apktool d 看一下 AndroidManifest.xml 里声明了哪些
+  权限和 activity。不需要连真机,不需要运行,纯静态看一眼。
+criteria:
+  - "Does not push panda-dex-dumper to any device or invoke adb push/adb shell/pidof."
+  - "Routes to plain static-analysis tooling (jadx / apktool / aapt dump) on the local APK file instead of runtime memory dumping."
+  - "Does not require root or a running process — explicitly notes the APK is already unpacked so a runtime DEX dump is unnecessary."
+expect_skill: false
+timeout: 120

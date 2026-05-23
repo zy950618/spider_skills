@@ -2,6 +2,7 @@
 name: reverse-js-crawler
 description: >-
   Use this skill for crawler reverse engineering and interface restoration: page reconnaissance, real API discovery, JavaScript sign/token/cookie analysis, browser runtime dependency tracing, request reproduction, batch collection, and verified Python/Node.js delivery. Trigger when the user asks for JS reverse, crawler reverse, API restoration, encrypted parameters, sign/x-sign/authKey/token, web data collection, turning a page into stable collection scripts, or Chinese requests such as 逆向采集, JS逆向, 接口还原, 接口复现, 加密参数, 补环境, 浏览器环境模拟, 请求复现, 批量采集, 数据清洗, or 采集脚本交付.
+platforms: [web, h5]
 ---
 
 # Reverse JS Crawler
@@ -58,6 +59,8 @@ description: >-
 
 ## Tool Policy
 
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。
 - 使用 `js_reverse` MCP 做页面打开、网络拦截、Hook、运行时变量、调用栈、Cookie/storage 观察。
 - 使用仓库搜索和静态分析定位脚本入口。
 - **进入加密还原阶段前，按需主动 Read 子 skill 的 SKILL.md 把上下文装进来再做**：

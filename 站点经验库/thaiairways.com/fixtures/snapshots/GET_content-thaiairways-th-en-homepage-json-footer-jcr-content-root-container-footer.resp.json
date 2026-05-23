@@ -1,0 +1,204 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64449",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "br",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"108e-652666130907e\"",
+    "expires": "0",
+    "last-modified": "Fri, 22 May 2026 11:32:10 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "2yvFBdVg7To_0QVyfenp5BIlVldMkxbVLcPZrq7f8wpkc4I4nNtVrQ==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "footerDetails": [
+      {
+        "footerGroup": [
+          {
+            "footerGroupID": "1",
+            "footerItems": [
+              {
+                "footerSectionId": "1",
+                "footerSectionName": "ABOUT THAI",
+                "footerSectionNavigation": [
+                  {
+                    "footerSubItemName": "Company Profile",
+                    "footerSubItemNavigation": "/content/company-profile",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Board of Directors",
+                    "footerSubItemNavigation": "/content/board-of-directors",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Executive Management Team",
+                    "footerSubItemNavigation": "/content/executive-management",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Star Alliance",
+                    "footerSubItemNavigation": "/content/star-alliance",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Sustainable Development",
+                    "footerSubItemNavigation": "/content/sustainable-development",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Investor Relations",
+                    "footerSubItemNavigation": "https://ir.thaiairways.com/",
+                    "footerSubItemIcon": "/osci/assets/footerHome.svg"
+                  },
+                  {
+                    "footerSubItemName": "Careers / Join us",
+                    "footerSubItemNavigation": "https://career.thaiairways.com/",
+                    "footerSubItemIcon": "/osci/assets/footerHome.svg"
+                  },
+                  {
+                    "footerSubItemName": "Procurement & Supplier",
+                    "footerSubItemNavigation": "/content/procurement-supplier",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Modern Slavery Statement",
+                    "footerSubItemNavigation": "/content/dam/thaiairways/pdf/footer/Anti_Slavery_Statement.pdf",
+                    "footerSubItemIcon": "/osci/assets/about-footer-icon.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "footerGroupID": "2",
+            "footerItems": [
+              {
+                "footerSectionId": "2",
+                "footerSectionName": "Travel Policies",
+                "footerSectionNavigation": [
+                  {
+                    "footerSubItemName": "Reservation & Ticketing",
+                    "footerSubItemNavigation": "/content/reservation-ticketing-terms-and-conditions",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Conditions of Contract",
+                    "footerSubItemNavigation": "/content/conditions-of-contract",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Conditions of Carriage",
+                    "footerSubItemNavigation": "/content/condition-of-carriage",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Domestic Ceiling Fares (CAAT)",
+                    "footerSubItemNavigation": "/content/domestic-ceiling-fares",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Agency Debit Memo Policy",
+                    "footerSubItemNavigation": "/content/dam/thaiairways/pdf/footer/Agency_Debit_Memo_Policy.pdf",
+                    "footerSubItemIcon": "/osci/assets/about-footer-icon.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "footerGroupID": "3",
+            "footerItems": [
+              {
+                "footerSectionId": "3",
+                "footerSectionName": "Legal Information",
+                "footerSectionNavigation": [
+                  {
+                    "footerSubItemName": "Terms of Use",
+                    "footerSubItemNavigation": "/content/terms-of-use",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Passenger Rights",
+                    "footerSubItemNavigation": "/content/passenger-rights",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Privacy Notice",
+                    "footerSubItemNavigation": "/content/privacy-notice",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Cookie Notice",
+                    "footerSubItemNavigation": "/content/cookie-notice",
+                    "footerSubItemIcon": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "footerGroupID": "4",
+            "footerItems": [
+              {
+                "footerSectionId": "4",
+                "footerSectionName": "POPULAR FLIGHTS",
+                "footerSectionNavigation": [
+                  {
+                    "footerSubItemName": "Flights from Thailand",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-from-thailand",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Flights to Udon Thani",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-to-udon-thani",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Flights to Chiang Rai",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-to-chiang-rai",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Flights to Hanoi",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-to-hanoi",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Flights to Beijing",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-to-beijing",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Flights to Sydney",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-to-sydney",
+                    "footerSubItemIcon": null
+                  },
+                  {
+                    "footerSubItemName": "Flights to Istanbul",
+                    "footerSubItemNavigation": "https://www.thaiairways.com/flights/en-th/flights-to-istanbul",
+                    "footerSubItemIcon": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "copyrights": "Copyright © 2026 Thai Airways International Public Company Limited (THAI). All rights reserved."
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 4238
+  }
+}

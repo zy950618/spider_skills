@@ -2,6 +2,7 @@
 name: imperva-waf-reese84
 description: >-
   Use this skill for Imperva/Incapsula/Reese84, x-d-token, reese84 cookies, SWJIYLWA/CWUDNSAI/SWUDNSAI challenge HTML, browser fingerprint simulation, token cache identity, and WAF acceptance testing. Trigger when the user asks to solve 84 shield, Reese84, Incapsula, WAF challenge, anti-bot token rejection, dynamic fingerprinting, protected flight/booking APIs, or Chinese requests such as 84盾, 84风控, Reese84逆向, Incapsula反爬, Imperva风控, x-d-token, reese84 cookie, WAF挑战, 风控token, 浏览器指纹, 指纹模拟, 反扒, 反爬, or token被拒.
+platforms: [web, h5]
 ---
 
 # Imperva WAF Reese84
@@ -55,6 +56,11 @@ description: >-
 - 已区分 WAF、路由错误、payload 错误、IP/proxy 和业务无数据。
 - 已记录 cache key、刷新原因和重试边界。
 - 已把测试失败写入站点经验库或 eval backlog。
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。
 
 ## Boundaries
 

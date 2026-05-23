@@ -1,6 +1,7 @@
 ---
 name: rev-idapython
 description: IDAPython and IDALib script reference for reverse engineering. Activate when the user needs to write IDAPython scripts in IDA, use IDALib for headless analysis, operate on IDB databases, debug with IDA, manipulate memory/registers, traverse functions/blocks/instructions, work with Hex-Rays decompiler API, handle obfuscation, or batch-process binaries.
+platforms: [app]
 ---
 
 # rev-idapython - IDAPython / IDALib Script Reference
@@ -797,3 +798,10 @@ if __name__ == "__main__":
             if i is not None:
                 print(i)
 ```
+
+---
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。

@@ -1,0 +1,12 @@
+name: Negative trigger when source struct already exists or scope is a single local
+prompt: >
+  I have the original C++ source for this binary including the full class
+  definition of Session in session.h. In sub_4012A0 I just want to know what
+  the local variable v7 holds after the call to parse_header - it's clearly
+  a single int return value, not a struct. Can you tell me?
+criteria:
+  - "Does not invoke rev-struct memory-pattern recovery when the user already owns the struct definition in source."
+  - "Does not run cross-function offset aggregation for a single scalar local variable."
+  - "Answers by reading session.h / the one function and tracing the local, instead of rebuilding a layout."
+expect_skill: false
+timeout: 120

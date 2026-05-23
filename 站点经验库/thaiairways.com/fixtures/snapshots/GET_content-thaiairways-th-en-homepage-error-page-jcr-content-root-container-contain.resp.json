@@ -1,0 +1,747 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64450",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "br",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"392b-65266611b3a32\"",
+    "expires": "0",
+    "last-modified": "Fri, 22 May 2026 11:32:09 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "U2ul_mVmmsMgulKN6ABqbLDrimO2qeXDHbOMCUjDsqmgJJqvFON39A==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "errorEntries": [
+      {
+        "errorCode": "40004",
+        "errorMessage": "Insurance is not available at the moment. Please try again later"
+      },
+      {
+        "errorCode": "7010",
+        "errorMessage": "Send email failed. Please try again later"
+      },
+      {
+        "errorCode": "10102 ",
+        "errorMessage": "Currency mismatch on excess rate"
+      },
+      {
+        "errorCode": "10100",
+        "errorMessage": "Bag(s) not allowed. Passenger(s) on Standby"
+      },
+      {
+        "errorCode": "10101",
+        "errorMessage": "No Infant Bag Allowance Found"
+      },
+      {
+        "errorCode": "10099",
+        "errorMessage": "No Bag Allowance Found"
+      },
+      {
+        "errorCode": "11000",
+        "errorMessage": "Unable to update bag"
+      },
+      {
+        "errorCode": "999",
+        "errorMessage": "Unexpected error"
+      },
+      {
+        "errorCode": "37576",
+        "errorMessage": "Payment Failed"
+      },
+      {
+        "errorCode": "15015",
+        "errorMessage": "External Check-in warning returned due to alliance eligible flight outside the check-in window"
+      },
+      {
+        "errorCode": "15014",
+        "errorMessage": "xternal Check-in warning returned due to Journey mismatch between client & Target"
+      },
+      {
+        "errorCode": "15013",
+        "errorMessage": "External Check-in error due to cache extraction failure"
+      },
+      {
+        "errorCode": "15012",
+        "errorMessage": "External Check-in warning returned due to SEE_AGENT returned by Eligibility"
+      },
+      {
+        "errorCode": "15011",
+        "errorMessage": "Multiple document update is not allowed with-in the Carrier Connect Check-in"
+      },
+      {
+        "errorCode": "15010",
+        "errorMessage": "External Check-in error caused due to bad request"
+      },
+      {
+        "errorCode": "15009",
+        "errorMessage": "Some mandatory fields missing in the Destination Address Request"
+      },
+      {
+        "errorCode": "15008",
+        "errorMessage": "Some mandatory fields missing in the VISA Request"
+      },
+      {
+        "errorCode": "15007",
+        "errorMessage": "Some mandatory fields missing in the passport Request"
+      },
+      {
+        "errorCode": "15006",
+        "errorMessage": "Acceptance restricted due to check-in restriction set for travelers"
+      },
+      {
+        "errorCode": "15005",
+        "errorMessage": "Passport details missing for the passenger"
+      },
+      {
+        "errorCode": "15004",
+        "errorMessage": "The operation is not permitted within SKY seamless check-in"
+      },
+      {
+        "errorCode": "15003",
+        "errorMessage": "Boarding Pass could not be issued"
+      },
+      {
+        "errorCode": "15002",
+        "errorMessage": "Transaction not allowed due to missing associated adult passenger."
+      },
+      {
+        "errorCode": "15001",
+        "errorMessage": "External Checkin Warning"
+      },
+      {
+        "errorCode": "15000",
+        "errorMessage": "External Checkin Error"
+      },
+      {
+        "errorCode": "12002",
+        "errorMessage": "Standby transfer products itinerary could not be cancelled"
+      },
+      {
+        "errorCode": "12001",
+        "errorMessage": "Standby transfer products acceptance could not be cancelled"
+      },
+      {
+        "errorCode": "12000",
+        "errorMessage": "No transfer journey found"
+      },
+      {
+        "errorCode": "11004",
+        "errorMessage": "Unexpected issue when delivering bag tag"
+      },
+      {
+        "errorCode": "11003",
+        "errorMessage": "Bag tag cannot be delivered due to error during delivering process"
+      },
+      {
+        "errorCode": "11002",
+        "errorMessage": "No bag tag to deliver due to ineligible or invalid bag Id(s) provided"
+      },
+      {
+        "errorCode": "11001",
+        "errorMessage": "No Bag tag delivery methods in request"
+      },
+      {
+        "errorCode": "10007",
+        "errorMessage": "Price has changed"
+      },
+      {
+        "errorCode": "10006",
+        "errorMessage": "Payment authorization failed"
+      },
+      {
+        "errorCode": "10005",
+        "errorMessage": "Payment not supported for the booking"
+      },
+      {
+        "errorCode": "10004",
+        "errorMessage": "Flight acceptance is not opened"
+      },
+      {
+        "errorCode": "10003",
+        "errorMessage": "Finalize payment failed"
+      },
+      {
+        "errorCode": "10002",
+        "errorMessage": "No ancillary service payable"
+      },
+      {
+        "errorCode": "10001",
+        "errorMessage": "Initiate payment failed"
+      },
+      {
+        "errorCode": "10000",
+        "errorMessage": "No unpaid service"
+      },
+      {
+        "errorCode": "9006",
+        "errorMessage": "Infants are processed with their parent"
+      },
+      {
+        "errorCode": "9005",
+        "errorMessage": "Invalid Request: passengers not on all flights"
+      },
+      {
+        "errorCode": "9004",
+        "errorMessage": "No alternate journey available"
+      },
+      {
+        "errorCode": "9003",
+        "errorMessage": "Flight is not eligible for Flow Forward"
+      },
+      {
+        "errorCode": "9002",
+        "errorMessage": "Customer not eligible for Flow Forward"
+      },
+      {
+        "errorCode": "9001",
+        "errorMessage": "Alternate journey for Flow Forward not eligible"
+      },
+      {
+        "errorCode": "9000",
+        "errorMessage": "Flow Forward not applicable"
+      },
+      {
+        "errorCode": "8003",
+        "errorMessage": "Seatmap display is inhibited"
+      },
+      {
+        "errorCode": "8002",
+        "errorMessage": "No agreement between the airlines"
+      },
+      {
+        "errorCode": "8001",
+        "errorMessage": "Flight could not be found in the booking"
+      },
+      {
+        "errorCode": "8000",
+        "errorMessage": "Issue while retreving seatmap"
+      },
+      {
+        "errorCode": "7001",
+        "errorMessage": "Record in use - Please retry"
+      },
+      {
+        "errorCode": "7000",
+        "errorMessage": "Query received is not valid - check xml"
+      },
+      {
+        "errorCode": "6018",
+        "errorMessage": "Customer must be accepted before Seat allocation for IATCI flight"
+      },
+      {
+        "errorCode": "6017",
+        "errorMessage": "Passenger not eligable for Exit Seat. Seat must be reassigned."
+      },
+      {
+        "errorCode": "6016",
+        "errorMessage": "Seat change failed. The target seat is not available to the customer"
+      },
+      {
+        "errorCode": "5010",
+        "errorMessage": "Determined Office ID is not the same as requesting office"
+      },
+      {
+        "errorCode": "6014",
+        "errorMessage": "Missing mandatory fields in the input"
+      },
+      {
+        "errorCode": "6013",
+        "errorMessage": "chargeable seating not eligible in the output"
+      },
+      {
+        "errorCode": "6012",
+        "errorMessage": "Passenger is already Hajj on the flight"
+      },
+      {
+        "errorCode": "6011",
+        "errorMessage": "Status cannot be updated"
+      },
+      {
+        "errorCode": "6010",
+        "errorMessage": "service Code not supported"
+      },
+      {
+        "errorCode": "6009",
+        "errorMessage": "Issue while updating VDB data"
+      },
+      {
+        "errorCode": "6008",
+        "errorMessage": "Issue while updating customer service"
+      },
+      {
+        "errorCode": "6007",
+        "errorMessage": "Flight not Hajj"
+      },
+      {
+        "errorCode": "6006",
+        "errorMessage": "Issue while updating details // Warn Kirti PTR 8653675"
+      },
+      {
+        "errorCode": "6005",
+        "errorMessage": "Exit seat suitability needed"
+      },
+      {
+        "errorCode": "6004",
+        "errorMessage": "Mixed passenger and products identifiers"
+      },
+      {
+        "errorCode": "6003",
+        "errorMessage": "Passive product"
+      },
+      {
+        "errorCode": "6002",
+        "errorMessage": "Inhibited seat"
+      },
+      {
+        "errorCode": "6001",
+        "errorMessage": "Passenger not eligible on segment for seat change/allocation"
+      },
+      {
+        "errorCode": "6000",
+        "errorMessage": "Passenger not eligible for seat change/allocation"
+      },
+      {
+        "errorCode": "5011",
+        "errorMessage": "Unsupported boardingPass document for googlePay"
+      },
+      {
+        "errorCode": "5009",
+        "errorMessage": "Unable to save boarding pass to google Pay"
+      },
+      {
+        "errorCode": "5008",
+        "errorMessage": "Customer Product could not be found"
+      },
+      {
+        "errorCode": "5007",
+        "errorMessage": "Boarding Pass ID not found"
+      },
+      {
+        "errorCode": "5006",
+        "errorMessage": "Printing is inhibited and confirmation document not allowed"
+      },
+      {
+        "errorCode": "5005",
+        "errorMessage": "No document to format for the customer"
+      },
+      {
+        "errorCode": "5004",
+        "errorMessage": "Issue while printing"
+      },
+      {
+        "errorCode": "5003",
+        "errorMessage": "Printing is inhibited as credit card verification is required"
+      },
+      {
+        "errorCode": "5002",
+        "errorMessage": "Printing is inhibited for the customer"
+      },
+      {
+        "errorCode": "5001",
+        "errorMessage": "Printing is inhibited for the route"
+      },
+      {
+        "errorCode": "4024",
+        "errorMessage": "'Category' or 'contactType' of email is missing in the request"
+      },
+      {
+        "errorCode": "4023",
+        "errorMessage": "Date is missing, details not added"
+      },
+      {
+        "errorCode": "4022",
+        "errorMessage": "'Purpose' is missing in the request."
+      },
+      {
+        "errorCode": "4021",
+        "errorMessage": "Email address has not been added"
+      },
+      {
+        "errorCode": "4020",
+        "errorMessage": "Invalid characters in document name"
+      },
+      {
+        "errorCode": "4019",
+        "errorMessage": "Special Characters not allowed in last name"
+      },
+      {
+        "errorCode": "4018",
+        "errorMessage": "Missing country code"
+      },
+      {
+        "errorCode": "4017",
+        "errorMessage": "Name has not been added"
+      },
+      {
+        "errorCode": "4016",
+        "errorMessage": "Phone number extension missing"
+      },
+      {
+        "errorCode": "4015",
+        "errorMessage": "Phone number missing element"
+      },
+      {
+        "errorCode": "6019",
+        "errorMessage": "Iapp Error"
+      },
+      {
+        "errorCode": "6015",
+        "errorMessage": "Invalid purpose of visit"
+      },
+      {
+        "errorCode": "4014",
+        "errorMessage": "Retrigger of regulatory data failed"
+      },
+      {
+        "errorCode": "4013",
+        "errorMessage": "Regulatory data requested for Extra seat"
+      },
+      {
+        "errorCode": "4012",
+        "errorMessage": "Regulatory data requested for several customer"
+      },
+      {
+        "errorCode": "4011",
+        "errorMessage": "Update CPR failed"
+      },
+      {
+        "errorCode": "4010",
+        "errorMessage": "Different nationalities received in existing documents"
+      },
+      {
+        "errorCode": "4009",
+        "errorMessage": "Regulatory data name and CPR name matching fails"
+      },
+      {
+        "errorCode": "4008",
+        "errorMessage": "Documents with different nationalities received"
+      },
+      {
+        "errorCode": "4007",
+        "errorMessage": "Multiple documents of the same type received in the input"
+      },
+      {
+        "errorCode": "4006",
+        "errorMessage": "Special Characters"
+      },
+      {
+        "errorCode": "4005",
+        "errorMessage": "Product is ï¿½Non Operationalï¿½"
+      },
+      {
+        "errorCode": "4004",
+        "errorMessage": "Flight status is locked"
+      },
+      {
+        "errorCode": "4003",
+        "errorMessage": "Product is not active (DCS Not Synchronised or DCS Active Synchronised)"
+      },
+      {
+        "errorCode": "4002",
+        "errorMessage": "Child age is less more 24 months"
+      },
+      {
+        "errorCode": "4001",
+        "errorMessage": "Date of Birth is more than 150 years"
+      },
+      {
+        "errorCode": "4000",
+        "errorMessage": "Date of Birth is invalid // PTR 9041594"
+      },
+      {
+        "errorCode": "3018",
+        "errorMessage": "Regulatory Check failed."
+      },
+      {
+        "errorCode": "3017",
+        "errorMessage": "Customer has paid bag(s)"
+      },
+      {
+        "errorCode": "3016",
+        "errorMessage": "Customer has printed bagTag(s)"
+      },
+      {
+        "errorCode": "3015",
+        "errorMessage": "Missing one time password"
+      },
+      {
+        "errorCode": "3014",
+        "errorMessage": "Invalid one time password"
+      },
+      {
+        "errorCode": "3013",
+        "errorMessage": "Customer has bag data"
+      },
+      {
+        "errorCode": "3012",
+        "errorMessage": "Customer not checked-in nor standby"
+      },
+      {
+        "errorCode": "3011",
+        "errorMessage": "Customer not accepted"
+      },
+      {
+        "errorCode": "3010",
+        "errorMessage": "No ticket details"
+      },
+      {
+        "errorCode": "3009",
+        "errorMessage": "No IATCI agreements"
+      },
+      {
+        "errorCode": "3008",
+        "errorMessage": "Product already checked in // Ask Kirti to update Specs (PTR 08759667)"
+      },
+      {
+        "errorCode": "3007",
+        "errorMessage": "Security questions not verified"
+      },
+      {
+        "errorCode": "3006",
+        "errorMessage": "Acceptance cannot be processed as passive product"
+      },
+      {
+        "errorCode": "3005",
+        "errorMessage": "Customer need to answer some security questions"
+      },
+      {
+        "errorCode": "3004",
+        "errorMessage": "Customer answered wrongly to questions and can't be checked-in"
+      },
+      {
+        "errorCode": "3003",
+        "errorMessage": "Acceptance cannot be processed as customer on the segment is not eligible"
+      },
+      {
+        "errorCode": "3002",
+        "errorMessage": "Online check-in is not available for this segment, please contact airport agent for further assistance"
+      },
+      {
+        "errorCode": "3001",
+        "errorMessage": "Acceptance cannot be processed as regulatory check are failed"
+      },
+      {
+        "errorCode": "3000",
+        "errorMessage": "Acceptance is inhibited as credit card verification is required"
+      },
+      {
+        "errorCode": "2019",
+        "errorMessage": "No matching bookings found"
+      },
+      {
+        "errorCode": "2018",
+        "errorMessage": "No Traveler with that ID"
+      },
+      {
+        "errorCode": "2017",
+        "errorMessage": "Group booking: Filter by e-tkt required"
+      },
+      {
+        "errorCode": "2016",
+        "errorMessage": "Group booking: Filter by e-tkt or first name required"
+      },
+      {
+        "errorCode": "2015",
+        "errorMessage": "No Journey with that id"
+      },
+      {
+        "errorCode": "2014",
+        "errorMessage": "Journey ID not found"
+      },
+      {
+        "errorCode": "2011",
+        "errorMessage": "Infant problem"
+      },
+      {
+        "errorCode": "2010",
+        "errorMessage": "None of the booking status is eligible for check-in"
+      },
+      {
+        "errorCode": "2009",
+        "errorMessage": "Seat allocation problem"
+      },
+      {
+        "errorCode": "2008",
+        "errorMessage": "No filter was set. Application filtering expected"
+      },
+      {
+        "errorCode": "2007",
+        "errorMessage": "Filter entered doesn't matched with any of the customer"
+      },
+      {
+        "errorCode": "2006",
+        "errorMessage": "Prime flight of the journey not available"
+      },
+      {
+        "errorCode": "2005",
+        "errorMessage": "Prime flight of the journey is locked"
+      },
+      {
+        "errorCode": "2004",
+        "errorMessage": "Surname is required"
+      },
+      {
+        "errorCode": "2002",
+        "errorMessage": "Field not Filled"
+      },
+      {
+        "errorCode": "2001",
+        "errorMessage": "Invalid Booking Reference/E-ticket number"
+      },
+      {
+        "errorCode": "2000",
+        "errorMessage": "No customer found"
+      },
+      {
+        "errorCode": "1021",
+        "errorMessage": "Passengers found do not have the same flights, please check in separately"
+      },
+      {
+        "errorCode": "1020",
+        "errorMessage": "ineligible as passengers were added or removed"
+      },
+      {
+        "errorCode": "1019",
+        "errorMessage": "Invalid language code input"
+      },
+      {
+        "errorCode": "1018",
+        "errorMessage": "Warnings from flight eligibility rule"
+      },
+      {
+        "errorCode": "1017",
+        "errorMessage": "Warnings from CM: actual title will be in the following format: CM Warning <CM_EDIFACT>_UPI_<JourneyElementId>, errorCode <CM_Error_Code>, errorText: <CM_Error_Text> Example: CM Warning CCKIUR_UPI_123245677655C3, errorCode 18356, errorText missing APIS"
+      },
+      {
+        "errorCode": "1016",
+        "errorMessage": "Errors from CM: actual title will be in the following format: CM Error <CM_EDIFACT>_UPI_<JourneyElementId>, errorCode <CM_Error_Code>, errorText: <CM_Error_Text> Example: CM Error CCKIUR_UPI_123245677655C3, errorCode 18356, errorText missing APIS"
+      },
+      {
+        "errorCode": "1015",
+        "errorMessage": "Permission is missing"
+      },
+      {
+        "errorCode": "1014",
+        "errorMessage": "Bad request"
+      },
+      {
+        "errorCode": "1013",
+        "errorMessage": "Last Passenger cannot be deleted from a journey"
+      },
+      {
+        "errorCode": "1012",
+        "errorMessage": "No matching bookings found"
+      },
+      {
+        "errorCode": "1011",
+        "errorMessage": "Booking not supported"
+      },
+      {
+        "errorCode": "1010",
+        "errorMessage": "Option request name to be provided for filtering"
+      },
+      {
+        "errorCode": "1008",
+        "errorMessage": "Printed a confirmation"
+      },
+      {
+        "errorCode": "1007",
+        "errorMessage": "Change seat inhibited"
+      },
+      {
+        "errorCode": "1006",
+        "errorMessage": "Passport expires before departure date of flight product"
+      },
+      {
+        "errorCode": "1005",
+        "errorMessage": "Passport expires before arrival date of flight product"
+      },
+      {
+        "errorCode": "1004",
+        "errorMessage": "Adult age is less than 24 months"
+      },
+      {
+        "errorCode": "1003",
+        "errorMessage": "Infant age is more than 99 months"
+      },
+      {
+        "errorCode": "1002",
+        "errorMessage": "Infant age is more than 24 months"
+      },
+      {
+        "errorCode": "1000",
+        "errorMessage": "Customer not eligible for check-in"
+      },
+      {
+        "errorCode": "199",
+        "errorMessage": "Record not found"
+      },
+      {
+        "errorCode": "194",
+        "errorMessage": "No matching bookings found"
+      },
+      {
+        "errorCode": "181",
+        "errorMessage": "Invalid country code"
+      },
+      {
+        "errorCode": "36",
+        "errorMessage": "Address formatting error"
+      },
+      {
+        "errorCode": "801",
+        "errorMessage": "Boarding Pass is not eligible for this origin and destination"
+      },
+      {
+        "errorCode": "102",
+        "errorMessage": "Check-in Unavailable You can check in online starting 24 hours before your flight. Please try again later"
+      },
+      {
+        "errorCode": "703",
+        "errorMessage": "Passenger not found in the same flight, please verify the details and try again."
+      },
+      {
+        "errorCode": "702",
+        "errorMessage": "Cabin Class not matched"
+      },
+      {
+        "errorCode": "704",
+        "errorMessage": "There is more than one passengers with this name.Please enter your ticket number and try again"
+      },
+      {
+        "errorCode": "705",
+        "errorMessage": "Passenger Already Added"
+      },
+      {
+        "errorCode": "021",
+        "errorMessage": "Royal Orchid Plus number doesn't match with this passenger name"
+      },
+      {
+        "errorCode": "022",
+        "errorMessage": "Invalid Royal Orchid Plus ID"
+      },
+      {
+        "errorCode": "023",
+        "errorMessage": "Invalid FFP Number"
+      },
+      {
+        "errorCode": "800",
+        "errorMessage": "Online Check-in is not eligible for this origin and destination"
+      }
+    ],
+    ":type": "thaiairways/components/error-message"
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 14635
+  }
+}

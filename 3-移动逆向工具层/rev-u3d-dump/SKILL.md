@@ -1,6 +1,7 @@
 ---
 name: rev-u3d-dump
 description: Dump Unity IL2CPP symbols from iOS/Android builds. Extract method names, addresses, and type info from IL2CPP binaries and global-metadata.dat, then generate IDA/Ghidra import scripts.
+platforms: [app]
 ---
 
 # rev-u3d-dump - Unity IL2CPP Symbol Dumper
@@ -170,3 +171,10 @@ public void MethodName() { }
 - `dump.cs` is the quickest reference — search for class/method names with RVA addresses
 - `script.json` Address values are decimal — convert to hex for IDA: `hex(40865744)` → `0x26F8FD0`
 - Field offsets in `dump.cs` (e.g., `// 0x20`) are relative to object base, useful for memory inspection with Frida
+
+---
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。

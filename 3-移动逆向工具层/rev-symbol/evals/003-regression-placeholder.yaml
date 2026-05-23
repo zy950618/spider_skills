@@ -1,0 +1,20 @@
+name: Guard against false positives from shared constants, inlining, and optimization variants
+prompt: >
+  Last round of symbol recovery I made three mistakes on the same binary:
+  (1) I named sub_501000 as "SHA256_Init" because it contained 0x6A09E667, but
+  it turned out to be a Blake2 variant that shares the same IV constant;
+  (2) sub_502000 and sub_502400 looked totally different in pseudo-code but
+  were actually the same memcpy compiled at -O0 vs -O3 (one with a byte loop,
+  one with SIMD unrolled), and I gave them two different names;
+  (3) sub_503000 had no clean prologue/epilogue and its "tail" was actually an
+  inlined strlen, which I mis-attributed as the outer function's logic and
+  named the whole thing strlen_and_copy. Re-do the analysis correctly and make
+  sure this class of mistake does not happen again on this site.
+criteria:
+  - "Detects that a shared magic constant (0x6A09E667 is reused by SHA-256 and Blake2) is not sufficient evidence by itself, and requires a second signal (round count, message schedule, additional constants, or string) before committing to a name."
+  - "Recognizes that pseudo-code shape can diverge across optimization levels and inlining, and uses callers/callees plus paired argument patterns (dst, src, size) to confirm semantic identity instead of textual similarity."
+  - "Identifies that an inlined helper (strlen here) inside a larger function should not rename the outer function; treats inlined fragments as a sub-region and renames only what the function actually does end-to-end."
+  - "Writes the three failure modes (shared-constant ambiguity, optimization-variant divergence, inline-boundary loss) back to 站点经验库/<domain>/known-failures.md so future rev-symbol runs on this site avoid the same trap."
+  - "Re-emits the corrected symbols with confidence levels and an explicit list of which signals were used and which were rejected as insufficient."
+expect_skill: true
+timeout: 120

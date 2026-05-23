@@ -1,0 +1,45 @@
+{
+  "status": 200,
+  "headers": {
+    "accept-ranges": "bytes",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "content-length": "134",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:22 GMT",
+    "etag": "\"2853291b08635d0a6633d5aa8d3cdce1\"",
+    "last-modified": "Thu, 11 Sep 2025 11:12:43 GMT",
+    "server": "AmazonS3",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "VJk3AMzTSXOMW7cF6nQxNVYgDZmd7y1ishlfEck8wF3Ppynj6GBGuQ==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-amz-server-side-encryption": "AES256",
+    "x-cache": "Miss from cloudfront"
+  },
+  "body": {
+    "ca": [
+      "YYZ",
+      "YVR"
+    ],
+    "kh": [
+      "SAI",
+      "PNH",
+      "KTI"
+    ],
+    "nz": [
+      "CHC",
+      "ZQN",
+      "WLG",
+      "AKL"
+    ],
+    "us": [
+      "LAX",
+      "SFO",
+      "SEA"
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 134
+  }
+}

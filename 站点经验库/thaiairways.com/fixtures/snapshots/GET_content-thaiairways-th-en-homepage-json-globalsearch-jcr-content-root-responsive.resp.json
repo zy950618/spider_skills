@@ -1,0 +1,86 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64450",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "br",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"4c3-65266611b33b4\"",
+    "expires": "0",
+    "last-modified": "Fri, 22 May 2026 11:32:09 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "DpQ3dicLEVu8R2lg_l1ClnrU7B21cvPqcm0QV8hNcJwaCfCP38RbQA==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "popularKeywords": [
+      {
+        "heading": "Popular Keywords",
+        "reDirURL": "/en-th/content/search?query=",
+        "data": [
+          {
+            "label": "Help"
+          },
+          {
+            "label": "Online Check-in"
+          },
+          {
+            "label": "Manage Booking"
+          },
+          {
+            "label": "Destinations"
+          },
+          {
+            "label": "Wi-fi"
+          }
+        ]
+      }
+    ],
+    "lookingForAnyOfThesePagesCard": [
+      {
+        "heading": "Looking for one of these pages?",
+        "data": [
+          {
+            "image": "/content/dam/thaiairways/images/global-search/faqs.jpg",
+            "location": "View useful information for your trip.",
+            "title": "FAQs",
+            "buttonText": "FAQs",
+            "buttonUrl": "/en-th/content/help/faq"
+          },
+          {
+            "image": "/content/dam/thaiairways/images/global-search/baggagepolicies.jpg",
+            "location": "See fees and policies for checked and carry-on bags",
+            "title": "Baggage Policies",
+            "buttonText": "Baggage Policies",
+            "buttonUrl": "/en-th/content/baggage"
+          },
+          {
+            "image": "/content/dam/thaiairways/images/global-search/specialassistance.jpg",
+            "location": "Unaccompanied minors, travelling with infant and more",
+            "title": "Special Assistance",
+            "buttonText": "Special Assistance",
+            "buttonUrl": "/en-th/content/special-assistance"
+          },
+          {
+            "image": "/content/dam/thaiairways/images/global-search/managebooking.jpg",
+            "location": "Receive information regarding flight status",
+            "title": "Manage Booking",
+            "buttonText": "Manage Booking",
+            "buttonUrl": "/en-th/book/my-trips"
+          }
+        ]
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 1219
+  }
+}

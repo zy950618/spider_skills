@@ -1,0 +1,10 @@
+name: Move browser sign algorithm into Node
+prompt: >
+  我在浏览器里已经定位到 window._sign 这个加密函数,依赖一个 webpack chunk。
+  现在想把这段 JS 搬到 Node 里独立跑,签名一致后封装成 sign(url, data) 接口。
+criteria:
+  - "Builds env/ project layout with env_core.js as engine and run.js as strategy, never editing the original JS."
+  - "Sets up window/document/navigator/location stubs and runs node env/run.js to read the diagnostic report before patching."
+  - "Validates signature length/prefix against the browser before claiming success, and writes lessons to 站点经验库/<domain>/known-failures.md."
+expect_skill: true
+timeout: 120

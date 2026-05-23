@@ -2,6 +2,7 @@
 name: skills-evaluation-governance
 description: >-
   Use this skill to score, refine, backtest, and govern Codex/Claude skills: assess whether notes are installable skills, create evals, prepare Skill Bench structure, compare SKILL.md quality, define trigger/negative-trigger tests, track drift, maintain versions, record changes, and enforce admission gates for new Skills. Trigger when the user asks to rate skills, use Skill Bench, convert notes into usable skills, evaluate trigger accuracy, maintain a skills library, score a new Skill before accepting it, run backtests, or Chinese requests such as SKILLS评分, 技能评分, 可用SKILLS, 新增Skill准入, Skill Bench跑分, 回测, 漂移测试, 长期治理, 版本号, 变更记录, 触发词优化, 负例测试, or 技能库治理.
+platforms: [cross-platform]
 ---
 
 # Skills Evaluation Governance
@@ -78,6 +79,11 @@ Score separately:
 - 每个 Skill 至少有正例、负例和回归/边界 eval。
 - 测试日志中的重复失败能进入站点经验库或 eval backlog。
 - 改动后版本、变更记录和漂移测试要求同步更新。
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。
 
 ## Boundaries
 

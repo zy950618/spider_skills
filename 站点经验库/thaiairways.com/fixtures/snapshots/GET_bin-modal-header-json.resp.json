@@ -1,0 +1,1261 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "r_cRZOMoyXzvDt9vTM68GynyeWyoyHW8qYKWC_Hrvn_08Z6fxM4oZw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "body": {
+    "headerDetails": [
+      {
+        "mainHeaderId": "1",
+        "mainHeaderName": "Plan Trip",
+        "mainHeaderUrl": "",
+        "mainHeaderGroup": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "regionCode": "ASA",
+                    "redirectionUrl": "https://www.thaiairways.com/en_TH/travel_information/where_we_fly/thai-destinations.page"
+                  },
+                  {
+                    "regionCode": "EU",
+                    "redirectionUrl": "https://www.thaiairways.com/en_TH/travel_information/where_we_fly/thai-destinations.page"
+                  },
+                  {
+                    "regionCode": "THA",
+                    "redirectionUrl": "https://www.thaiairways.com/en_TH/travel_information/where_we_fly/thai-destinations.page"
+                  }
+                ],
+                "showMap": true,
+                "showCard": false
+              }
+            ],
+            "groupId": "11"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/where-we-fly",
+                "mainHeaderNavigationId": "101",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "1011",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationSubCategory": [
+                      {
+                        "mainHeaderSubNavigationSubCategoryTitle": "Thailand",
+                        "regionCode": "THA",
+                        "mainHeaderSubNavigationSubCategoryId": "10111",
+                        "mainHeaderSubNavigationSubCategoryUrl": "/content/where-we-fly/thailand"
+                      },
+                      {
+                        "mainHeaderSubNavigationSubCategoryTitle": "Asia ",
+                        "regionCode": "ASA",
+                        "mainHeaderSubNavigationSubCategoryId": "10121",
+                        "mainHeaderSubNavigationSubCategoryUrl": "/content/where-we-fly/asia"
+                      },
+                      {
+                        "mainHeaderSubNavigationSubCategoryTitle": "Europe",
+                        "regionCode": "EU",
+                        "mainHeaderSubNavigationSubCategoryId": "10122",
+                        "mainHeaderSubNavigationSubCategoryUrl": "/content/where-we-fly/europe"
+                      },
+                      {
+                        "mainHeaderSubNavigationSubCategoryTitle": "Australia",
+                        "regionCode": "AUS",
+                        "mainHeaderSubNavigationSubCategoryId": "10123",
+                        "mainHeaderSubNavigationSubCategoryUrl": "/content/where-we-fly/australia"
+                      }
+                    ]
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1012",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Where we fly"
+              }
+            ],
+            "groupId": "12"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/offers-Promotions",
+                "mainHeaderNavigationId": "131",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "1311",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Special Offers",
+                    "mainHeaderSubNavigationUrl": "/content/offers-Promotions?tab=specialOffers",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1312",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Partner Previleges",
+                    "mainHeaderSubNavigationUrl": "/content/offers-Promotions?tab=partners",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1313",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal Orchid Plus",
+                    "mainHeaderSubNavigationUrl": "/content/offers-Promotions?tab=rop",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1314",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal Orchid Holidays",
+                    "mainHeaderSubNavigationUrl": "/content/offers-Promotions?tab=roh",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Offers & Promotions"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/airport-information",
+                "mainHeaderNavigationId": "132",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Airport Information"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/plan-trip/flight-schedule",
+                "mainHeaderNavigationId": "133",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Flight Schedule"
+              }
+            ],
+            "groupId": "13"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "https://www.thaiairways.com/flights/en-th/",
+                "mainHeaderNavigationId": "141",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "1411",
+                    "regionCode": "BKK-HKT",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "Bangkok to Phuket",
+                    "mainHeaderSubNavigationUrl": "https://www.thaiairways.com/flights/en-th/flights-from-bangkok-to-phuket",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1412",
+                    "regionCode": "BKK-NRT",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "Bangkok to Japan",
+                    "mainHeaderSubNavigationUrl": "https://www.thaiairways.com/flights/en-th/flights-from-bangkok-to-japan",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1413",
+                    "regionCode": "BKK-HAN",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "Thailand to Vietnam",
+                    "mainHeaderSubNavigationUrl": "https://www.thaiairways.com/flights/en-th/flights-from-thailand-to-vietnam",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1414",
+                    "regionCode": "BKK-ISB",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "Thailand to Pakistan",
+                    "mainHeaderSubNavigationUrl": "https://www.thaiairways.com/flights/en-th/flights-from-bangkok-to-phuket",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "1415",
+                    "regionCode": "BKK-BOM",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "Thailand to India",
+                    "mainHeaderSubNavigationUrl": "https://www.thaiairways.com/flights/en-th/flights-from-thailand-to-india",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Popular Destinations"
+              }
+            ],
+            "groupId": "14"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "buttonText": "Book Now",
+                    "regionCode": "BKK-HKT",
+                    "headingText": "Bangkok to Phuket",
+                    "bgImageUrl": "/content/dam/thaiairways/images/populardestinations/en-th/HKT.png",
+                    "id": "1",
+                    "redirectionUrl": "https://www.thaiairways.com/flights/en-th/flights-from-bangkok-to-phuket"
+                  },
+                  {
+                    "buttonText": "Book Now",
+                    "regionCode": "BKK-NRT",
+                    "headingText": "Bangkok to Japan",
+                    "bgImageUrl": "/content/dam/thaiairways/images/populardestinations/en-th/NRT.jpg",
+                    "id": "2",
+                    "redirectionUrl": "https://www.thaiairways.com/flights/en-th/flights-from-bangkok-to-japan"
+                  },
+                  {
+                    "buttonText": "Book Now",
+                    "regionCode": "BKK-HAN",
+                    "headingText": "Thailand to Vietnam",
+                    "bgImageUrl": "/content/dam/thaiairways/images/populardestinations/en-th/HAN.jpg",
+                    "id": "3",
+                    "redirectionUrl": "https://www.thaiairways.com/flights/en-th/flights-from-thailand-to-vietnam"
+                  },
+                  {
+                    "buttonText": "Book Now",
+                    "regionCode": "BKK-ISB",
+                    "headingText": "Thailand to Pakistan",
+                    "bgImageUrl": "/content/dam/thaiairways/images/populardestinations/en-th/ISB.jpg",
+                    "id": "4",
+                    "redirectionUrl": "https://www.thaiairways.com/flights/en-th/flights-from-thailand-to-pakistan"
+                  },
+                  {
+                    "buttonText": "Book Now",
+                    "regionCode": "BKK-BOM",
+                    "headingText": "Thailand to India",
+                    "bgImageUrl": "/content/dam/thaiairways/images/populardestinations/en-th/BOM.jpg",
+                    "id": "5",
+                    "redirectionUrl": "https://www.thaiairways.com/flights/en-th/flights-from-thailand-to-india"
+                  }
+                ],
+                "showMap": false,
+                "showCard": true
+              }
+            ],
+            "groupId": "15"
+          }
+        ],
+        "mainHeaderGroupLoggedIn": []
+      },
+      {
+        "mainHeaderId": "2",
+        "mainHeaderName": "Book",
+        "mainHeaderUrl": "",
+        "mainHeaderGroup": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "buttonText": "Book a Flight",
+                    "headingText": "Explore the world with us",
+                    "bgImageUrl": "/content/dam/thaiairways/header/Submenu_Book_NewCardImg.png",
+                    "redirectionUrl": "/book/book-flight"
+                  }
+                ],
+                "showMap": false,
+                "showCard": true
+              }
+            ],
+            "groupId": "21"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/book/book-flight",
+                "mainHeaderNavigationId": "201",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Book Flight"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/book/my-trips",
+                "mainHeaderNavigationId": "202",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "2021",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Upcoming Trips",
+                    "mainHeaderSubNavigationUrl": "/book/my-trips",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "2022",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Past Trips",
+                    "mainHeaderSubNavigationUrl": "/book/my-trips/past-trips",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "My Trips"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/check-in",
+                "mainHeaderNavigationId": "203",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "2031",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Online Check-in",
+                    "mainHeaderSubNavigationUrl": "/content/check-in#checkinStandalone",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "2032",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Mobile Check-in",
+                    "mainHeaderSubNavigationUrl": "/content/check-in#section1",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "2033",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Self Check-in",
+                    "mainHeaderSubNavigationUrl": "/content/check-in#section2",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "2034",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Counter Check-in",
+                    "mainHeaderSubNavigationUrl": "/content/check-in#section3",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Check-in"
+              }
+            ],
+            "groupId": "22"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/more-services",
+                "mainHeaderNavigationId": "402",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "4021",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Preferred Seats",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/preferred-Seats",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4022",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Pre-Select Meals",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/pre-select-meals",
+                    "mainHeaderSubNavigationSubCategory": [
+                      {
+                        "mainHeaderSubNavigationSubCategoryTitle": "Special In-Flight Meals",
+                        "mainHeaderSubNavigationSubCategoryId": "4023",
+                        "mainHeaderSubNavigationSubCategoryUrl": "/content/more-services/special-in-flight-meals"
+                      }
+                    ]
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4024",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Online Excess Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/online-excess-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "40212",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Standby Upgrade",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/standby-upgrade",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4025",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Airport Services",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/airport-services",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4026",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Transportation",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/transportation",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4027",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Hotels",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/hotels",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4028",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Insurance",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/insurance",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4029",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal Orchid Holidays",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/royal-orchid-holidays",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "40210",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "THAI Shop",
+                    "mainHeaderSubNavigationUrl": "https://thaishop.thaiairways.com/web/",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "40211",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Pre-order Duty Free",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/pre-order-duty-free",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Other Services",
+                    "mainHeaderSubNavigationUrl": "/content/more-services/other-services",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "More Services"
+              }
+            ],
+            "groupId": "23"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/book/flight-status",
+                "mainHeaderNavigationId": "203",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Flight Status"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/book/e-Receipt",
+                "mainHeaderNavigationId": "204",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "e-Receipt"
+              }
+            ],
+            "groupId": "24"
+          }
+        ],
+        "mainHeaderGroupLoggedIn": []
+      },
+      {
+        "mainHeaderId": "3",
+        "mainHeaderName": "Travel Information",
+        "mainHeaderUrl": "",
+        "mainHeaderGroup": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "buttonText": "Learn More",
+                    "headingText": "Baggage Guide",
+                    "bgImageUrl": "/content/dam/thaiairways/header/SubMenu_BaggageGuide.png",
+                    "redirectionUrl": "/content/baggage"
+                  }
+                ],
+                "showMap": false,
+                "showCard": true
+              }
+            ],
+            "groupId": "31"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/baggage",
+                "mainHeaderNavigationId": "721",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "7021",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Checked Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/checked-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7022",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Carry-on Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/carry-on-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7023",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Excess Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/excess-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7024",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Special Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/special-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7026",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Restricted Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/restricted-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7027",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Dangerous Goods",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/dangerous-goods",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7028",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Delayed Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/delayed-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7029",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Damaged Baggage",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/damaged-baggage",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7030",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Bag Drop",
+                    "mainHeaderSubNavigationUrl": "/content/baggage/bagdrop",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Baggage"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/travel-information/baggage/baggage-tracking",
+                "mainHeaderNavigationId": "722",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Baggage Tracking"
+              }
+            ],
+            "groupId": "72"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/special-assistance",
+                "mainHeaderNavigationId": "701",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "7011",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Unaccompanied Minors",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/unaccompanied-minors",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7012",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Traveling with Infants",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/traveling-with-infants",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7013",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Traveling with Pets",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/travel-with-pets",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7014",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Wheelchair",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/traveling-with-a-wheelchair",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7015",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Advice for Elderly Passengers",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/advice-for-elderly-passenger",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7016",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Advice for Sick Passengers",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/advice-for-sick-passengers",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "7017",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Health and Well-being Onboard",
+                    "mainHeaderSubNavigationUrl": "/content/special-assistance/health-andwell-being-onboard",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Special Assistance"
+              }
+            ],
+            "groupId": "72"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/travel-document",
+                "mainHeaderNavigationId": "722",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Travel Document"
+              }
+            ],
+            "groupId": "74"
+          }
+        ],
+        "mainHeaderGroupLoggedIn": []
+      },
+      {
+        "mainHeaderId": "4",
+        "mainHeaderName": "Experience",
+        "mainHeaderUrl": "",
+        "mainHeaderGroup": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "buttonText": "Travel Classes",
+                    "headingText": "Explore our classes",
+                    "bgImageUrl": "/content/dam/thaiairways/header/SubMenu_TravelClass.png",
+                    "redirectionUrl": "/content/travel-class"
+                  }
+                ],
+                "showMap": false,
+                "showCard": true
+              }
+            ],
+            "groupId": "41"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/ground-services",
+                "mainHeaderNavigationId": "405",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "4051",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Lounges",
+                    "mainHeaderSubNavigationUrl": "/content/ground-services/lounges",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4052",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Gold Track",
+                    "mainHeaderSubNavigationUrl": "/experience/ground-services/gold-track",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4053",
+                    "isExternalUrl": true,
+                    "mainHeaderSubNavigationTitle": "Star Alliance Services",
+                    "mainHeaderSubNavigationUrl": "https://www.staralliance.com/en/home",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Ground Services"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/our-fleet",
+                "mainHeaderNavigationId": "404",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Our Fleet"
+              }
+            ],
+            "groupId": "42"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/travel-class",
+                "mainHeaderNavigationId": "406",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "4061",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal First",
+                    "mainHeaderSubNavigationUrl": "/content/travel-class/royal-first",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4062",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal Silk",
+                    "mainHeaderSubNavigationUrl": "/content/travel-class/royal-silk",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4063",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Premium Economy",
+                    "mainHeaderSubNavigationUrl": "/content/travel-class/premium-economy",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4064",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Economy",
+                    "mainHeaderSubNavigationUrl": "/content/travel-class/economy",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Travel Classes"
+              }
+            ],
+            "groupId": "43"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/in-flight-experience",
+                "mainHeaderNavigationId": "407",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "4071",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "In-Flight Cuisine",
+                    "mainHeaderSubNavigationUrl": "/content/in-flight-experience/in-flight-cuisine",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4072",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Sawasdee Magazine",
+                    "mainHeaderSubNavigationUrl": "https://sawasdee.thaiairways.com/",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4073",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "In-Flight Entertainment",
+                    "mainHeaderSubNavigationUrl": "/content/in-flight-experience/in-flight-entertainment",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4074",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "In-Flight Connectivity",
+                    "mainHeaderSubNavigationUrl": "/content/in-flight-experience/in-flight-connectivity",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4075",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Use of Electric Device",
+                    "mainHeaderSubNavigationUrl": "/content/in-flight-experience/use-of-electronic-device",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4076",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "In-Flight Duty Free",
+                    "mainHeaderSubNavigationUrl": "/content/in-flight-experience/in-flight-duty-free",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "4077",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "e-Library",
+                    "mainHeaderSubNavigationUrl": "/content/in-flight-experience/e-library",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "In-Flight Experience"
+              }
+            ],
+            "groupId": "44"
+          }
+        ],
+        "mainHeaderGroupLoggedIn": []
+      },
+      {
+        "mainHeaderId": "5",
+        "mainHeaderName": "Royal Orchid Plus",
+        "mainHeaderUrl": "",
+        "mainHeaderGroup": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "buttonText": "Sign In / Join Royal Orchid Plus",
+                    "headingText": "Exclusive Benefits Await For You",
+                    "bgImageUrl": "/content/dam/thaiairways/header/subMenu_Rop.png",
+                    "redirectionUrl": "/sign-up"
+                  }
+                ],
+                "showMap": false,
+                "showCard": true
+              }
+            ],
+            "groupId": "51"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/about-royal-orchid-plus",
+                "mainHeaderNavigationId": "521",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "About Royal Orchid Plus"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/status-and-benefits",
+                "mainHeaderNavigationId": "522",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Status and Benefits"
+              }
+            ],
+            "groupId": "52"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/rop/miles-calculator",
+                "mainHeaderNavigationId": "531",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Miles Calculator"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/earn-miles",
+                "mainHeaderNavigationId": "532",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Earn Miles"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/spend-miles",
+                "mainHeaderNavigationId": "533",
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "5331",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Search By Miles",
+                    "mainHeaderSubNavigationUrl": "/rop/spend-miles/search-by-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5332",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Air Awards",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/air-awards",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5333",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Non-Air Awards",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/non-air-awards",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5334",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Flight Upgrades",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/flight-upgrades",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5335",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Cash Plus Miles",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/cash-plus-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5336",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Donations",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/donation",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Spend Miles"
+              }
+            ],
+            "groupId": "53"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/offers-Promotions?tab=rop",
+                "mainHeaderNavigationId": "541",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Promotions and Offers"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/royal-orchid-plus/royal-orchid-plus-news",
+                "mainHeaderNavigationId": "542",
+                "mainHeaderSubNavigation": [
+                  {
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal Orchid Plus Newsletter",
+                    "mainHeaderSubNavigationUrl": "/content/royal-orchid-plus/royal-orchid-plus-newsletter",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "mainHeaderNavigationName": "Royal Orchid Plus News"
+              }
+            ],
+            "groupId": "54"
+          }
+        ],
+        "mainHeaderGroupLoggedIn": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/about-royal-orchid-plus",
+                "mainHeaderNavigationId": "551",
+                "showMap": false,
+                "mainHeaderSubNavigation": [],
+                "showCard": false,
+                "mainHeaderNavigationName": "About Royal Orchid Plus"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/rop/my-profile",
+                "mainHeaderNavigationId": "552",
+                "showMap": false,
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "5521",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Award Nominees",
+                    "mainHeaderSubNavigationUrl": "/rop/my-profile?tabSelected=nominee",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "showCard": false,
+                "mainHeaderNavigationName": "My Profile"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/status-and-benefits",
+                "mainHeaderNavigationId": "553",
+                "showMap": false,
+                "mainHeaderSubNavigation": [],
+                "showCard": false,
+                "mainHeaderNavigationName": "Status and Benefits"
+              }
+            ],
+            "groupId": "55"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/miles-management",
+                "mainHeaderNavigationId": "561",
+                "showMap": false,
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "5611",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Mileage Statement",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/mileage-statement",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5612",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Member Status Calculator",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/member-status-calculator",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5613",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Claim Missing Miles",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/claim-missing-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5614",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Mileage Purchase",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/mileage-purchase",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5615",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Gift Miles",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/gift-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5616",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Transfer Miles",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/transfer-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5617",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Extend Expiring Miles",
+                    "mainHeaderSubNavigationUrl": "/rop/miles-management/extend-expiry-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "showCard": false,
+                "mainHeaderNavigationName": "Miles Management"
+              }
+            ],
+            "groupId": "56"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/rop/miles-calculator",
+                "mainHeaderNavigationId": "571",
+                "showMap": false,
+                "mainHeaderSubNavigation": [],
+                "showCard": false,
+                "mainHeaderNavigationName": "Miles Calculator"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/earn-miles",
+                "mainHeaderNavigationId": "572",
+                "showMap": false,
+                "mainHeaderSubNavigation": [],
+                "showCard": false,
+                "mainHeaderNavigationName": "Earn Miles"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/spend-miles",
+                "mainHeaderNavigationId": "573",
+                "showMap": false,
+                "mainHeaderSubNavigation": [
+                  {
+                    "mainHeaderSubNavigationId": "5731",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Search By Miles",
+                    "mainHeaderSubNavigationUrl": "/rop/spend-miles/search-by-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5732",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Air Awards",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/air-awards",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5733",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Non-Air Awards",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/non-air-awards",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5734",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Flight Upgrades",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/flight-upgrades",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5735",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Cash Plus Miles",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/cash-plus-miles",
+                    "mainHeaderSubNavigationSubCategory": []
+                  },
+                  {
+                    "mainHeaderSubNavigationId": "5736",
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Donations",
+                    "mainHeaderSubNavigationUrl": "/content/spend-miles/donation",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "showCard": false,
+                "mainHeaderNavigationName": "Spend Miles"
+              }
+            ],
+            "groupId": "57"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/offers-Promotions/special-offers/?tab=rop",
+                "mainHeaderNavigationId": "581",
+                "showMap": false,
+                "mainHeaderSubNavigation": [],
+                "showCard": false,
+                "mainHeaderNavigationName": "Promotions and Offers"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/royal-orchid-plus/royal-orchid-plus-news",
+                "mainHeaderNavigationId": "582",
+                "showMap": false,
+                "mainHeaderSubNavigation": [
+                  {
+                    "isExternalUrl": false,
+                    "mainHeaderSubNavigationTitle": "Royal Orchid Plus Newsletter",
+                    "mainHeaderSubNavigationUrl": "/content/royal-orchid-plus/royal-orchid-plus-newsletter",
+                    "mainHeaderSubNavigationSubCategory": []
+                  }
+                ],
+                "showCard": false,
+                "mainHeaderNavigationName": "Royal Orchid Plus News"
+              }
+            ],
+            "groupId": "58"
+          }
+        ]
+      },
+      {
+        "mainHeaderId": "6",
+        "mainHeaderName": "For Business",
+        "mainHeaderUrl": "",
+        "mainHeaderGroup": [
+          {
+            "mainHeaderNavigation": [
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/mice",
+                "mainHeaderNavigationId": "612",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "MICE"
+              },
+              {
+                "hideMobileViewArrow": false,
+                "isExternalUrl": false,
+                "mainHeaderNavigationUrl": "/content/charter-flights",
+                "mainHeaderNavigationId": "613",
+                "mainHeaderSubNavigation": [],
+                "mainHeaderNavigationName": "Charter Flight"
+              }
+            ],
+            "groupId": "61"
+          },
+          {
+            "mainHeaderNavigation": [
+              {
+                "data": [
+                  {
+                    "buttonText": "Book Now",
+                    "headingText": "Charter Flights",
+                    "bgImageUrl": "/content/dam/thaiairways/header/subMenu_CharterFlight.png",
+                    "redirectionUrl": "/content/charter-flights"
+                  }
+                ],
+                "showMap": false,
+                "showCard": true
+              }
+            ],
+            "groupId": "62"
+          }
+        ],
+        "mainHeaderGroupLoggedIn": []
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 62308
+  }
+}

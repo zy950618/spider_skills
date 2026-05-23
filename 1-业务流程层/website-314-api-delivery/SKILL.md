@@ -2,6 +2,7 @@
 name: website-314-api-delivery
 description: >-
   Use this skill when a user gives a new website or existing target site and asks for end-to-end pure-interface implementation, API service delivery, or integration with the 314 base framework. Trigger for requests such as new website crawler, pure API implementation, site-to-service delivery, search/cart/order/payment flow, flight booking interface, 314 framework, flight_cwl_common_314, 接口实现, 纯接口, 网站接入, 新站点接入, 查询/加车/生单/支付, 加解密全部实现, 314基础框架, 提供接口, 服务化, or 长期可维护接口交付.
+platforms: [web, h5]
 ---
 
 # Website 314 API Delivery
@@ -103,6 +104,11 @@ description: >-
 - 失败时能区分业务错误、路由错误、加密错误、WAF、IP、支付不可逆风险。
 - 结果能沉淀成下一次复用的 Skill/eval。
 - 同站点同 market/locale/currency/stage 的已知失败在执行前被检查，并且测试后有写回记录。
+
+## Tool Policy
+
+- **开始实现前 Read `~/.claude/skills/karpathy-guidelines/SKILL.md`**,确认 4 条原则:Think Before Coding / Simplicity First / Surgical Changes / Goal-Driven Execution。这是基础层规范,所有执行类 skill 强制依赖。
+- **遇到逆向运行时问题(断点/时间/cookie/TLS 指纹/风控恢复/接口变更)Read `~/.claude/skills/my_reverse_skill/99-SKILLS治理/10-逆向运行时常见问题.md`**。
 
 ## Boundaries
 

@@ -1,0 +1,487 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "strict-transport-security": "max-age=31536000 ; includeSubDomains",
+    "vary": "origin,access-control-request-method,access-control-request-headers,accept-encoding",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "LQj6hj_PZSWPt9bU_QolDlPyrXrSdbZmRxs-DorI2LDQhmsp9h_U2w==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY",
+    "x-xss-protection": "1; mode=block"
+  },
+  "body": [
+    {
+      "regionId": 1,
+      "regionName": "Asia-Pacific",
+      "regionCode": "APAC",
+      "countryDetails": [
+        {
+          "countryCode": "AU",
+          "languageDetails": [
+            {
+              "countryName": "Australia",
+              "countryNameEN": "Australia",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "BD",
+          "languageDetails": [
+            {
+              "countryName": "Bangladesh",
+              "countryNameEN": "Bangladesh",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "KH",
+          "languageDetails": [
+            {
+              "countryName": "Cambodia",
+              "countryNameEN": "Cambodia",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "CN",
+          "languageDetails": [
+            {
+              "countryName": "China 中国",
+              "countryNameEN": "China",
+              "languageCode": "ZH",
+              "languageName": "简体中文"
+            },
+            {
+              "countryName": "China",
+              "countryNameEN": "China",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "HK",
+          "languageDetails": [
+            {
+              "countryName": "香港",
+              "countryNameEN": "Hong Kong - China",
+              "languageCode": "ZH",
+              "languageName": "繁體中文"
+            },
+            {
+              "countryName": "Hong Kong - China",
+              "countryNameEN": "Hong Kong - China",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "IN",
+          "languageDetails": [
+            {
+              "countryName": "India",
+              "countryNameEN": "India",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "ID",
+          "languageDetails": [
+            {
+              "countryName": "Indonesia",
+              "countryNameEN": "Indonesia",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "JP",
+          "languageDetails": [
+            {
+              "countryName": "Japan　日本",
+              "countryNameEN": "Japan",
+              "languageCode": "JA",
+              "languageName": "日本語"
+            },
+            {
+              "countryName": "Japan",
+              "countryNameEN": "Japan",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "KR",
+          "languageDetails": [
+            {
+              "countryName": "대한민국",
+              "countryNameEN": "Korea",
+              "languageCode": "KO",
+              "languageName": "한국어"
+            },
+            {
+              "countryName": "Korea",
+              "countryNameEN": "Korea",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "LA",
+          "languageDetails": [
+            {
+              "countryName": "Laos",
+              "countryNameEN": "Laos",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "MY",
+          "languageDetails": [
+            {
+              "countryName": "Malaysia",
+              "countryNameEN": "Malaysia",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "MM",
+          "languageDetails": [
+            {
+              "countryName": "Myanmar",
+              "countryNameEN": "Myanmar",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "NP",
+          "languageDetails": [
+            {
+              "countryName": "Nepal",
+              "countryNameEN": "Nepal",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "NZ",
+          "languageDetails": [
+            {
+              "countryName": "New Zealand",
+              "countryNameEN": "New Zealand",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "PK",
+          "languageDetails": [
+            {
+              "countryName": "Pakistan",
+              "countryNameEN": "Pakistan",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "PH",
+          "languageDetails": [
+            {
+              "countryName": "Philippines",
+              "countryNameEN": "Philippines",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "SG",
+          "languageDetails": [
+            {
+              "countryName": "Singapore",
+              "countryNameEN": "Singapore",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "LK",
+          "languageDetails": [
+            {
+              "countryName": "Sri Lanka",
+              "countryNameEN": "Sri Lanka",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "TW",
+          "languageDetails": [
+            {
+              "countryName": "Taiwan 台湾 - China 中国",
+              "countryNameEN": "Taiwan - China",
+              "languageCode": "ZH",
+              "languageName": "繁體中文"
+            },
+            {
+              "countryName": "Taiwan - China",
+              "countryNameEN": "Taiwan - China",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "TH",
+          "languageDetails": [
+            {
+              "countryName": "ไทย",
+              "countryNameEN": "Thailand",
+              "languageCode": "TH",
+              "languageName": "ไทย"
+            },
+            {
+              "countryName": "Thailand",
+              "countryNameEN": "Thailand",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "VN",
+          "languageDetails": [
+            {
+              "countryName": "Việt Nam",
+              "countryNameEN": "Vietnam",
+              "languageCode": "VI",
+              "languageName": "Tiếng Việt"
+            },
+            {
+              "countryName": "Vietnam",
+              "countryNameEN": "Vietnam",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": 2,
+      "regionName": "Europe",
+      "regionCode": "EURO",
+      "countryDetails": [
+        {
+          "countryCode": "BE",
+          "languageDetails": [
+            {
+              "countryName": "Belgium",
+              "countryNameEN": "Belgium",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "DK",
+          "languageDetails": [
+            {
+              "countryName": "Denmark",
+              "countryNameEN": "Denmark",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "FR",
+          "languageDetails": [
+            {
+              "countryName": "France",
+              "countryNameEN": "France",
+              "languageCode": "FR",
+              "languageName": "Français"
+            }
+          ]
+        },
+        {
+          "countryCode": "DE",
+          "languageDetails": [
+            {
+              "countryName": "Deutschland",
+              "countryNameEN": "Germany",
+              "languageCode": "DE",
+              "languageName": "Deutsch"
+            }
+          ]
+        },
+        {
+          "countryCode": "IT",
+          "languageDetails": [
+            {
+              "countryName": "Italy",
+              "countryNameEN": "Italy",
+              "languageCode": "IT",
+              "languageName": "Italiano"
+            }
+          ]
+        },
+        {
+          "countryCode": "NL",
+          "languageDetails": [
+            {
+              "countryName": "Netherlands",
+              "countryNameEN": "Netherlands",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "NO",
+          "languageDetails": [
+            {
+              "countryName": "Norge",
+              "countryNameEN": "Norway",
+              "languageCode": "NO",
+              "languageName": "Norwegian"
+            },
+            {
+              "countryName": "Norway",
+              "countryNameEN": "Norway",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "ES",
+          "languageDetails": [
+            {
+              "countryName": "España",
+              "countryNameEN": "Spain",
+              "languageCode": "ES",
+              "languageName": "Español"
+            }
+          ]
+        },
+        {
+          "countryCode": "SE",
+          "languageDetails": [
+            {
+              "countryName": "Sverige",
+              "countryNameEN": "Sweden",
+              "languageCode": "SV",
+              "languageName": "Svenska"
+            },
+            {
+              "countryName": "Sweden",
+              "countryNameEN": "Sweden",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "CH",
+          "languageDetails": [
+            {
+              "countryName": "Switzerland",
+              "countryNameEN": "Switzerland",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "TR",
+          "languageDetails": [
+            {
+              "countryName": "Türkiye",
+              "countryNameEN": "Türkiye (Turkey)",
+              "languageCode": "TR",
+              "languageName": "Türkçe"
+            }
+          ]
+        },
+        {
+          "countryCode": "GB",
+          "languageDetails": [
+            {
+              "countryName": "United Kingdom",
+              "countryNameEN": "United Kingdom",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": 4,
+      "regionName": "The Americas",
+      "regionCode": "NAM",
+      "countryDetails": [
+        {
+          "countryCode": "CA",
+          "languageDetails": [
+            {
+              "countryName": "Canada",
+              "countryNameEN": "Canada",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        },
+        {
+          "countryCode": "US",
+          "languageDetails": [
+            {
+              "countryName": "United States of America",
+              "countryNameEN": "United States of America",
+              "languageCode": "EN",
+              "languageName": "English"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 6147
+  }
+}

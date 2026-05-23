@@ -1,0 +1,61 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "gzip",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:21 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Accept-Encoding",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "Hz2NonrDgmLBJu5prUo1Iyfm7S8QlrsC2tFoWI4c3lFTfjbMZGGY7A==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "body": {
+    "readMoreLinkText": "Show All News",
+    "newsList": [
+      {
+        "date": "14 May 2026",
+        "buttonText": "Read More",
+        "heading": "<p>THAI Reports Operating Results for the First Quarter of 2026</p>\r\n",
+        "highlighted": "true",
+        "imageUrl": "/content/dam/thaiairways/images/newsannouncements/Q1-2026-Infographic.jpg",
+        "description": "<p>Thai Airways International Public Company Limited (THAI) reported the operating results for the first quarter of 2026, recording total revenue, excluding one-time items, of 51,029 million baht, a decrease from the same period last year of 596 million baht or 1.2%.</p>\r\n",
+        "redirectionLink": "/en-th/content/news-and-announcements/thai-reports-operating-results-for-the-first-quarter-of-2026",
+        "imageAlt": "THAI Reports Operating Results for the First Quarter of 2026"
+      },
+      {
+        "date": "26 February 2026",
+        "buttonText": "Read More",
+        "heading": "<p>THAI Reports Operational Performance Results for the Year Ended 31 December 2025  </p>\r\n",
+        "highlighted": "false",
+        "imageUrl": "/content/dam/thaiairways/images/newsannouncements/THAI-Reports-Year-Ended.jpg",
+        "description": "<p>Thai Airways International Public Company Limited (THAI) and its subsidiaries reported operational performance results for the year ended 31 December 2025, with total revenues excluding one-time items of 190,277 million baht, representing an increase of 1.2% from 2024 and accounting for 103.4% of the 2019 pre-COVID-19. The growth was mainly driven by passenger revenue, which expanded by 0.5%.</p>\r\n",
+        "redirectionLink": "/en-th/content/news-and-announcements/thai-reports-operational-performance-results-for-the-year-ended",
+        "imageAlt": "THAI Reports Operational Performance Results for the Year Ended"
+      },
+      {
+        "date": "16 January 2026",
+        "buttonText": "Read More",
+        "heading": "<p>Thai Airways Unveils Airbus A321neo, Showcasing New Cabin and Products to Elevate the Travel Experience</p>\r\n",
+        "highlighted": "false",
+        "imageUrl": "/content/dam/thaiairways/images/newsannouncements/Thai-Airways-Unveils-Airbus-A321neo.jpg",
+        "description": "<p>16 January 2026 – Thai Airways International Public Company Limited (THAI) hosted THAI Airbus A321neo launch event at THAI Technical Hangar, Suvarnabhumi airport, unveiling its new cabin products, underscoring the airline’s commitment to enhancing the passenger travel experience while improving fleet efficiency and advancing environmentally sustainable operations. Among those in attendance were Mr. Sumrid Sumneing, and Mrs. Chananyarak Phetcharat, members of the Board of Directors, Mr. Chai Eamsiri, THAI’s Chief Executive Officer, THAI’s management, and business partners.  </p>\r\n",
+        "redirectionLink": "/en-th/content/news-and-announcements/thai-airways-unveils-airbus-A321neo",
+        "imageAlt": "THAI News"
+      }
+    ],
+    "readMoreLink": "/en-th/content/news-and-announcements",
+    "title": "News & Announcements"
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 3233
+  }
+}

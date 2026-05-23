@@ -1,0 +1,141 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-encoding": "gzip",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Accept-Encoding",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "ZLtiZtY05H6BkksuXu5Qitv6lzFmY5b8zZ1sTBH5R0CGYYZhWTxp0g==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "body": {
+    "showPopup": "false",
+    "imagePath": "/content/dam/thaiairways/images/event/popup-en.jpg",
+    "imagePopupDescription": "In Eternal Remembrance With the Deepest Affection of the Thai Nation We humbly recall, with profound reverence. Her Majesty Queen Sirikit The Queen Mother, whose grace, wisdom, and benevolence shall forever remain in the hearts of the Thai people. with the highest respect and unwavering loyalty, we offer our heartfelt condolences on this solemn occasion of remembrance.",
+    "seeAllBannerNotification": [
+      {
+        "endTimeUTC": "2027-10-09T11:09:00Z",
+        "region": "TH",
+        "lang": "th",
+        "message": {
+          "bannerHeading": "Subject: Adjustment of International Passenger Service Charge (PSC) by Airports of Thailand Public Company Limited (AOT)",
+          "description": "<p>Reference is made to the announcement issued by Airports of Thailand Public Company Limited (AOT) on <b>20 February 2026</b> regarding the adjustment of the <b>International Passenger Service Charge (PSC)</b>.</p>\r\n<p>AOT has announced an increase in the International Passenger Service Charge from the current rate of <b>THB 730 per passenger</b> to <b>THB 1,120 per passenger</b>. This adjustment applies to six major airports under AOT’s management, namely <b>Suvarnabhumi, Don Mueang, Chiang Rai, Chiang Mai, Phuket, and Hat Yai</b>.</p>\r\n<p>For <b>domestic flights</b>, the Passenger Service Charge will <b>remain unchanged at THB 130 per passenger</b>.</p>\r\n<p>The revised PSC will apply to international tickets issued from 11 March 2026 onwards, for travel commencing on or after 20 June 2026.</p>\r\n"
+        },
+        "startTimeUTC": "2025-10-09T11:09:00Z"
+      },
+      {
+        "endTimeUTC": "2027-10-09T11:09:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "Thai Airways Confirms Continued Normal Operations",
+          "description": "<p>In light of the unrest in certain areas of the Middle East, Thai Airways International Public Company Limited (THAI) confirms that all flights continue to operate as scheduled.<br />\r\n<br />\r\nCurrently, THAI does not operate flights to the affected region. For European flight services, THAI is operating on flight paths that avoid the airspace of areas affected by the situation. As a result, flight durations to and from Europe may be slightly extended.<br />\r\n<br />\r\nTHAI will continue to closely monitor and assess the situation to ensure the safety and continuity of flight operations.<br />\r\n<br />\r\nPassengers holding confirmed bookings are advised to remain updated and check flight schedules via the official website at <a href=\"https://www.thaiairways.com/en-th/\">www.thaiairways.com</a> / Thai Airways mobile Application or THAI Contact Center at +66 (0)2-356-1111, available 24 hours.</p>\r\n"
+        },
+        "startTimeUTC": "2025-10-09T11:09:00Z"
+      },
+      {
+        "endTimeUTC": "2027-10-09T11:09:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "UK VISA TRANSITION TO FULLY DIGITAL \"eVisa\"",
+          "description": "<p>Effective from 25 February 2026<br />\r\n</p>\r\n<p>The United Kingdom will transition from issuing physical visa stickers (vignettes) to a fully digital &quot;eVisa&quot; system.</p>\r\n<p>What this means for you:<br />\r\n• Visa approval will be issued digitally - no visa sticker in your passport<br />\r\n• You must create a UKVI account to access your eVisa<br />\r\n• Before travelling, ensure your eVisa details match your current passport<br />\r\n• If you obtain a new passport, update your details in your UKVI account </p>\r\n<p>You may log in at any time via the official UK Government website to view or manage your eVisa.<br />\r\n<br />\r\nFOR MORE INFORMATION visit <a href=\"http://gov.uk\" title=\"http://gov.uk/\" target=\"_blank\">gov.uk</a>Official Website</p>\r\n"
+        },
+        "startTimeUTC": "2025-10-09T11:09:00Z"
+      },
+      {
+        "endTimeUTC": "2027-10-09T11:09:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "Important Notice for Thai Airways Passengers Connecting with Asiana Airlines at Incheon Airport",
+          "description": "<p>Please be informed that Asiana Airlines (OZ) will move its flight operations from Terminal 1 to Terminal 2 at Incheon International Airport (ICN) effective 14 January 2026.</p>\r\n<p>Thai Airways (TG) continues to operate from Terminal 1.<br />\r\nPassengers connecting between TG (Terminal 1) and OZ (Terminal 2) are advised to allow more time for transfer, as the minimum connecting time will be extended from 70 minutes to 90 minutes.</p>\r\n<p>We recommend all passengers check terminal information before travel to ensure smooth connections.</p>\r\n<p>For more details, please visit Asiana Airlines Official Website</p>\r\n"
+        },
+        "startTimeUTC": "2025-10-09T11:09:00Z"
+      },
+      {
+        "endTimeUTC": "2027-10-09T11:09:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "Non-EU nationals travelling to the European countries using the EES for a short stay ",
+          "description": "<p>The Entry/Exit System (EES) is Europe’s new border management system for registering non-EU nationals travelling for a short stay, each time they cross the external borders of 29 European countries. Starting from 12 October 2025</p>\r\n<p>For more information, <a href=\"https://ec.europa.eu/assets/home/EES-information-campaign-materials/Leaflet/Leaflet-A5-digital_en.pdf\" target=\"_blank\">click here</a></p>\r\n"
+        },
+        "startTimeUTC": "2025-10-09T11:09:00Z"
+      },
+      {
+        "endTimeUTC": "2026-06-10T17:51:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": " Announcement of No-Show Fee for traveling with Royal Orchid Plus Award Tickets.",
+          "description": "<p>Effective<b> </b>1 October 2025, Royal Orchid Plus Award ticket holders who fail to show up on their scheduled travel date will be subject to a no-show fee. In addition, cancellations made<b> </b>less than 24 hours prior to departure for international flights or less than 4 hours prior for domestic flights will also be treated as no-shows and charged the applicable fee.</p>\r\n<p>More Details of the No-Show Fee for Royal Orchid Plus Award tickets, <a href=\"/en-th/content/about-royal-orchid-plus/service-fees/\">click here</a></p>\r\n"
+        },
+        "startTimeUTC": "2025-08-29T17:51:00Z"
+      },
+      {
+        "endTimeUTC": "2027-03-10T09:23:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "New TDAC Requirement for Non-Thai Nationals Effective May 1, 2025",
+          "description": "<p>📌 Starting 1 May 2025, all non-Thai nationals entering Thailand by air, land, or sea must complete the Thailand Digital Arrival Card (TDAC) online prior to arrival.</p>\r\n<p>🔹 Registration window:<br />\r\nYou must register and submit the TDAC within 72 hours (3 days) before your scheduled arrival in Thailand.</p>\r\n<p>🔹 Required for all ports of entry:<br />\r\nThis applies to all international arrivals—whether by airports, land borders, or sea ports.</p>\r\n<p>🔹 Purpose of the TDAC:<br />\r\nThe TDAC replaces the previous physical arrival/departure card and is designed to streamline the immigration process and improve border control efficiency.</p>\r\n<p>🔹 What you’ll need to complete the TDAC:</p>\r\n<ul>\r\n<li><p>Passport detailsTravel</p>\r\n</li>\r\n<li><p>information (flight number, entry point, date of arrival)</p>\r\n</li>\r\n<li><p>Accommodation address in Thailand</p>\r\n</li>\r\n<li><p>A valid email address to receive confirmation</p>\r\n</li>\r\n</ul>\r\n<p>🔹 Apply online here:</p>\r\n<p>👉 <a href=\"https://tdac.immigration.go.th/\" title=\"https://tdac.immigration.go.th/\" target=\"_blank\"><b>Thailand Digital Arrival Card (TDAC)</b></a></p>\r\n<p>⚠️ Important: Failure to complete the TDAC in advance may result in delays, denied boarding or entry upon arrival.</p>\r\n<p><a class=\"ngEE8j2xjOXWCzrmZE1H btn btn-primary\" href=\"/en-au/content/news-and-announcements/thailand-digital-arrival-card\" target=\"_self\">Read More</a></p>\r\n"
+        },
+        "startTimeUTC": "2025-03-02T09:23:00Z"
+      },
+      {
+        "endTimeUTC": "2027-12-01T18:07:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "Important Entry Information for Travelers to Cambodia",
+          "description": "<p>All Travelers to Cambodia, please be aware of the following online requirements to ensure a smooth arrival:</p>\r\n<p>1. Apply for your <b>e-Visa</b> at: <a href=\"https://www.evisa.gov.kh/\">https://www.evisa.gov.kh/</a></p>\r\n<p>2. Complete your<b> e-Arrival Card</b> (within 7 days before arrival)</p>\r\n<p>at: <a href=\"https://arrival.gov.kh/\">https://arrival.gov.kh/</a></p>\r\n<p>We strongly recommend completing these steps before your departure to avoid any delays.</p>\r\n"
+        },
+        "startTimeUTC": "2025-03-01T18:07:00Z"
+      },
+      {
+        "endTimeUTC": "2027-03-10T09:23:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "THAI Announces Prohibition of Power Bank Use Onboard",
+          "description": "<p>Thai Airways International Public Company Limited is introducing a new safety measure to enhance onboard security, prohibiting the use of power banks while onboard. This regulation will take effect from March 15, 2025 onwards.</p>\r\n<p>This measure is implemented to ensure the highest level of safety for all passengers and crew members. We kindly ask for your cooperation and apologize for any inconvenience caused.</p>\r\n<p><a class=\"ngEE8j2xjOXWCzrmZE1H btn btn-primary\" href=\"/en-th/content/news-and-announcements/thai-announces-prohibition-of-power-bank-use-onboard/\">Read More</a></p>\r\n"
+        },
+        "startTimeUTC": "2025-06-18T01:35:00Z"
+      },
+      {
+        "endTimeUTC": "2026-03-19T22:24:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "Travel Advice for Thai Airways Passengers",
+          "description": "<p>Check-in counter closing times for all Thai Airways flights departing at Suvarnabhumi Airport are as follows:</p>\r\n<p>- Domestic flights: Check-in counter closes 40 minutes before departure time.</p>\r\n<p>- International flights: Check-in counter closes 50 minutes before departure time.</p>\r\n<p>For a smooth journey, We kindly ask all passengers to arrive early at the airport to prevent missing their flights. Especially during festivals and long holidays.</p>\r\n<p>For more information, please contact THAI Contact Center +66-2-356-1111.</p>\r\n<p><a class=\"ngEE8j2xjOXWCzrmZE1H btn btn-primary\" href=\"/en-th/content/check-in#section3\" target=\"_self\">Read More</a></p>\r\n"
+        },
+        "startTimeUTC": "2025-04-07T22:24:00Z"
+      },
+      {
+        "endTimeUTC": "2026-03-11T22:27:00Z",
+        "region": "TH",
+        "lang": "en",
+        "message": {
+          "bannerHeading": "Collection of Service Fee for Ticket Change issued from Travel Agents",
+          "description": "<p>Any tickets issued by travel agents, a service fee of THB 1,000 will be applied for any reservation changes.</p>\r\n<p><a class=\"ngEE8j2xjOXWCzrmZE1H btn btn-primary\" href=\"/en-th/content/news-and-announcements/service_fee_travel_agents\" target=\"_self\">Read More</a></p>\r\n"
+        },
+        "startTimeUTC": "2025-04-07T22:27:00Z"
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 12257
+  }
+}

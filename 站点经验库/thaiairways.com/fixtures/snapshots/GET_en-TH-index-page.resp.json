@@ -1,0 +1,25 @@
+{
+  "status": 301,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "content-length": "0",
+    "date": "Sat, 23 May 2026 05:26:12 GMT",
+    "location": "/en-th/",
+    "referrer-policy": "strict-origin-when-cross-origin",
+    "server": "CloudFront",
+    "strict-transport-security": "max-age=31536000; includeSubDomains",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "fG_XN1S1b-1tpJ8oRU-zuS-TsG-vaDYx6gm32N8A4gPGKPeg5jMV1Q==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "FunctionGeneratedResponse from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN",
+    "x-xss-protection": "1"
+  },
+  "body": null,
+  "_meta": {
+    "body_encoding": "none",
+    "body_size_bytes": -1
+  }
+}

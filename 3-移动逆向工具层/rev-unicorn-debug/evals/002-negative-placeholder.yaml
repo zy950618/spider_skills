@@ -1,0 +1,12 @@
+name: Negative trigger when source is available or Frida dynamic hook suffices
+prompt: >
+  我手上有这个加密函数的 C 源码(sign.c),里面就一个 HMAC-SHA256 + base64,
+  没有任何 JNI 或者 syscall 依赖。我想验证一下算法跟线上 app 出来的 X-Sign
+  一不一致。另外如果对不上,我打算直接用 Frida hook 真机上的 SignUtil.sign
+  打印中间结果,在设备上跑就行。
+criteria:
+  - "Does not propose Unicorn emulation; recommends compiling sign.c with gcc/clang and running it natively, or running it as Python ctypes if needed."
+  - "For the runtime verification path, routes to Frida (Interceptor.attach / Java.use) on the live device instead of emulating with Unicorn."
+  - "Explicitly notes that Unicorn is overkill when source builds cleanly with no environment dependencies."
+expect_skill: false
+timeout: 120

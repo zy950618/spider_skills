@@ -1,0 +1,247 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64449",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-disposition": "attachment",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"43d1-63c3e0a1437c0\"",
+    "expires": "0",
+    "last-modified": "Wed, 13 Aug 2025 12:10:15 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "IAU-mgaUwFk4-wobsz_PCf7zc8_x1ygwUqnz8kdM1LRYZIwQm4vHnQ==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "home": {
+      "th": {
+        "title": "Flight Tickets Online | Book International Flights | Thai Airways",
+        "description": "Book flight tickets from Thailand, and Bangkok to international destinations with Thai Airways. Get the best fares and deals online. Manage your booking and check in online now.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "au": {
+        "title": "Book Flights to Thailand from Australia |  Thai Airways International",
+        "description": "Book flight tickets from Australia to Thailand, Bangkok & other International destinations with Thai Airways. Get the best fares and deals online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "at": {
+        "title": "Book Flights From Austria to Thailand | Thai Airways International",
+        "description": "Book flight tickets from Austria to Thailand, Bangkok & other International destinations with Thai Airways. Get the best fares and deals and book your flight online.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "bd": {
+        "title": "Book Flights From Bangladesh to Thailand | Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok and other international destinations with Thai Airways. Manage your booking and check-in online. Book online now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "be": {
+        "title": "Book Flights From Belgium to Bangkok | Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, the US and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "ca": {
+        "title": "Book Flights From Canada to Bangkok | Thai Airways International",
+        "description": " Book your domestic & international flight tickets to Thailand, Bangkok with best offers at Thai Airways. Manage your booking and check-in online now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "sa": {
+        "title": "Flight Ticket Booking | Find Flights | Thai Airways International",
+        "description": " Book flight tickets to Thailand, Bangkok, Dubai and other international destinations with the best offers at Thai Airways. Manage your booking and check-in online now! ",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "cn": {
+        "title": "Book Flights to Bangkok, Seoul & More | Thai Airways International ",
+        "description": " Book flight tickets to Thailand, Bangkok, Japan and other international destinations with the best offers at Thai Airways. Manage your booking and check-in online now! ",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "fr": {
+        "title": "Book Non-Stop flights to Thailand Online | Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Italy and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "de": {
+        "title": "Book Flights to Thailand, Spain| Thai Airways International ",
+        "description": "Book flight tickets to Thailand, Bangkok, Spain and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "hk": {
+        "title": "Hong Kong Flight Tickets to Thailand | Thai Airways International ",
+        "description": "Book flight tickets to Thailand, Bangkok, Spain and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "in": {
+        "title": "Book Flights to Bangkok, Thailand | Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok & many more with Thai Airways. Get the best fares and deals online. Manage your booking and check-in online now.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "id": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Saudi Arabia and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "it": {
+        "title": "Book Flights to Thailand, Spain| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Spain and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "jp": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets from Tokyo to Thailand, Bangkok & other International destinations with Thai Airways. Get the best fares and deals and book your flight online.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "Ko": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, China & other International destinations with Thai Airways. Get the best fares and deals and book your flight online.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "la": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Singapore, Malaysia & other International destinations with Thai Airways. Get the best fares and deals and book your flight online.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "my": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, UAE, Kuwait and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "mm": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, London and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "np": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "nz": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, India and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "no": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Oslo and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "pk": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Spain and other international destinations with Thai Airways. Manage your booking and check-in online. Book  now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "ph": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, India and other international destinations with Thai Airways. Manage your booking and check-in online. Book  now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "ru": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok & many more with Thai Airways. Get the best fares and deals online. Manage your booking and check-in online now.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "sg": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Tokyo & many more with Thai Airways. Get the best fares and deals online. Manage your booking and check-in online now.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "es": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok & many more with Thai Airways. Get the best fares and deals online. Manage your booking and check-in online now.",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "lk": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Malaysia and other international destinations with Thai Airways. Manage your booking and check-in online. Book online now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "se": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Vietnam and other international destinations with Thai Airways. Manage your booking and check-in online. Book  now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "ch": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "tw": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, India and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "tr": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "ae": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok, Saudi and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "us": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok from the United States, including flights from New York to Thailand & more with Thai Airways. Book online now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      },
+      "vn": {
+        "title": "Book Flights to Bangkok, Thailand| Thai Airways International",
+        "description": "Book flight tickets to Thailand, Bangkok and other international destinations with Thai Airways. Manage your booking and check-in online. Book now!",
+        "keywords": "Flight tickets online, online flight ticket, book international flights,book flights online"
+      }
+    },
+    "plan-trip": {
+      "flight-schedule": {
+        "title": "Flight Schedule | Thai Airways",
+        "description": "Discover latest flight schedule for Thai Airways. Get to know the flight number, departure & arrival times for international and domestic flight timings.",
+        "keywords": "flight schedule, flight timings, flight timetable"
+      }
+    },
+    "book": {
+      "flight-status": {
+        "title": "Flight Status Online| Thai Airways",
+        "description": "Thai Airways International flight service to Worldwide. View flight schedules, travel extras, find hotel deals and more. Book your trip online now!",
+        "keywords": "flight status thai airways,flight schedule"
+      },
+      "e-Receipt": {
+        "title": "E- Receipt | Thai Airways",
+        "description": "Check out our guidelines on how to get an E- Receipt. Explore now!",
+        "keywords": "flight status thai airways,flight schedule"
+      },
+      "my-trips": {
+        "title": "My Trips | Thai Airways",
+        "description": "Manage your Thai Airways International flight booking and check-in online to view & manage flight details. Find your booking, pre-order meals, view E-receipt & more.",
+        "keywords": "flight status thai airways,flight schedule"
+      },
+      "book-flight": {
+        "title": "Book Air Tickets| Book Flights from Bangkok | Thai Airways",
+        "description": "Book airfare from Thai Airways, providing flights from Bangkok to destinations around the world. Book online now and avail exciting offers.",
+        "keywords": "flight status thai airways,flight schedule"
+      }
+    },
+    "help": {
+      "feedback": {
+        "title": "Feedback | Thai Airways",
+        "description": "Share your experience and provide valuable feedback about our services. Help us improve by submitting your comments and suggestions on our dedicated feedback page",
+        "keywords": "flight status thai airways,flight schedule"
+      },
+      "baggage-claim-form": {
+        "title": "Baggage Claim | Thai Airways",
+        "description": "Navigate baggage claim with ease at Thai Airways. Find information on how to retrieve your luggage, report lost items & handle any issues efficiently for a smooth airport experience.",
+        "keywords": "flight status thai airways,flight schedule"
+      }
+    }
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 17361
+  }
+}

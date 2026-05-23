@@ -1,0 +1,194 @@
+name: Consistency Replay (Layer B - Real Behavior)
+
+on:
+  pull_request:
+    paths:
+      - '站点经验库/*/fixtures/**'
+      - 'tools/replayer/**'
+      - 'tools/recorder/**'
+      - '5-沉淀工具层/*/adapter.yaml'
+      - '.github/workflows/consistency-replay.yml'
+  schedule:
+    - cron: '23 2 * * 2'   # 每周二 UTC 02:23(跟 skill-bench 周一错开)
+  workflow_dispatch:
+    inputs:
+      adapter_url:
+        description: 'Adapter base URL (留空则跳过 replay,只跑 validation)'
+        required: false
+        default: ''
+      threshold:
+        description: '一致率阈值 (默认 0.90)'
+        required: false
+        default: '0.90'
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  validate-schema:
+    runs-on: ubuntu-latest
+    outputs:
+      domains: ${{ steps.list.outputs.domains }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate fixtures schema
+        run: python tools/replayer/validate_fixtures.py
+
+      - name: List domains with fixtures
+        id: list
+        run: |
+          set -euo pipefail
+          DOMAINS=$(find 站点经验库 -mindepth 3 -maxdepth 3 -type d -name snapshots 2>/dev/null \
+                    | xargs -I{} dirname {} 2>/dev/null \
+                    | xargs -I{} dirname {} 2>/dev/null \
+                    | xargs -n1 basename 2>/dev/null \
+                    | grep -v "^_" \
+                    | paste -sd ',' - || echo "")
+          echo "domains=$DOMAINS" >> "$GITHUB_OUTPUT"
+          echo "domains with fixtures: $DOMAINS"
+
+      - name: Score skills with new consistency dimension
+        run: |
+          set -euo pipefail
+          SCRIPT="1-业务流程层/skills-evaluation-governance/scripts/score_skills.py"
+          mkdir -p .ci-out
+          for layer in "1-业务流程层" "2-JS逆向工具层" "3-移动逆向工具层" "5-沉淀工具层"; do
+            safe=$(echo "$layer" | tr / _)
+            python "$SCRIPT" "$layer" > ".ci-out/${safe}.json" || true
+          done
+
+      - name: Upload score artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-scores-with-consistency
+          path: .ci-out/
+
+  replay-diff:
+    runs-on: ubuntu-latest
+    needs: validate-schema
+    if: |
+      (github.event_name == 'schedule') ||
+      (github.event_name == 'workflow_dispatch' && inputs.adapter_url != '')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Determine adapter URL
+        id: adapter
+        run: |
+          set -euo pipefail
+          URL="${{ inputs.adapter_url }}"
+          if [ -z "$URL" ]; then
+            URL="${ADAPTER_BASE_URL:-}"
+          fi
+          if [ -z "$URL" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "No adapter URL configured; replay step will be skipped"
+          else
+            echo "url=$URL" >> "$GITHUB_OUTPUT"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+          THR="${{ inputs.threshold }}"
+          if [ -z "$THR" ]; then THR="0.90"; fi
+          echo "threshold=$THR" >> "$GITHUB_OUTPUT"
+
+      - name: Replay all domains
+        if: steps.adapter.outputs.skip != 'true'
+        run: |
+          set -euo pipefail
+          mkdir -p .ci-out/replay
+          DOMAINS="${{ needs.validate-schema.outputs.domains }}"
+          if [ -z "$DOMAINS" ]; then
+            echo "No domains with fixtures, nothing to replay"
+            exit 0
+          fi
+          FAIL=0
+          IFS=',' read -ra ARR <<< "$DOMAINS"
+          for d in "${ARR[@]}"; do
+            echo "::group::Replay $d"
+            python tools/replayer/snapshot_replay.py \
+              --domain "$d" \
+              --target "${{ steps.adapter.outputs.url }}" || true
+            python tools/replayer/consistency_report.py \
+              --domain "$d" \
+              --threshold "${{ steps.adapter.outputs.threshold }}" \
+              || FAIL=1
+            echo "::endgroup::"
+          done
+          if [ "$FAIL" = "1" ]; then
+            echo "::warning::One or more domains fell below consistency threshold"
+            exit 3
+          fi
+
+      - name: Upload replay reports
+        if: always() && steps.adapter.outputs.skip != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: consistency-reports
+          path: 站点经验库/*/fixtures/reports/
+
+      - name: Comment on PR
+        if: github.event_name == 'pull_request' && steps.adapter.outputs.skip != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const root = '站点经验库';
+            const lines = ['### Consistency Replay', ''];
+            try {
+              for (const d of fs.readdirSync(root)) {
+                const rd = path.join(root, d, 'fixtures', 'reports');
+                if (!fs.existsSync(rd)) continue;
+                const trend = path.join(rd, 'trend.json');
+                if (!fs.existsSync(trend)) continue;
+                const j = JSON.parse(fs.readFileSync(trend, 'utf-8'));
+                const e = (j.entries || []).slice(-1)[0];
+                if (e) lines.push(`- ${d}: ${(e.consistency_rate*100).toFixed(1)}% [${e.status}]`);
+              }
+            } catch (e) {
+              lines.push('(report read failed)');
+            }
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: lines.join('\n')
+            });
+
+      - name: Open issue on drift
+        if: failure() && github.event_name == 'schedule'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const date = new Date().toISOString().split('T')[0];
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Consistency drift detected — ${date}`,
+              body: [
+                'One or more domains fell below the consistency threshold.',
+                '',
+                `Workflow run: ${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,
+                '',
+                '下一步:',
+                '1. 看 artifact `consistency-reports/<domain>/reports/<date>-replay.md`',
+                '2. 判断是真实漂移(网页改了)还是 fixtures 过期(超 30 天)',
+                '3. 真实漂移 → 改 adapter / 标 known-failures.md',
+                '4. fixtures 过期 → 重录(用 cloak_recorder.py 或 har_to_fixtures.py)',
+              ].join('\n'),
+              labels: ['consistency-drift', 'auto-open']
+            });

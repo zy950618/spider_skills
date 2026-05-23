@@ -1,0 +1,29 @@
+{
+  "method": "GET",
+  "url": "https://www.thaiairways.com/common/airport/list",
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en",
+    "access-control-allow-origin": "*",
+    "cookie": "i18next=en-th",
+    "hostname": "https://www.thaiairways.com",
+    "priority": "u=1, i",
+    "referer": "https://www.thaiairways.com/en-th/",
+    "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Google Chrome\";v=\"146\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "source": "website",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+  },
+  "body": null,
+  "_meta": {
+    "host": "www.thaiairways.com",
+    "path": "/common/airport/list",
+    "query": "",
+    "body_encoding": "none"
+  }
+}

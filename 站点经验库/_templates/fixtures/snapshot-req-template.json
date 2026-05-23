@@ -1,0 +1,17 @@
+{
+  "method": "GET",
+  "url": "https://www.example.com/api/v1/airports/list?lang=en",
+  "headers": {
+    "user-agent": "Mozilla/5.0 ...",
+    "accept": "application/json",
+    "accept-language": "en-US,en;q=0.9",
+    "referer": "https://www.example.com/"
+  },
+  "body": null,
+  "_meta": {
+    "_comment": "_meta 字段供脚本读取,不参与重放。重放只用上面 method/url/headers/body。",
+    "host": "www.example.com",
+    "path": "/api/v1/airports/list",
+    "query_keys": ["lang"]
+  }
+}

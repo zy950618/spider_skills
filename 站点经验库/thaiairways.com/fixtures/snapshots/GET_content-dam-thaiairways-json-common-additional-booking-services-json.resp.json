@@ -1,0 +1,211 @@
+{
+  "status": 200,
+  "headers": {
+    "age": "64449",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-disposition": "attachment",
+    "content-encoding": "br",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "W/\"1725-6343998b45800\"",
+    "expires": "0",
+    "last-modified": "Sat, 03 May 2025 11:30:40 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "UXUQWPW-JKqurHM2EH1rK1TA6GRmcUw6eQBP4aXiv9fUGDC6kDVtTw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": {
+    "en": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/more-services/online-excess-baggage",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/more-services/preferred-Seats",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/more-services/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/in-flight-experience/e-library",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ],
+    "th": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/more-services/online-excess-baggage",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/more-services/preferred-Seats",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/more-services/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/in-flight-experience/e-library",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ],
+    "it": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/servizi-speciali/eccedenza-bagaglio",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/servizi-speciali/scelta-del-posto",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/servizi-speciali/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/esperienza-a-bordo/biblioteca",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ],
+    "fr": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/autres-services/excedent-de-bagages",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/autres-services/sieges-preferentiels",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/autres-services/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/experience-a-bord/bibliotheque-numerique",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ],
+    "de": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/extra-services/zusatzliches-reisegepack",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/extra-services/preferred-Seats",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/extra-services/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/service-an-bord/e-bibliothek",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ],
+    "tr": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/more-services/online-excess-baggage",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/more-services/preferred-Seats",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/more-services/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/in-flight-experience/e-library",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ],
+    "es": [
+      {
+        "serviceId": 1,
+        "serviceURL": "/content/more-services/online-excess-baggage",
+        "serviceNameKey": "label_additional_baggage_button",
+        "seriveIcon": "/osci/assets/AdditionalBaggage.png"
+      },
+      {
+        "serviceId": 2,
+        "serviceURL": "/content/more-services/preferred-Seats",
+        "serviceNameKey": "label_preferred_Seats_Button",
+        "seriveIcon": "/osci/assets/PreferredSeats.png"
+      },
+      {
+        "serviceId": 3,
+        "serviceURL": "/content/more-services/pre-select-meals",
+        "serviceNameKey": "label_preSelect_Meals_Button",
+        "seriveIcon": "/osci/assets/Pre-SelectMeals.png"
+      },
+      {
+        "serviceId": 4,
+        "serviceURL": "/content/in-flight-experience/e-library",
+        "serviceNameKey": "label_eLibrary_button",
+        "seriveIcon": "/osci/assets/E-Library.png"
+      }
+    ]
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 5925
+  }
+}

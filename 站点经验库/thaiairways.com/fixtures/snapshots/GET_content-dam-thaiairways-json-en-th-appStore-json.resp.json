@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "headers": {
+    "accept-ranges": "bytes",
+    "age": "64448",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-disposition": "attachment",
+    "content-length": "692",
+    "content-type": "application/json",
+    "date": "Sat, 23 May 2026 05:26:19 GMT",
+    "etag": "\"2b4-631bb07192e00\"",
+    "expires": "0",
+    "last-modified": "Tue, 01 Apr 2025 17:40:08 GMT",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "vary": "Origin",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "HVYD3KT2cUZQ3dLC3nKmgqi4rNK1RINMtxcE0NADRiyORoyfSFF9CQ==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff"
+  },
+  "body": [
+    {
+      "sectionName": "App Store",
+      "sectionHeader": "Stay in control throughout Your Journey.",
+      "sectionDescription": "Easily manage, track, and modify your trip on the go. All your plans in one comprehensive digital travel companion.",
+      "storeHeader": "Download Now",
+      "playStore": "/osci/assets/GooglePlay.svg",
+      "playStoreLink": "https://play.google.com/store/apps/details?id=com.thaiairways.mobile&hl=en&gl=US",
+      "appStore": "/osci/assets/AppStore.svg",
+      "appStoreLink": "https://apps.apple.com/th/app/thai-airways/id1393912966",
+      "huaweiStore": "/osci/assets/modalHauweiStore.svg",
+      "huaweiStoreLink": "https://appgallery.huawei.com/app/C101200261"
+    }
+  ],
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 692
+  }
+}

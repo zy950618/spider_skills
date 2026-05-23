@@ -1,0 +1,32 @@
+{
+  "status": 200,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "no-store, no-cache, must-revalidate",
+    "content-length": "411",
+    "content-type": "application/json;charset=utf-8",
+    "date": "Sat, 23 May 2026 05:26:21 GMT",
+    "expires": "0",
+    "pragma": "no-cache",
+    "server": "Apache/2.4.62 (Amazon Linux) Communique/4.3.7",
+    "via": "1.1 9989e61358a5ce40a78fc28d162f1cd4.cloudfront.net (CloudFront)",
+    "x-amz-cf-id": "woMBnIYuaamBe9cQ23yz5AOu-rXMlXwQ21V6C7JjGmH4ckKC7-EgQw==",
+    "x-amz-cf-pop": "LAX54-P6",
+    "x-cache": "Miss from cloudfront",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "SAMEORIGIN"
+  },
+  "body": {
+    "image": "/content/dam/thaiairways/rop/rop_joinnow.png",
+    "buttonText": "Join Now",
+    "linkURL": "/en-th/content/about-royal-orchid-plus",
+    "linkText": "Learn More",
+    "title": "MORE THAN A JOURNEY, IT'S A REWARDING EXPERIENCE WITH ROYAL ORCHID PLUS.  ",
+    "buttonURL": "/sign-up",
+    "desc": "<p>Make every journey remarkable, with access to a wide range of rewards and benefits.</p>\r\n"
+  },
+  "_meta": {
+    "body_encoding": "json",
+    "body_size_bytes": 411
+  }
+}

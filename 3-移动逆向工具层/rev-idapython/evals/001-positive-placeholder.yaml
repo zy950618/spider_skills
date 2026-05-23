@@ -1,0 +1,13 @@
+name: Batch decompile ELF directory with Hex-Rays via IDALib
+prompt: >
+  I have ~200 stripped ELF binaries from a CTF challenge in /samples/. I want to
+  run IDA headless to enumerate every function and dump the Hex-Rays decompiled
+  pseudocode to one JSON per binary, with multiprocess workers. Give me a script
+  I can run from the shell without opening the IDA GUI.
+criteria:
+  - "Uses IDALib (import idapro, ida.open_database / ida.close_database) for headless analysis, not GUI-only IDAPython."
+  - "Enumerates functions with idautils.Functions() and decompiles via ida_hexrays.decompile(func), guarding for None return."
+  - "Drives a worker pool (multiprocessing.Pool or equivalent) where each worker shells out to a single-binary decompile script, with retry on missing output."
+  - "Calls ida.close_database explicitly so the IDB lock is released between runs."
+expect_skill: true
+timeout: 180
