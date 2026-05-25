@@ -1,0 +1,6 @@
+platform: app
+notes: |
+  Trip.com 国际版 Android (com.ctrip.english / ctrip.english,Google Play 包名 ctrip.english)。
+  数据来源:**公开技术资料 (external research)**,非本仓自身抓包/逆向。
+  本目录用于预案性沉淀,真实接入需用户自备 root Android + Frida + IDA/Ghidra 环境。
+  整体 confidence: LOW-MEDIUM。详见 site-memory.md 顶部声明与 known-failures.md 每条 source 字段。
