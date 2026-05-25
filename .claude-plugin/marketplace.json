@@ -1,0 +1,36 @@
+{
+  "name": "my-reverse-skill",
+  "owner": {
+    "name": "zhaoyang"
+  },
+  "description": "逆向工程 SKILLS 总库 — 一次安装拿到 18 个逆向 skill,覆盖业务流程 / JS 工具 / 移动逆向 / 通用规范 / 沉淀全流水线",
+  "plugins": [
+    {
+      "name": "my-reverse-skill",
+      "source": "./",
+      "description": "完整逆向工具集合 (18 skill, 5 层架构): 侦察→入口→还原→复现→沉淀",
+      "version": "0.4.0",
+      "author": {
+        "name": "zhaoyang"
+      },
+      "homepage": "https://github.com/zy950618/spider_skills",
+      "license": "MIT",
+      "category": "reverse-engineering",
+      "tags": [
+        "reverse-engineering",
+        "crawler",
+        "js-reverse",
+        "mobile-reverse",
+        "frida",
+        "waf"
+      ],
+      "skills": [
+        "./1-业务流程层",
+        "./2-JS逆向工具层",
+        "./3-移动逆向工具层",
+        "./4-通用规范层",
+        "./5-沉淀工具层"
+      ]
+    }
+  ]
+}
